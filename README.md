@@ -26,6 +26,8 @@ timescale.2020 <- read.csv(file="https://raw.githubusercontent.com/naheim/PBDB_S
 
 ## Sepkoski's Compendium of Fossil Marine Genera
 
+Note, I have dropped "Protista" from Sepkoski's compendium so it only includes animals.
+
 * [sepkoski.csv](Sepkoski/sepkoski.csv)
 
 ```{r}

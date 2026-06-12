@@ -21,6 +21,7 @@ params <- paste(c(
 
 ###### ADD & CLEAN UP SEPKOSKI DATASET
 data("sepkoski")
+sepkoski <- subset(sepkoski, PHYLUM != "Protista")
 sepkoski <- cbind('index' = 1:nrow(sepkoski), sepkoski)
 mult.gen <- table(sepkoski$GENUS)
 repeats <- names(mult.gen[mult.gen > 1])
@@ -100,7 +101,7 @@ for(i in 1:nrow(sepkoski)) {
           sepkoski$pbdb_genus[i] <- temp.pbdb$accepted_name[1]
           sepkoski$pbdb_accepted_no[i] <- temp.pbdb$accepted_no[1]
      } 
-     if(i %% 1000 == 0) {print(i)} # just to keep track of progress
+     if(i %% 5000 == 0) {print(i)} # just to keep track of progress
 }
 
 unused.orders <- unique(subset(sepkoski, is.na(pbdb_genus) & !is.element(ORDER, pbdb_order))$ORDER)
