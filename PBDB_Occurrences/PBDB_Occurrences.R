@@ -360,5 +360,5 @@ pbdb.occs <- subset(pbdb.occs, newFAD > base.phan | newFAD - newLAD <= max.dur )
 
 ##### GitHub won't let us upload the uncompressed occurrence dataset.
 
-write.csv(pbdb.occs, file=gzfile("pbdb_occs_mar.csv.gz"), row.names=FALSE, na="")
+write.csv(pbdb.occs, file=gzfile("pbdb_occs.csv.gz"), row.names=FALSE, na="")
 
