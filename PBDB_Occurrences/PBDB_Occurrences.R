@@ -151,6 +151,9 @@ params <- paste(c(
      "pres=regular", # only body fossils
      "taxon_status=accepted",
      "idreso=lump_genus", # lump mult. species of the same genus in each collection into a single occurrence
+     "scale_id=1", # use international time scale
+     "interval_type=age", # bin occurrences by age 
+     "timerule=contain", # the most restrictive time rule, but we will still have to limit after the fact
      "show=attr,class,coords,paleoloc,abund,env,lith,ecospace,ent,entname"
 ), collapse="&")
 
@@ -352,11 +355,9 @@ pbdb.occs <- chrono_scale(pbdb.occs, srt = "early_interval", end = "late_interva
 ##### DROP OCCURRENCES WHERE LAD >= FAD
 pbdb.occs <- subset(pbdb.occs, newFAD > newLAD)
 
-###### DROP OCCURRENCES WHOSE age range is > than the longest Phanerozoic Stage + 1 myr, the Norian
-base.phan <- max(timescale$age_bottom[timescale$Period=="Cambrian"]) # keep precambrian occurrences
-max.dur <- timescale$age_bottom[timescale$Age == "Norian"] - timescale$age_top[timescale$Age == "Norian"] + 1
+###### LIMIT TO OCCURRENCES WHOSE age constrained to a single age
 
-pbdb.occs <- subset(pbdb.occs, newFAD > base.phan | newFAD - newLAD <= max.dur )
+pbdb.occs <- subset(pbdb.occs, is.element(early_interval, ts.13$interval_name) & late_interval == "" | early_interval == late_interval )
 
 ##### GitHub won't let us upload the uncompressed occurrence dataset.
 
