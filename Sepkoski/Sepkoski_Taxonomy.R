@@ -123,5 +123,5 @@ for(i in unused.classes) {
 }
 
 write.csv(sepkoski, file="sepkoski.csv", na="", row.names = FALSE)
-save(sep.pbdb, sepkoski, file="Sepkoski_PBDB_Genera.RData") # just in case you want it
+write.csv(sep.pbdb, file="pbdb_genenera_in_sepkoski.csv") # just in case you want it
 
