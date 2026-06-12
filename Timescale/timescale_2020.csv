@@ -1,0 +1,101 @@
+"Era","Period","Epoch","Age","age_bottom","age_top","age_mid"
+"Cenozoic","Quaternary","Holocene","Holocene",0.0117,0,0.006
+"Cenozoic","Quaternary","Pleistocene","Late Pleistocene",0.129,0.0117,0.07
+"Cenozoic","Quaternary","Pleistocene","Chibanian",0.773,0.129,0.451
+"Cenozoic","Quaternary","Pleistocene","Calabrian",1.8,0.773,1.286
+"Cenozoic","Quaternary","Pleistocene","Gelasian",2.58,1.8,2.19
+"Cenozoic","Neogene","Pliocene","Piacenzian",3.6,2.58,3.09
+"Cenozoic","Neogene","Pliocene","Zanclean",5.33,3.6,4.465
+"Cenozoic","Neogene","Miocene","Messinian",7.25,5.33,6.29
+"Cenozoic","Neogene","Miocene","Tortonian",11.65,7.25,9.45
+"Cenozoic","Neogene","Miocene","Serravallian",13.82,11.65,12.735
+"Cenozoic","Neogene","Miocene","Langhian",15.99,13.82,14.905
+"Cenozoic","Neogene","Miocene","Burdigalian",20.45,15.99,18.22
+"Cenozoic","Neogene","Miocene","Aquitanian",23.04,20.45,21.745
+"Cenozoic","Paleogene","Oligocene","Chattian",27.29,23.04,25.165
+"Cenozoic","Paleogene","Oligocene","Rupelian",33.9,27.29,30.595
+"Cenozoic","Paleogene","Eocene","Priabonian",37.71,33.9,35.805
+"Cenozoic","Paleogene","Eocene","Bartonian",41.03,37.71,39.37
+"Cenozoic","Paleogene","Eocene","Lutetian",48.07,41.03,44.55
+"Cenozoic","Paleogene","Eocene","Ypresian",56,48.07,52.035
+"Cenozoic","Paleogene","Paleocene","Thanetian",59.24,56,57.62
+"Cenozoic","Paleogene","Paleocene","Selandian",61.66,59.24,60.45
+"Cenozoic","Paleogene","Paleocene","Danian",66.04,61.66,63.85
+"Mesozoic","Cretaceous","Late Cretaceous","Maastrichtian",72.17,66.04,69.105
+"Mesozoic","Cretaceous","Late Cretaceous","Campanian",83.65,72.17,77.91
+"Mesozoic","Cretaceous","Late Cretaceous","Santonian",85.7,83.65,84.675
+"Mesozoic","Cretaceous","Late Cretaceous","Coniacian",89.39,85.7,87.545
+"Mesozoic","Cretaceous","Late Cretaceous","Turonian",93.9,89.39,91.645
+"Mesozoic","Cretaceous","Late Cretaceous","Cenomanian",100.5,93.9,97.2
+"Mesozoic","Cretaceous","Early Cretaceous","Albian",113.2,100.5,106.85
+"Mesozoic","Cretaceous","Early Cretaceous","Aptian",121.4,113.2,117.3
+"Mesozoic","Cretaceous","Early Cretaceous","Barremian",126.5,121.4,123.95
+"Mesozoic","Cretaceous","Early Cretaceous","Hauterivian",132.6,126.5,129.55
+"Mesozoic","Cretaceous","Early Cretaceous","Valanginian",137.7,132.6,135.15
+"Mesozoic","Cretaceous","Early Cretaceous","Berriasian",143.1,137.7,140.4
+"Mesozoic","Jurassic","Late Jurassic","Tithonian",149.24,143.1,146.17
+"Mesozoic","Jurassic","Late Jurassic","Kimmeridgian",154.78,149.24,152.01
+"Mesozoic","Jurassic","Late Jurassic","Oxfordian",161.53,154.78,158.155
+"Mesozoic","Jurassic","Middle Jurassic","Callovian",165.29,161.53,163.41
+"Mesozoic","Jurassic","Middle Jurassic","Bathonian",168.17,165.29,166.73
+"Mesozoic","Jurassic","Middle Jurassic","Bajocian",170.9,168.17,169.535
+"Mesozoic","Jurassic","Middle Jurassic","Aalenian",174.7,170.9,172.8
+"Mesozoic","Jurassic","Early Jurassic","Toarcian",184.2,174.7,179.45
+"Mesozoic","Jurassic","Early Jurassic","Pliensbachian",192.9,184.2,188.55
+"Mesozoic","Jurassic","Early Jurassic","Sinemurian",199.46,192.9,196.18
+"Mesozoic","Jurassic","Early Jurassic","Hettangian",201.36,199.46,200.41
+"Mesozoic","Triassic","Late Triassic","Rhaetian",209.51,201.36,205.435
+"Mesozoic","Triassic","Late Triassic","Norian",227.3,209.51,218.405
+"Mesozoic","Triassic","Late Triassic","Carnian",237,227.3,232.15
+"Mesozoic","Triassic","Middle Triassic","Ladinian",241.46,237,239.23
+"Mesozoic","Triassic","Middle Triassic","Anisian",246.7,241.46,244.08
+"Mesozoic","Triassic","Early Triassic","Olenekian",249.88,246.7,248.29
+"Mesozoic","Triassic","Early Triassic","Induan",251.902,249.88,250.891
+"Paleozoic","Permian","Lopingian","Changhsingian",254.24,251.902,253.071
+"Paleozoic","Permian","Lopingian","Wuchiapingian",259.55,254.24,256.895
+"Paleozoic","Permian","Guadalupian","Capitanian",264.34,259.55,261.945
+"Paleozoic","Permian","Guadalupian","Wordian",269.21,264.34,266.775
+"Paleozoic","Permian","Guadalupian","Roadian",274.37,269.21,271.79
+"Paleozoic","Permian","Cisuralian","Kungurian",283.3,274.37,278.835
+"Paleozoic","Permian","Cisuralian","Artinskian",290.51,283.3,286.905
+"Paleozoic","Permian","Cisuralian","Sakmarian",293.52,290.51,292.015
+"Paleozoic","Permian","Cisuralian","Asselian",298.89,293.52,296.205
+"Paleozoic","Carboniferous","Pennsylvanian","Gzhelian",303.68,298.89,301.285
+"Paleozoic","Carboniferous","Pennsylvanian","Kasimovian",307.02,303.68,305.35
+"Paleozoic","Carboniferous","Pennsylvanian","Moscovian",315.15,307.02,311.085
+"Paleozoic","Carboniferous","Pennsylvanian","Bashkirian",323.4,315.15,319.275
+"Paleozoic","Carboniferous","Mississippian","Serpukhovian",330.34,323.4,326.87
+"Paleozoic","Carboniferous","Mississippian","Visean",346.73,330.34,338.535
+"Paleozoic","Carboniferous","Mississippian","Tournaisian",359.3,346.73,353.015
+"Paleozoic","Devonian","Late Devonian","Famennian",371.1,359.3,365.2
+"Paleozoic","Devonian","Late Devonian","Frasnian",378.9,371.1,375
+"Paleozoic","Devonian","Middle Devonian","Givetian",385.3,378.9,382.1
+"Paleozoic","Devonian","Middle Devonian","Eifelian",394.3,385.3,389.8
+"Paleozoic","Devonian","Early Devonian","Emsian",410.51,394.3,402.405
+"Paleozoic","Devonian","Early Devonian","Pragian",412.4,410.51,411.455
+"Paleozoic","Devonian","Early Devonian","Lochkovian",419,412.4,415.7
+"Paleozoic","Silurian","Pridoli","GAP",422.73,419,420.865
+"Paleozoic","Silurian","Ludlow","Ludfordian",425.01,422.73,423.87
+"Paleozoic","Silurian","Ludlow","Gorstian",426.74,425.01,425.875
+"Paleozoic","Silurian","Wenlock","Homerian",430.62,426.74,428.68
+"Paleozoic","Silurian","Wenlock","Sheinwoodian",432.93,430.62,431.775
+"Paleozoic","Silurian","Llandovery","Telychian",438.59,432.93,435.76
+"Paleozoic","Silurian","Llandovery","Aeronian",440.49,438.59,439.54
+"Paleozoic","Silurian","Llandovery","Rhuddanian",443.07,440.49,441.78
+"Paleozoic","Ordovician","Late Ordovician","Hirnantian",445.21,443.07,444.14
+"Paleozoic","Ordovician","Late Ordovician","Katian",452.75,445.21,448.98
+"Paleozoic","Ordovician","Late Ordovician","Sandbian",458.18,452.75,455.465
+"Paleozoic","Ordovician","Middle Ordovician","Darriwilian",469.42,458.18,463.8
+"Paleozoic","Ordovician","Middle Ordovician","Dapingian",471.26,469.42,470.34
+"Paleozoic","Ordovician","Early Ordovician","Floian",477.08,471.26,474.17
+"Paleozoic","Ordovician","Early Ordovician","Tremadocian",485.85,477.08,481.465
+"Paleozoic","Cambrian","Furongian","Stage 10",491,486.85,488.925
+"Paleozoic","Cambrian","Furongian","Jiangshanian",494.2,491,492.6
+"Paleozoic","Cambrian","Furongian","Paibian",497,494.2,495.6
+"Paleozoic","Cambrian","Miaolingian","Guzhangian",500.5,497,498.75
+"Paleozoic","Cambrian","Miaolingian","Drumian",504.5,500.5,502.5
+"Paleozoic","Cambrian","Miaolingian","Wulian",509,504.5,506.75
+"Paleozoic","Cambrian","Series 2","Stage 4",514.5,509,511.75
+"Paleozoic","Cambrian","Series 2","Stage 3",521,514.5,517.75
+"Paleozoic","Cambrian","Terreneuvian","Stage 2",529,521,525
+"Paleozoic","Cambrian","Terreneuvian","Fortunian",538.8,529,533.9
