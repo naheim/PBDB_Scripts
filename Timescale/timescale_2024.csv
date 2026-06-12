@@ -1,0 +1,101 @@
+"interval_no","color","Era","Period","Epoch","interval_name","age_bottom","age_top","age_mid"
+32,"#FEF2E0","Cenozoic","Quaternary","Holocene","Holocene",0.0117,0,0.006
+922,"#FFF2C7","Cenozoic","Quaternary","Pleistocene","Late Pleistocene",0.129,0.0117,0.07
+1203,"#FFF2C7","Cenozoic","Quaternary","Pleistocene","Chibanian",0.774,0.129,0.452
+740,"#FFF2C7","Cenozoic","Quaternary","Pleistocene","Calabrian",1.8,0.774,1.287
+741,"#FFEDB3","Cenozoic","Quaternary","Pleistocene","Gelasian",2.58,1.8,2.19
+96,"#FFFFBF","Cenozoic","Neogene","Pliocene","Piacenzian",3.6,2.58,3.09
+97,"#FFFFB3","Cenozoic","Neogene","Pliocene","Zanclean",5.333,3.6,4.466
+98,"#FFFF73","Cenozoic","Neogene","Miocene","Messinian",7.246,5.333,6.29
+99,"#FFFF66","Cenozoic","Neogene","Miocene","Tortonian",11.63,7.246,9.438
+100,"#FFFF59","Cenozoic","Neogene","Miocene","Serravallian",13.82,11.63,12.725
+101,"#FFFF4D","Cenozoic","Neogene","Miocene","Langhian",15.98,13.82,14.9
+102,"#FFFF41","Cenozoic","Neogene","Miocene","Burdigalian",20.45,15.98,18.215
+103,"#FFFF33","Cenozoic","Neogene","Miocene","Aquitanian",23.04,20.45,21.745
+104,"#FEE6AA","Cenozoic","Paleogene","Oligocene","Chattian",27.3,23.04,25.17
+105,"#FED99A","Cenozoic","Paleogene","Oligocene","Rupelian",33.9,27.3,30.6
+106,"#FDCDA1","Cenozoic","Paleogene","Eocene","Priabonian",37.71,33.9,35.805
+107,"#FDC091","Cenozoic","Paleogene","Eocene","Bartonian",41.03,37.71,39.37
+108,"#FCB482","Cenozoic","Paleogene","Eocene","Lutetian",48.07,41.03,44.55
+109,"#FCA773","Cenozoic","Paleogene","Eocene","Ypresian",56,48.07,52.035
+110,"#FDBF6F","Cenozoic","Paleogene","Paleocene","Thanetian",59.24,56,57.62
+743,"#FEBF65","Cenozoic","Paleogene","Paleocene","Selandian",61.66,59.24,60.45
+111,"#FDB462","Cenozoic","Paleogene","Paleocene","Danian",66,61.66,63.83
+112,"#F2FA8C","Mesozoic","Cretaceous","Late Cretaceous","Maastrichtian",72.2,66,69.1
+113,"#E6F47F","Mesozoic","Cretaceous","Late Cretaceous","Campanian",83.6,72.2,77.9
+114,"#D9EF74","Mesozoic","Cretaceous","Late Cretaceous","Santonian",85.7,83.6,84.65
+115,"#CCE968","Mesozoic","Cretaceous","Late Cretaceous","Coniacian",89.8,85.7,87.75
+116,"#BFE35D","Mesozoic","Cretaceous","Late Cretaceous","Turonian",93.9,89.8,91.85
+117,"#B3DE53","Mesozoic","Cretaceous","Late Cretaceous","Cenomanian",100.5,93.9,97.2
+118,"#CCEA97","Mesozoic","Cretaceous","Early Cretaceous","Albian",113.2,100.5,106.85
+119,"#BFE48A","Mesozoic","Cretaceous","Early Cretaceous","Aptian",121.4,113.2,117.3
+120,"#B3DF7F","Mesozoic","Cretaceous","Early Cretaceous","Barremian",125.77,121.4,123.585
+121,"#A6D975","Mesozoic","Cretaceous","Early Cretaceous","Hauterivian",132.6,125.77,129.185
+122,"#99D36A","Mesozoic","Cretaceous","Early Cretaceous","Valanginian",137.05,132.6,134.825
+123,"#8CCD60","Mesozoic","Cretaceous","Early Cretaceous","Berriasian",143.1,137.05,140.075
+124,"#D9F1F7","Mesozoic","Jurassic","Late Jurassic","Tithonian",149.2,143.1,146.15
+125,"#CCECF4","Mesozoic","Jurassic","Late Jurassic","Kimmeridgian",154.8,149.2,152
+126,"#BFE7F1","Mesozoic","Jurassic","Late Jurassic","Oxfordian",161.5,154.8,158.15
+127,"#BFE7E5","Mesozoic","Jurassic","Middle Jurassic","Callovian",165.3,161.5,163.4
+128,"#B3E2E3","Mesozoic","Jurassic","Middle Jurassic","Bathonian",168.2,165.3,166.75
+129,"#A6DDE0","Mesozoic","Jurassic","Middle Jurassic","Bajocian",170.9,168.2,169.55
+130,"#9AD9DD","Mesozoic","Jurassic","Middle Jurassic","Aalenian",174.7,170.9,172.8
+131,"#99CEE3","Mesozoic","Jurassic","Early Jurassic","Toarcian",184.2,174.7,179.45
+132,"#80C5DD","Mesozoic","Jurassic","Early Jurassic","Pliensbachian",192.9,184.2,188.55
+133,"#67BCD8","Mesozoic","Jurassic","Early Jurassic","Sinemurian",199.5,192.9,196.2
+134,"#4EB3D3","Mesozoic","Jurassic","Early Jurassic","Hettangian",201.4,199.5,200.45
+135,"#E3B9DB","Mesozoic","Triassic","Late Triassic","Rhaetian",205.7,201.4,203.55
+136,"#D6AAD3","Mesozoic","Triassic","Late Triassic","Norian",227.3,205.7,216.5
+137,"#C99BCB","Mesozoic","Triassic","Late Triassic","Carnian",237,227.3,232.15
+138,"#C983BF","Mesozoic","Triassic","Middle Triassic","Ladinian",241.464,237,239.232
+139,"#BC75B7","Mesozoic","Triassic","Middle Triassic","Anisian",246.7,241.464,244.082
+652,"#B051A5","Mesozoic","Triassic","Early Triassic","Olenekian",249.9,246.7,248.3
+653,"#A4469F","Mesozoic","Triassic","Early Triassic","Induan",251.902,249.9,250.901
+715,"#FCC0B2","Paleozoic","Permian","Lopingian","Changhsingian",254.14,251.902,253.021
+716,"#FCB4A2","Paleozoic","Permian","Lopingian","Wuchiapingian",259.51,254.14,256.825
+145,"#FB9A85","Paleozoic","Permian","Guadalupian","Capitanian",264.28,259.51,261.895
+146,"#FB8D76","Paleozoic","Permian","Guadalupian","Wordian",266.9,264.28,265.59
+717,"#FB8069","Paleozoic","Permian","Guadalupian","Roadian",274.4,266.9,270.65
+148,"#E38776","Paleozoic","Permian","Cisuralian","Kungurian",283.3,274.4,278.85
+149,"#E37B68","Paleozoic","Permian","Cisuralian","Artinskian",290.1,283.3,286.7
+150,"#E36F5C","Paleozoic","Permian","Cisuralian","Sakmarian",293.52,290.1,291.81
+151,"#E36350","Paleozoic","Permian","Cisuralian","Asselian",298.9,293.52,296.21
+49,"#CCD4C7","Paleozoic","Carboniferous","Pennsylvanian","Gzhelian",303.7,298.9,301.3
+50,"#BFD0C5","Paleozoic","Carboniferous","Pennsylvanian","Kasimovian",307,303.7,305.35
+51,"#C7CBB9","Paleozoic","Carboniferous","Pennsylvanian","Moscovian",315.2,307,311.1
+52,"#99C2B5","Paleozoic","Carboniferous","Pennsylvanian","Bashkirian",323.4,315.2,319.3
+53,"#BFC26B","Paleozoic","Carboniferous","Mississippian","Serpukhovian",330.3,323.4,326.85
+54,"#A6B96C","Paleozoic","Carboniferous","Mississippian","Visean",346.7,330.3,338.5
+55,"#8CB06C","Paleozoic","Carboniferous","Mississippian","Tournaisian",358.86,346.7,352.78
+177,"#F2EDC5","Paleozoic","Devonian","Late Devonian","Famennian",372.15,358.86,365.505
+178,"#F2EDAD","Paleozoic","Devonian","Late Devonian","Frasnian",382.31,372.15,377.23
+179,"#F1E185","Paleozoic","Devonian","Middle Devonian","Givetian",387.95,382.31,385.13
+180,"#F1D576","Paleozoic","Devonian","Middle Devonian","Eifelian",393.47,387.95,390.71
+181,"#E5D075","Paleozoic","Devonian","Early Devonian","Emsian",410.62,393.47,402.045
+182,"#E5C468","Paleozoic","Devonian","Early Devonian","Pragian",413.02,410.62,411.82
+183,"#E5B75A","Paleozoic","Devonian","Early Devonian","Lochkovian",419.62,413.02,416.32
+59,"#E6F5E1","Paleozoic","Silurian","Pridoli","Pridoli",422.7,419.62,421.16
+184,"#D9F0DF","Paleozoic","Silurian","Ludlow","Ludfordian",425,422.7,423.85
+185,"#CCECDD","Paleozoic","Silurian","Ludlow","Gorstian",426.7,425,425.85
+785,"#CCEBD1","Paleozoic","Silurian","Wenlock","Homerian",430.6,426.7,428.65
+188,"#BFE6C3","Paleozoic","Silurian","Wenlock","Sheinwoodian",432.9,430.6,431.75
+189,"#BFE6CF","Paleozoic","Silurian","Llandovery","Telychian",438.6,432.9,435.75
+190,"#B3E1C2","Paleozoic","Silurian","Llandovery","Aeronian",440.5,438.6,439.55
+191,"#A6DCB5","Paleozoic","Silurian","Llandovery","Rhuddanian",443.1,440.5,441.8
+192,"#A6DBAB","Paleozoic","Ordovician","Late Ordovician","Hirnantian",445.2,443.1,444.15
+1008,"#99D69F","Paleozoic","Ordovician","Late Ordovician","Katian",452.8,445.2,449
+1009,"#8CD094","Paleozoic","Ordovician","Late Ordovician","Sandbian",458.2,452.8,455.5
+556,"#74C69C","Paleozoic","Ordovician","Middle Ordovician","Darriwilian",469.4,458.2,463.8
+1079,"#66C092","Paleozoic","Ordovician","Middle Ordovician","Dapingian",471.3,469.4,470.35
+1010,"#41B087","Paleozoic","Ordovician","Early Ordovician","Floian",477.1,471.3,474.2
+559,"#33A97E","Paleozoic","Ordovician","Early Ordovician","Tremadocian",486.85,477.1,481.975
+1112,"#E6F5C9","Paleozoic","Cambrian","Furongian","Stage 10",491,486.85,488.925
+1113,"#D9F0BB","Paleozoic","Cambrian","Furongian","Jiangshanian",494.2,491,492.6
+1086,"#CCEBAE","Paleozoic","Cambrian","Furongian","Paibian",497,494.2,495.6
+1087,"#CCDFAA","Paleozoic","Cambrian","Miaolingian","Guzhangian",500.5,497,498.75
+1116,"#BFD99D","Paleozoic","Cambrian","Miaolingian","Drumian",504.5,500.5,502.5
+1205,"#B3D492","Paleozoic","Cambrian","Miaolingian","Wuliuan",506.5,504.5,505.5
+1118,"#B3CA8E","Paleozoic","Cambrian","Series 2","Stage 4",514.5,506.5,510.5
+1119,"#A6C583","Paleozoic","Cambrian","Series 2","Stage 3",521,514.5,517.75
+1120,"#A6BA80","Paleozoic","Cambrian","Terreneuvian","Stage 2",529,521,525
+1121,"#99B575","Paleozoic","Cambrian","Terreneuvian","Fortunian",538.8,529,533.9
