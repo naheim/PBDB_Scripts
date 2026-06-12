@@ -241,7 +241,7 @@ genera.to.drop <- c(
 pbdb.occs <- subset(pbdb.occs, !is.element(class_genus, genera.to.drop))
 
 ##### Clean Taxonomy using list produced by fossilbrush
-syns <- read.csv("synonym_fixes.csv")
+syns <- read.csv("../Taxon_Cleaning_Files/synonym_fixes.csv")
 name.cols <- c("t1","t2")
 syns <- subset(syns, is.element(use_this, name.cols))
 for(i in 1:nrow(syns)) {
