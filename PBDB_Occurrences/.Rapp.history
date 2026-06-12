@@ -1,0 +1,204 @@
+my.wd <- "~/Library/CloudStorage/Dropbox/Useful Scripts/PBDB Occurrences/"
+paste0(my.wd,"Marine_Nonmarine_Taxa.csv")
+all.phyla <- c("Brachiopoda","Cnidaria","Echinodermata","Bryozoa","Porifera","Hemichordata",#
+     "Hyolitha","Problematica", "Arthropoda","Chordata","Annelida",#
+     "Bivalvia","Gastropoda","Mollusca,^Gastropoda,^Bivalvia") # mollusks have been split to prevent timing out#
+#
+params <- paste(c(#
+     "pres=regular", # only body fossils#
+     "taxon_status=accepted",#
+     "idreso=lump_genus", # lump mult. species of the same genus in each collection into a single occurrence#
+     "show=loc,paleoloc,class,abund,coords,lith,ecospace,env,ent,entname"#
+), collapse="&")
+api.base <- "https://paleobiodb.org/data1.2/occs/list.csv?"
+phyla.url <- paste0(api.base, "base_name=Animalia&rank=min_order&taxon_status=accepted&pres=regular&private&order=n_occs")#
+phyla.call <- read.csv(file=URLencode(phyla.url))
+phyla.url <- paste0(api.base, "base_name=Animalia&rank=phylum&taxon_status=accepted&pres=regular&order=n_occs")
+phyla.call <- read.csv(file=URLencode(phyla.url))
+phyla.url
+phyla.url <- "https://paleobiodb.org/data1.2/occs/list.csv?base_name=Animalia&rank=phylum&taxon_status=accepted&pres=regular&order=n_occs"
+phyla.call <- read.csv(file=URLencode(phyla.url))
+phyla.url <- "https://paleobiodb.org/data1.2/taxa/list.csv?base_name=Animalia&rank=phylum&taxon_status=accepted&pres=regular&order=n_occs"
+phyla.call <- read.csv(file=URLencode(phyla.url))
+phyla.call
+### SET WORKING DIRECTORY
+## SET WORKING DIRECTORY#
+my.wd <- "~/Library/CloudStorage/Dropbox/Useful Scripts/PBDB Occurrences/"#
+#
+### SET TAXON SCOPE#
+#
+major.phyla.only <- FALSE # if false include major and minor phyla, if true only phyly with > 2000 occurrences#
+#
+### Load Libraries#
+library(fossilbrush)#
+#
+### General Set Up#
+api.base <- "https://paleobiodb.org/data1.2/occs/list.csv?"#
+#
+### MARINE AND TERRESTRAIL TAXA#
+taxon.realms <- read.csv(file=paste0(my.wd,"Marine_Nonmarine_Taxa.csv"), na="")#
+marine.realm <- subset(taxon.realms, realm == "marine")#
+nonmarine.realm <- subset(taxon.realms, realm == "non_marine")#
+#
+### MARINE AND TERRESTRIAL ENVIRONMENTS#
+#
+# Marine environments -- defined in taxa#
+# oligotrophic, mesotrophic, eutrophic, and hypersaline were excluded because of ambiguity#
+mar.taxa <- c(#
+     "marine",#
+     "lagoonal",	#
+     "coastal",#
+     "inner shelf",#
+     "outer shelf",	#
+     "oceanic",#
+     "brackish"#
+)#
+#
+# Terrestrial Environments -- defined in taxa#
+ter.taxa <- c(#
+     "freshwater",#
+     "lacustrine"#
+)#
+#
+# Marine environments -- defined in collections#
+mar.env <- c(#
+     "marine indet.",#
+     "offshore shelf",                      #
+     "shallow subtidal indet.",#
+     "deep subtidal shelf",#
+     "offshore",#
+     "sand shoal",                          #
+     "peritidal",#
+     "lagoonal",                          #
+     "slope",#
+     "offshore ramp",#
+     "deep subtidal ramp",#
+     "transition zone/lower shoreface",#
+     "delta front",#
+     "shoreface",                        #
+     "interdistributary bay",#
+     "carbonate indet.",              #
+     "reef, buildup or bioherm",#
+     "basinal (carbonate)",           #
+     "prodelta",#
+     "submarine fan",#
+     "delta plain",#
+     "foreshore",#
+     "open shallow subtidal",#
+     "deep subtidal indet.",#
+     "marginal marine indet.",#
+     "coastal indet.",#
+     "lagoonal/restricted shallow subtidal",#
+     "fluvial-lacustrine indet.",#
+     "paralic indet.",#
+     "deep-water indet.",#
+     "basinal (siliciclastic)",#
+     "deltaic indet.",#
+     "offshore indet.",                    #
+     "basin reef",#
+     "platform/shelf-margin reef",#
+     "perireef or subreef",#
+     "estuary/bay",#
+     "basinal (siliceous)",#
+     "intrashelf/intraplatform reef",#
+     "slope/ramp reef"#
+)#
+#
+# Terrestrial Environments -- defined in collections#
+ter.env <- c(#
+     "pond",#
+     "lacustrine indet.",                   #
+     "terrestrial indet.",#
+     "\"floodplain\"",#
+     "fluvial indet.",#
+     "mire/swamp",#
+     "lacustrine - large",#
+     "fluvial-deltaic indet.",#
+     "alluvial fan",#
+     "lacustrine deltaic indet.",#
+     "wet floodplain",#
+     "lacustrine - small",#
+     "channel lag",#
+     "crevasse splay",#
+     "fine channel fill",#
+     "\"channel\"",                  #
+     "dry floodplain",#
+     "sinkhole",#
+     "cave",                           #
+     "crater lake",#
+     "glacial",#
+     "dune",#
+     "fissure fill",#
+     "coarse channel fill",#
+     "spring",#
+     "lacustrine delta plain",#
+     "levee",#
+     "karst indet.",#
+     "lacustrine prodelta",#
+     "loess",#
+     "eolian indet.",#
+     "lacustrine delta front",#
+     "interdune",#
+     "tar"#
+)#
+#
+### Get Occurrences#
+phyla.url <- "https://paleobiodb.org/data1.2/taxa/list.csv?base_name=Animalia&rank=phylum&taxon_status=accepted&pres=regular&order=n_occs"#
+phyla.call <- read.csv(file=URLencode(phyla.url))#
+#
+if(major.phyla.only == TRUE) {#
+	all.phyla <- phyla.call$taxon_name[phyla.call$n_occs >= 2000 & taxon_name != "Mollusca"]#
+} else {#
+	all.phyla <- phyla.call$taxon_name[phyla.call$n_occs > 0 & taxon_name != "Mollusca"]#
+}#
+all.phyla <- c(all.phyla, c("Bivalvia","Gastropoda","Mollusca,^Gastropoda,^Bivalvia")) # mollusks have been split to prevent timing out#
+#
+params <- paste(c(#
+     "pres=regular", # only body fossils#
+     "taxon_status=accepted",#
+     "idreso=lump_genus", # lump mult. species of the same genus in each collection into a single occurrence#
+     "show=loc,paleoloc,class,abund,coords,lith,ecospace,env,ent,entname"#
+), collapse="&")
+head(phyla_call)
+head(phyla.call)
+phyla.call$taxon_name
+if(major.phyla.only == TRUE) {#
+	all.phyla <- phyla.call$taxon_name[phyla.call$n_occs >= 2000 & phyla.call$taxon_name != "Mollusca"]#
+} else {#
+	all.phyla <- phyla.call$taxon_name[phyla.call$n_occs > 0 & phyla.call$taxon_name != "Mollusca"]#
+}#
+all.phyla <- c(all.phyla, c("Bivalvia","Gastropoda","Mollusca,^Gastropoda,^Bivalvia")) # mollusks have been split to prevent timing out
+all.phyla
+params <- paste(c(#
+     "pres=regular", # only body fossils#
+     "taxon_status=accepted",#
+     "idreso=lump_genus", # lump mult. species of the same genus in each collection into a single occurrence#
+     "show=loc,paleoloc,class,abund,coords,lith,ecospace,env,ent,entname"#
+), collapse="&")#
+#
+# Because of the size of the request, it often times out#
+# to solve this I am requesting each phylum separately and by geological Era#
+pbdb.occs <- list()#
+k <- 1
+# Because of the size of the request, it often times out#
+# to solve this I am requesting each phylum separately and by geological Era#
+pbdb.occs <- list()#
+k <- 1#
+for(i in all.phyla) {#
+     for(j in c("Neoproterozoic","Paleozoic","Mesozoic","Cenozoic")) {#
+          final.url <- paste0(api.base, paste0("base_name=",i,"&interval=",j,"&"), params)#
+          pbdb.call <- read.csv(file=URLencode(final.url))#
+          pbdb.occs[[k]] <- pbdb.call#
+          k <- k + 1#
+          print(paste(i, j, sep=" - ")) # this is to keep track of loop progress#
+     }#
+}
+phyla.call
+nrow(phyla.coll)
+nrow(phyla.cll)
+nrow(phyla.cll)
+nrow(phyla.call)
+length(unique(phyla.call$taxon_name))
+? inner_join
+library(dplyr)
+? inner_join
