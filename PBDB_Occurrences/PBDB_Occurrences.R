@@ -11,7 +11,7 @@ which.phyla <- "canonical.phyla" # mollusks, arthropods, brachiopods, bryozoa, e
 ### SET TEMPORAL RESOLUTION OF OCCURRENCES
 # The default is to limit to occurrences with stage-level resolution
 # Additionally, you can also limit to occurrences resolved to exactly one stage
-one.stage.reso <- TRUE
+one.stage.reso <- FALSE
 
 ### Load Libraries
 library(fossilbrush)
@@ -158,7 +158,7 @@ params <- paste(c(
      "idreso=lump_genus", # lump mult. species of the same genus in each collection into a single occurrence
      "scale_id=1", # use international time scale
      "interval_type=age", # bin occurrences by age 
-     "timerule=contain", # the most restrictive time rule, but we will still have to limit after the fact
+#     "timerule=main", # the most restrictive time rule, but we will still have to limit after the fact
      "show=attr,class,coords,paleoloc,abund,env,lith,ecospace,ent,entname"
 ), collapse="&")
 
@@ -172,7 +172,7 @@ for(i in my.phyla) {
           pbdb.call <- read.csv(file=URLencode(final.url))
           pbdb.occs[[k]] <- pbdb.call
           k <- k + 1
-          print(paste(i, j, sep=" - ")) # this is to keep track of loop progress
+          print(paste(i, j, nrow(pbdb.call), sep=" - ")) # this is to keep track of loop progress
      }
 }
 
@@ -355,7 +355,6 @@ pbdb.occs$marine[is.na(pbdb.occs$marine)] <- "unknown"
 
 ###### UPDATE GEOLOGICAL TIMESCALE USING FOSSILBRUSH
 pbdb.occs <- chrono_scale(pbdb.occs, srt = "early_interval", end = "late_interval", max_ma = "max_ma", min_ma = "min_ma")
-
 
 ##### DROP OCCURRENCES WHERE LAD >= FAD
 pbdb.occs <- subset(pbdb.occs, newFAD > newLAD)
