@@ -8,6 +8,11 @@ setwd(my.wd)
 which.phyla <- "canonical.phyla" # mollusks, arthropods, brachiopods, bryozoa, echinodermata, cnidaria, porifera, chordates, hemichordates (subclass Graptolithina only)
 #which.phyla <- "canonical.bilaterians" # mollusks, arthropods, brachiopods, echinodermata, and chordates
 
+### SET TEMPORAL RESOLUTION OF OCCURRENCES
+# The default is to limit to occurrences with stage-level resolution
+# Additionally, you can also limit to occurrences resolved to exactly one stage
+one.stage.reso <- TRUE
+
 ### Load Libraries
 library(fossilbrush)
 
@@ -17,7 +22,7 @@ api.base <- "https://paleobiodb.org/data1.2/occs/list.csv?"
 ### EXTERNAL DATA FILES FOR SEPKOSKI & MARINE AND TERRESTRAIL TAXA
 taxon.realms <- read.csv(file="Marine_Nonmarine_Taxa.csv")
 sepkoski <- read.csv(file="../Sepkoski/sepkoski.csv") # this will overwrite the sepkoski data fram from fossil brush
-timescale <- read.csv(file="../Timescale/timescale_2020.csv")
+timescale <- read.csv(file="../Timescale/timescale_2024.csv")
 
 # FIX TYPOS IN GTS_2020
 GTS_2020$LAD[GTS_2020$Interval == "Changhsingian"] <- 251.902 # was 251.901
@@ -355,9 +360,17 @@ pbdb.occs <- chrono_scale(pbdb.occs, srt = "early_interval", end = "late_interva
 ##### DROP OCCURRENCES WHERE LAD >= FAD
 pbdb.occs <- subset(pbdb.occs, newFAD > newLAD)
 
-###### LIMIT TO OCCURRENCES WHOSE age constrained to a single age
+###### LIMIT TO OCCURRENCES WHOSE AGE CONSTRAINTS
+# a list of ages
+pbdb.ages <- c("Holocene", read.csv(URLencode("https://paleobiodb.org/data1.2/intervals/list.csv?scale=1&type=Age&order=age"))$interval_name, "Ediacaran","Cryogenian","Tonian")
 
-pbdb.occs <- subset(pbdb.occs, is.element(early_interval, ts.13$interval_name) & late_interval == "" | early_interval == late_interval )
+# limit to stage-level resolution
+pbdb.occs <- subset(pbdb.occs, is.element(early_interval, pbdb.ages))
+
+# optionally limit to those with exactly one-stage-resolution
+if(one.stage.reso == TRUE) {
+     pbdb.occs <- subset(pbdb.occs, (late_interval == "" | is.element(late_interval, pbdb.ages)) )
+}
 
 ##### GitHub won't let us upload the uncompressed occurrence dataset.
 
