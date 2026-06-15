@@ -29,14 +29,16 @@ params <- paste(c(
 
 ###### ADD & CLEAN UP SEPKOSKI DATASET
 data("sepkoski")
+
+# add ICS 2024 timescale
 sepkoski$early_interval <- ""
 sepkoski$late_interval <- ""
-# add ICS 2024 timescale
 for(i in 1:nrow(fb.timescale)) {
      sepkoski$early_interval[sepkoski$RANGE_BASE <= fb.timescale$age_bottom[i] & sepkoski$RANGE_BASE > fb.timescale$age_top[i]] <- fb.timescale$Age[i]
-     sepkoski$late_interval[sepkoski$RANGE_top < fb.timescale$age_bottom[i] & sepkoski$RANGE_TOP >= fb.timescale$age_top[i]] <- fb.timescale$Age[i]
+     sepkoski$late_interval[sepkoski$RANGE_TOP < fb.timescale$age_bottom[i] & sepkoski$RANGE_TOP >= fb.timescale$age_top[i]] <- fb.timescale$Age[i]
 }
 sepkoski <- chrono_scale(sepkoski, tscale=timescale, srt = "early_interval", end = "late_interval", max_ma = "RANGE_BASE", min_ma = "RANGE_TOP")
+colnames(sepkoski)[match(c("newFAD","newLAD"), colnames(sepkoski))] <- c("fad","lad")
 
 sepkoski <- subset(sepkoski, PHYLUM != "Protista")
 sepkoski <- cbind('index' = 1:nrow(sepkoski), sepkoski)
