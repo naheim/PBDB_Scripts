@@ -14,7 +14,7 @@ which.phyla <- "canonical.phyla" # mollusks, arthropods, brachiopods, bryozoa, e
 one.stage.reso <- FALSE
 
 ### Load Libraries
-library(fossilbrush)
+#library(fossilbrush)
 
 ### General Set Up
 api.base <- "https://paleobiodb.org/data1.2/occs/list.csv?"
@@ -23,11 +23,6 @@ api.base <- "https://paleobiodb.org/data1.2/occs/list.csv?"
 taxon.realms <- read.csv(file="Marine_Nonmarine_Taxa.csv")
 sepkoski <- read.csv(file="../Sepkoski/sepkoski.csv") # this will overwrite the sepkoski data fram from fossil brush
 timescale <- read.csv(file="../Timescale/timescale_2024.csv")
-
-# FIX TYPOS IN GTS_2020
-GTS_2020$LAD[GTS_2020$Interval == "Changhsingian"] <- 251.902 # was 251.901
-GTS_2020$LAD[GTS_2020$Interval == "Stage 10"] <- 486.85 # was 485.85
-GTS_2020$Interval[GTS_2020$Interval == "Palaeozoic"] <- "Paleozoic" # using American spelling
 
 ### MARINE AND TERRESTRIAL ENVIRONMENTS
 
