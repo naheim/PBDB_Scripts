@@ -20,7 +20,7 @@ api.base <- "https://paleobiodb.org/data1.2/taxa/list.json?"
 
 params <- paste(c(
      "pres=regular", # only body fossils
-     "taxon_status=all",
+     "taxon_status=accepted",
      "rank=genus",
      "show=class,attr,app",
      "limit=250",
@@ -61,6 +61,11 @@ for(i in repeats) {
 # using JSON rather than CSV to cut out warnings when Sepkoski genus is not in PBDB
 n.sepkoski <- nrow(sepkoski)
 iterate <- c(seq(1,n.sepkoski, 120), n.sepkoski+1)
+x <- vector()
+for(i in 1:(length(iterate)-1)) {
+     x <- c(x, sepkoski$GENUS[iterate[i]:(iterate[i+1]-1)])
+}
+
 
 sep.pbdb <- list()
 for(i in 1:(length(iterate)-1)) {
@@ -144,7 +149,7 @@ for(i in unused.classes) {
 
 ## THERE ARE SOME GENERA WHOSE PBDB and SEPKOSKI CLASSES DO NOT MATCH
 # Take care of those here
-
+bad.class <- subset(sepkoski, CLASS != pbdb_class)
 
 write.csv(sepkoski, file="sepkoski.csv", na="", row.names = FALSE)
 write.csv(sep.pbdb, file="pbdb_genenera_in_sepkoski.csv") # just in case you want it
