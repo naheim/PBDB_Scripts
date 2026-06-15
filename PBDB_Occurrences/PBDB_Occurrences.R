@@ -14,7 +14,7 @@ which.phyla <- "canonical.phyla" # mollusks, arthropods, brachiopods, bryozoa, e
 one.stage.reso <- FALSE
 
 ### Load Libraries
-#library(fossilbrush)
+library(fossilbrush)
 
 ### General Set Up
 api.base <- "https://paleobiodb.org/data1.2/occs/list.csv?"
@@ -153,7 +153,7 @@ params <- paste(c(
      "idreso=lump_genus", # lump mult. species of the same genus in each collection into a single occurrence
      "scale_id=1", # use international time scale
      "interval_type=age", # bin occurrences by age 
-#     "timerule=main", # the most restrictive time rule, but we will still have to limit after the fact
+     "timerule=main", # the most restrictive time rule, but we may will still have to limit after the fact
      "show=attr,class,coords,paleoloc,abund,env,lith,ecospace,ent,entname"
 ), collapse="&")
 
@@ -354,10 +354,12 @@ pbdb.occs <- subset(pbdb.occs, max_ma > min_ma)
 
 ###### LIMIT TO OCCURRENCES WHOSE AGE CONSTRAINTS
 # a list of ages
-pbdb.ages <- c("Holocene", read.csv(URLencode("https://paleobiodb.org/data1.2/intervals/list.csv?scale=1&type=Age&order=age"))$interval_name, "Ediacaran","Cryogenian","Tonian")
+pbdb.ages <- c("Holocene", read.csv(URLencode("https://paleobiodb.org/data1.2/intervals/list.csv?type=Age&order=age"))$interval_name, "Ediacaran","Cryogenian","Tonian")
 
 # limit to stage-level resolution
+nrow(pbdb.occs)
 pbdb.occs <- subset(pbdb.occs, is.element(early_interval, pbdb.ages))
+nrow(pbdb.occs)
 
 # optionally limit to those with exactly one-stage-resolution
 if(one.stage.reso == TRUE) {
