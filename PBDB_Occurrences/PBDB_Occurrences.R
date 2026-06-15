@@ -353,11 +353,9 @@ unassigned <- subset(pbdb.occs, is.na(marine))
 unassigned.genera <- unique(unassigned$class_genus)
 pbdb.occs$marine[is.na(pbdb.occs$marine)] <- "unknown"
 
-###### UPDATE GEOLOGICAL TIMESCALE USING FOSSILBRUSH
-pbdb.occs <- chrono_scale(pbdb.occs, srt = "early_interval", end = "late_interval", max_ma = "max_ma", min_ma = "min_ma")
 
 ##### DROP OCCURRENCES WHERE LAD >= FAD
-pbdb.occs <- subset(pbdb.occs, newFAD > newLAD)
+pbdb.occs <- subset(pbdb.occs, min_ma > max_ma)
 
 ###### LIMIT TO OCCURRENCES WHOSE AGE CONSTRAINTS
 # a list of ages
