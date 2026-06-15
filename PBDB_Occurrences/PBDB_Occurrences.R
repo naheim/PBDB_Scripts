@@ -354,8 +354,8 @@ unassigned.genera <- unique(unassigned$class_genus)
 pbdb.occs$marine[is.na(pbdb.occs$marine)] <- "unknown"
 
 
-##### DROP OCCURRENCES WHERE LAD >= FAD
-pbdb.occs <- subset(pbdb.occs, min_ma > max_ma)
+##### KEEP ONLY OCCURRENCES WHERE FAD > LAD
+pbdb.occs <- subset(pbdb.occs, max_ma > min_ma)
 
 ###### LIMIT TO OCCURRENCES WHOSE AGE CONSTRAINTS
 # a list of ages
