@@ -167,7 +167,7 @@ for(i in my.phyla) {
           pbdb.call <- read.csv(file=URLencode(final.url))
           pbdb.occs[[k]] <- pbdb.call
           k <- k + 1
-          print(paste(i, j, nrow(pbdb.call), sep=" - ")) # this is to keep track of loop progress
+          print(paste(i, j, paste0(nrow(pbdb.call), " Occurrences"), sep=" - ")) # this is to keep track of loop progress
      }
 }
 
