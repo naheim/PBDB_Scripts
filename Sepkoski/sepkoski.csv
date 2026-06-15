@@ -59,7 +59,7 @@
 58,"Mollusca","Bivalvia","Nuculoida","Lembulus",56,33.9,"Ypresian","Priabonian",56,33.9,,,,,,
 59,"Mollusca","Bivalvia","Nuculoida","Lepteviella",246.7,237,"Anisian","Ladinian",246.7,237,"Mollusca","Bivalvia","Nuculida","NO_FAMILY_SPECIFIED","Lepteviella","16066"
 60,"Mollusca","Bivalvia","Nuculoida","Linucula",33.9,0,"Rupelian","Holocene",33.9,0,,,,,,
-61,"Mollusca","Bivalvia","Nuculoida","Lissanucula",3.6,2.58,"Piacenzian","Piacenzian",3.6,2.58,,,,,,
+61,"Mollusca","Bivalvia","Nuculoida","Lissanucula",3.6,2.58,"Piacenzian","Piacenzian",3.6,2.58,"Mollusca","Bivalvia","Nuculida","Nuculidae","Leionucula","16064"
 62,"Mollusca","Bivalvia","Nuculoida","Lithorhadia",66.04,11.63,"Danian","Tortonian",66,7.246,"Mollusca","Bivalvia","Nuculanida","Nuculanidae","Litorhadia","60920"
 63,"Mollusca","Bivalvia","Nuculoida","Malletia",137.7,0,"Valanginian","Holocene",137.05,0,"Mollusca","Bivalvia","Nuculanida","Malletiidae","Malletia","16071"
 64,"Mollusca","Bivalvia","Nuculoida","Megayoldia",33.9,0,"Rupelian","Holocene",33.9,0,"Mollusca","Bivalvia","Nuculanida","Sareptidae","Megayoldia","16072"
@@ -140,7 +140,7 @@
 139,"Mollusca","Bivalvia","Solemyoida","Adulomya",3.6,2.58,"Piacenzian","Piacenzian",3.6,2.58,"Mollusca","Bivalvia","Venerida","Vesicomyidae","Adulomya","16151"
 140,"Mollusca","Bivalvia","Solemyoida","Dystactella",461.2,385.3,"Darriwilian","Eifelian",469.4,387.95,"Mollusca","Bivalvia","Solemyida","Solemyidae","Dystactella","16152"
 141,"Mollusca","Bivalvia","Solemyoida","Huxleyia",5.33,2.59,"Zanclean","Piacenzian",5.333,2.58,"Mollusca","Bivalvia","Solemyida","Manzanellidae","Huxleyia","16153"
-142,"Mollusca","Bivalvia","Solemyoida","Janeia",430.62,254.24,"Homerian","Wuchiapingian",430.6,254.14,"Mollusca","Bivalvia","Solemyida","Solemyidae","Solemya","16162"
+142,"Mollusca","Bivalvia","Solemyoida","Janeia",430.62,254.24,"Homerian","Wuchiapingian",430.6,254.14,,,,,,
 143,"Mollusca","Bivalvia","Solemyoida","Manzanella",278.248,264.34,"Kungurian","Wordian",283.3,264.28,"Mollusca","Bivalvia","Solemyida","Manzanellidae","Manzanella","16155"
 144,"Mollusca","Bivalvia","Solemyoida","Nucinella",201.36,0,"Hettangian","Holocene",201.4,0,"Mollusca","Bivalvia","Solemyida","Nucinellidae","Nucinella","16156"
 145,"Mollusca","Bivalvia","Solemyoida","Ovatoconcha",477.08,471.3,"Floian","Floian",477.1,471.3,"Mollusca","Bivalvia","Solemyida","Solemyidae","Ovatoconcha","16157"
@@ -182,7 +182,7 @@
 181,"Mollusca","Bivalvia","Praecardioida","Vevoda",426.74,394.3,"Gorstian","Emsian",426.7,393.47,"Mollusca","Bivalvia","Ostreida","Vlastidae","Vevoda","16195"
 182,"Mollusca","Bivalvia","Praecardioida","Vlasta",449.2,422.73,"Katian","Ludfordian",452.8,422.7,"Mollusca","Bivalvia","Ostreida","Vlastidae","Vlasta","16196"
 183,"Mollusca","Bivalvia","Arcoida","Acar",72.17,0,"Maastrichtian","Holocene",72.2,0,"Mollusca","Bivalvia","Arcida","Arcidae","Acar","16198"
-184,"Mollusca","Bivalvia","Arcoida","Aegilops",455,451.3,"Sandbian","Katian",458.2,445.2,"Mollusca","Bivalvia","Cyrtodontida","NO_FAMILY_SPECIFIED","Aegilops","16199"
+184,"Mollusca","Bivalvia","Arcoida","Aegilops",455,451.3,"Sandbian","Katian",458.2,445.2,,,,,,
 185,"Mollusca","Bivalvia","Arcoida","Anadara",48.07,0,"Lutetian","Holocene",48.07,0,"Mollusca","Bivalvia","Arcida","Arcidae","Anadara","16201"
 186,"Mollusca","Bivalvia","Arcoida","Antoneila",323.4,298.89,"Bashkirian","Gzhelian",323.4,298.9,"Mollusca","Bivalvia","Arcida","NO_FAMILY_SPECIFIED","Antoneila","16202"
 187,"Mollusca","Bivalvia","Arcoida","Arca",100.5,0,"Cenomanian","Holocene",100.5,0,"Mollusca","Bivalvia","Arcida","Arcidae","Arca","16203"
@@ -227,10 +227,10 @@
 226,"Mollusca","Bivalvia","Arcoida","Glycymerella",20.45,0,"Burdigalian","Holocene",20.45,0,,,,,,
 227,"Mollusca","Bivalvia","Arcoida","Glycymeris",137.7,0,"Valanginian","Holocene",137.05,0,"Mollusca","Bivalvia","Arcida","Glycymerididae","Glycymeris","16243"
 228,"Mollusca","Bivalvia","Arcoida","Glycymerita",72.17,2.58,"Maastrichtian","Piacenzian",72.2,2.58,"Mollusca","Bivalvia","Arcida","Glycymerididae","Glycymerita","16244"
-229,"Mollusca","Bivalvia","Arcoida","Glycymerula",5.33,3.6,"Zanclean","Zanclean",5.333,3.6,"Mollusca","Bivalvia","Arcida","Glycymerididae","Glycymeris","16243"
+229,"Mollusca","Bivalvia","Arcoida","Glycymerula",5.33,3.6,"Zanclean","Zanclean",5.333,3.6,,,,,,
 230,"Mollusca","Bivalvia","Arcoida","Grammatodon",201.36,93.9,"Hettangian","Cenomanian",201.4,93.9,"Mollusca","Bivalvia","Arcida","Parallelodontidae","Grammatodon","16246"
 231,"Mollusca","Bivalvia","Arcoida","Grandaxinea",41.03,37.71,"Bartonian","Bartonian",41.03,37.71,,,,,,
-232,"Mollusca","Bivalvia","Arcoida","Grandiarca",20.45,0,"Burdigalian","Holocene",20.45,0,"Mollusca","Bivalvia","Arcida","Arcidae","Anadara","16201"
+232,"Mollusca","Bivalvia","Arcoida","Grandiarca",20.45,0,"Burdigalian","Holocene",20.45,0,,,,,,
 233,"Mollusca","Bivalvia","Arcoida","Hawaiarca",48.07,0,"Lutetian","Holocene",48.07,0,,,,,,
 234,"Mollusca","Bivalvia","Arcoida","Heikea",458.18,445.21,"Sandbian","Katian",458.2,445.2,"Mollusca","Bivalvia","Cyrtodontida","Cyrtodontidae","Heikea","16250"
 235,"Mollusca","Bivalvia","Arcoida","Hoernesarca",5.33,2.59,"Zanclean","Piacenzian",5.333,2.58,"Mollusca","Bivalvia","Arcida","Arcidae","Hoernesarca","16251"
@@ -439,7 +439,7 @@
 440,"Mollusca","Bivalvia","Pterioida","Amphiocoelia",443.07,422.73,"Rhuddanian","Ludfordian",443.1,422.7,"Mollusca","Bivalvia","Myalinida","Ambonychiidae","Amphiocoelia","16463"
 441,"Mollusca","Bivalvia","Pterioida","Amuropecten",188,184.2,"Pliensbachian","Pliensbachian",192.9,184.2,"Mollusca","Bivalvia","Pterioida","NO_FAMILY_SPECIFIED","Amuropecten","16464"
 442,"Mollusca","Bivalvia","Pterioida","Amussiopecten",27.29,3.6,"Chattian","Zanclean",27.3,3.6,"Mollusca","Bivalvia","Pectinida","Pectinidae","Amussiopecten","16465"
-443,"Mollusca","Bivalvia","Pterioida","Amussium",33.9,0,"Rupelian","Holocene",33.9,0,,,,,,
+443,"Mollusca","Bivalvia","Pterioida","Amussium",33.9,0,"Rupelian","Holocene",33.9,0,"Mollusca","Bivalvia","Pectinida","Pectinidae","Amusium","16466"
 444,"Mollusca","Bivalvia","Pterioida","Anatipopecten",37.71,2.59,"Priabonian","Piacenzian",37.71,2.58,,,,,,
 445,"Mollusca","Bivalvia","Pterioida","Anderkenia",458.18,443.07,"Sandbian","Hirnantian",458.2,443.1,"Mollusca","Bivalvia","Ostreida","Pterineidae","Anderkenia","16468"
 446,"Mollusca","Bivalvia","Pterioida","Anguipecten",3.6,2.58,"Piacenzian","Piacenzian",3.6,2.58,"Mollusca","Bivalvia","Pectinida","Pectinidae","Anguipecten","16469"
@@ -476,7 +476,7 @@
 477,"Mollusca","Bivalvia","Pterioida","Avichlamys",250.5,246.7,"Induan","Olenekian",251.902,246.7,"Mollusca","Bivalvia","Pectinida","Pectinidae","Avichlamys","16500"
 478,"Mollusca","Bivalvia","Pterioida","Avicularca",237,201.36,"Carnian","Rhaetian",237,201.4,"Mollusca","Bivalvia","Pectinida","Oxytomidae","Avicularca","16501"
 479,"Mollusca","Bivalvia","Pterioida","Aviculolima",246.7,241.46,"Anisian","Anisian",246.7,241.464,"Mollusca","Bivalvia","Limida","Limidae","Aviculolima","16502"
-480,"Mollusca","Bivalvia","Pterioida","Aviculomonotis",274.37,259.55,"Roadian","Capitanian",274.4,259.51,,,,,,
+480,"Mollusca","Bivalvia","Pterioida","Aviculomonotis",274.37,259.55,"Roadian","Capitanian",274.4,259.51,"Mollusca","Bivalvia","Pectinida","Pseudomonotidae","Pseudomonotis","16970"
 481,"Mollusca","Bivalvia","Pterioida","Aviculomyalina",244.24,241.46,"Anisian","Anisian",246.7,241.464,"Mollusca","Bivalvia","Myalinida","Myalinidae","Aviculomyalina","16504"
 482,"Mollusca","Bivalvia","Pterioida","Aviculopecten",360.4,251.901,"Famennian","Induan",372.15,249.9,"Mollusca","Bivalvia","Pectinida","Aviculopectinidae","Aviculopecten","16505"
 483,"Mollusca","Bivalvia","Pterioida","Aviculoperna",48.07,33.9,"Lutetian","Priabonian",48.07,33.9,"Mollusca","Bivalvia","Ostreida","Malleidae","Isognomon","16730"
@@ -543,7 +543,7 @@
 544,"Mollusca","Bivalvia","Pterioida","Cornutoentolium",161.53,143.1,"Oxfordian","Tithonian",161.5,143.1,"Mollusca","Bivalvia","Pterioida","NO_FAMILY_SPECIFIED","Cornutoentolium","16568"
 545,"Mollusca","Bivalvia","Pterioida","Corrugopecten",292,251.901,"Sakmarian","Induan",293.52,249.9,"Mollusca","Bivalvia","Pectinida","Heteropectinidae","Heteropecten","16705"
 546,"Mollusca","Bivalvia","Pterioida","Costagyra",113.2,66.04,"Albian","Maastrichtian",113.2,66,,,,,,
-547,"Mollusca","Bivalvia","Pterioida","Costeina",77.91,72.17,"Campanian","Campanian",83.6,72.2,"Mollusca","Bivalvia","Ostreida","Gryphaeidae","Costeina","16571"
+547,"Mollusca","Bivalvia","Pterioida","Costeina",77.91,72.17,"Campanian","Campanian",83.6,72.2,,,,,,
 548,"Mollusca","Bivalvia","Pterioida","Costellacesta",72.17,66.04,"Maastrichtian","Maastrichtian",72.2,66,"Mollusca","Bivalvia","Limida","Limidae","Costellacesta","16572"
 549,"Mollusca","Bivalvia","Pterioida","Costellamussiopecten",27.29,7.25,"Chattian","Tortonian",27.3,7.246,"Mollusca","Bivalvia","Pectinida","Pectinidae","Costellamussiopecten","16573"
 550,"Mollusca","Bivalvia","Pterioida","Costentolium",100.5,66.04,"Cenomanian","Maastrichtian",100.5,66,"Mollusca","Bivalvia","Pterioida","NO_FAMILY_SPECIFIED","Costentolium","16574"
@@ -801,7 +801,7 @@
 802,"Mollusca","Bivalvia","Pterioida","Myodakryotus",455,451.3,"Sandbian","Katian",458.2,445.2,"Mollusca","Bivalvia","Ostreida","Myodakryotidae","Myodakryotus","16829"
 803,"Mollusca","Bivalvia","Pterioida","Myrakeena",23.04,0,"Aquitanian","Holocene",23.04,0,"Mollusca","Bivalvia","Ostreida","Ostreidae","Ostrea","16870"
 804,"Mollusca","Bivalvia","Pterioida","Mysidoptera",251.902,201.36,"Induan","Rhaetian",251.902,201.4,"Mollusca","Bivalvia","Pterioida","NO_FAMILY_SPECIFIED","Mysidoptera","16831"
-805,"Mollusca","Bivalvia","Pterioida","Mytilidesmatella",293.52,264.34,"Sakmarian","Wordian",293.52,264.28,,,,,,
+805,"Mollusca","Bivalvia","Pterioida","Mytilidesmatella",293.52,264.34,"Sakmarian","Wordian",293.52,264.28,"Mollusca","Bivalvia","Myalinida","Atomodesmatidae","Maitaia","16791"
 806,"Mollusca","Bivalvia","Pterioida","Mytilarca",440.49,371.1,"Aeronian","Frasnian",440.5,372.15,"Mollusca","Bivalvia","Myalinida","Ambonychiidae","Mytilarca","16833"
 807,"Mollusca","Bivalvia","Pterioida","Mytiloceramus",174.7,165.29,"Aalenian","Bathonian",174.7,165.3,,,,,,
 808,"Mollusca","Bivalvia","Pterioida","Mytiloides",196.4,66,"Sinemurian","Danian",199.5,61.66,"Mollusca","Bivalvia","Myalinida","Inoceramidae","Mytiloides","16835"
@@ -832,7 +832,7 @@
 833,"Mollusca","Bivalvia","Pterioida","Odontogryphaea",72.17,41.03,"Maastrichtian","Lutetian",72.2,41.03,"Mollusca","Bivalvia","Ostreida","Ostreidae","Odontogryphaea","16862"
 834,"Mollusca","Bivalvia","Pterioida","Opiotoptera",458.18,443.07,"Sandbian","Hirnantian",458.2,443.1,"Mollusca","Bivalvia","Pterioida","NO_FAMILY_SPECIFIED","Opiotoptera","16863"
 835,"Mollusca","Bivalvia","Pterioida","Opisthoptera",449.2,445.21,"Katian","Katian",452.8,445.2,"Mollusca","Bivalvia","Myalinida","Ambonychiidae","Opisthoptera","16864"
-836,"Mollusca","Bivalvia","Pterioida","Oppenheimopecten",23.04,0,"Aquitanian","Holocene",23.04,0,,,,,,
+836,"Mollusca","Bivalvia","Pterioida","Oppenheimopecten",23.04,0,"Aquitanian","Holocene",23.04,0,"Mollusca","Bivalvia","Pectinida","Pectinidae","Pecten","16904"
 837,"Mollusca","Bivalvia","Pterioida","Orbiculopecten",315.15,307.02,"Moscovian","Moscovian",315.2,307,"Mollusca","Bivalvia","Pectinida","Streblochondriidae","Orbiculopecten","16866"
 838,"Mollusca","Bivalvia","Pterioida","Oretia",237,233.6,"Carnian","Carnian",237,227.3,"Mollusca","Bivalvia","Ostreida","Pergamidiidae","Oretia","16867"
 839,"Mollusca","Bivalvia","Pterioida","Ornithopecten",246.7,201.36,"Anisian","Rhaetian",246.7,201.4,"Mollusca","Bivalvia","Pectinida","Aviculopectinidae","Ornithopecten","16868"
@@ -1215,7 +1215,7 @@
 1217,"Mollusca","Bivalvia","Trigonoida","Quadratojaworskiella",199.46,192.9,"Sinemurian","Sinemurian",199.5,192.9,"Mollusca","Bivalvia","Trigoniida","Laevitrigoniidae","Quadratojaworskiella","17268"
 1218,"Mollusca","Bivalvia","Trigonoida","Quadratotrigonia",149.24,93.9,"Tithonian","Cenomanian",149.2,93.9,"Mollusca","Bivalvia","Trigoniida","Trigoniidae","Quadratotrigonia","17269"
 1219,"Mollusca","Bivalvia","Trigonoida","Quoiecchia",132.6,121.4,"Hauterivian","Barremian",132.6,121.4,"Mollusca","Bivalvia","Trigoniida","Trigoniidae","Quoiecchia","17270"
-1220,"Mollusca","Bivalvia","Trigonoida","Rhenania",385.3,378.9,"Givetian","Givetian",387.95,382.31,"Mollusca","Bivalvia","Trigoniida","Myophoriidae","Rhenania","17271"
+1220,"Mollusca","Bivalvia","Trigonoida","Rhenania",385.3,378.9,"Givetian","Givetian",387.95,382.31,,,"Trigoniida",,,
 1221,"Mollusca","Bivalvia","Trigonoida","Rutitrigonia",161.53,66.04,"Oxfordian","Maastrichtian",161.5,66,"Mollusca","Bivalvia","Trigoniida","Trigoniidae","Rutitrigonia","17272"
 1222,"Mollusca","Bivalvia","Trigonoida","Sainschandia",126.5,83.65,"Barremian","Santonian",125.77,83.6,"Mollusca","Bivalvia","Trigoniida","Sainschandiidae","Sainschandia","17273"
 1223,"Mollusca","Bivalvia","Trigonoida","Scabrotrigonia",126.5,66.04,"Barremian","Maastrichtian",125.77,66,,,"Trigoniida",,,
@@ -1289,7 +1289,7 @@
 1291,"Mollusca","Bivalvia","Veneroida","Anomalokellia",66.04,56,"Danian","Thanetian",66,56,"Mollusca","Bivalvia","Galeommatida","Lasaeidae","Anomalokellia","17343"
 1292,"Mollusca","Bivalvia","Veneroida","Anthonya",121.4,66.04,"Aptian","Maastrichtian",121.4,66,"Mollusca","Bivalvia","Carditida","Crassatellidae","Anthonya","17344"
 1293,"Mollusca","Bivalvia","Veneroida","Antigona",2.59,0.0117,"Piacenzian","Late Pleistocene",3.6,0.0117,"Mollusca","Bivalvia","Venerida","Veneridae","Antigona","17345"
-1294,"Mollusca","Bivalvia","Veneroida","Antinioche",15.99,11.63,"Langhian","Tortonian",15.98,7.246,"Mollusca","Bivalvia","Venerida","Veneridae","Leukoma","90372"
+1294,"Mollusca","Bivalvia","Veneroida","Antinioche",15.99,11.63,"Langhian","Tortonian",15.98,7.246,,,,,,
 1295,"Mollusca","Bivalvia","Veneroida","Antiquicyprina",168.17,165.29,"Bathonian","Bathonian",168.2,165.3,"Mollusca","Bivalvia","Venerida","Arcticidae","Antiquicyprina","17347"
 1296,"Mollusca","Bivalvia","Veneroida","Aphaea",77.91,69.9,"Campanian","Maastrichtian",83.6,66,"Mollusca","Bivalvia","Venerida","NO_FAMILY_SPECIFIED","Aphaea","17348"
 1297,"Mollusca","Bivalvia","Veneroida","Aphrodina",113.2,33.9,"Albian","Priabonian",113.2,33.9,"Mollusca","Bivalvia","Venerida","Veneridae","Aphrodina","17349"
@@ -1344,7 +1344,7 @@
 1346,"Mollusca","Bivalvia","Veneroida","Basterotia",56,0,"Ypresian","Holocene",56,0,"Mollusca","Bivalvia","Cardiida","Sportellidae","Basterotia","17399"
 1347,"Mollusca","Bivalvia","Veneroida","Bathytormus",83.65,0,"Campanian","Holocene",83.6,0,"Mollusca","Bivalvia","Carditida","Crassatellidae","Bathytormus","17400"
 1348,"Mollusca","Bivalvia","Veneroida","Batissa",161.53,0,"Oxfordian","Holocene",161.5,0,"Mollusca","Bivalvia","Venerida","Corbiculidae","Batissa","17401"
-1349,"Mollusca","Bivalvia","Veneroida","Bellucina",48.07,0,"Lutetian","Holocene",48.07,0,"Mollusca","Bivalvia","Lucinida","Lucinidae","Cardiolucina","95163"
+1349,"Mollusca","Bivalvia","Veneroida","Bellucina",48.07,0,"Lutetian","Holocene",48.07,0,,,,,,
 1350,"Mollusca","Bivalvia","Veneroida","Bendemacoma",56,33.9,"Ypresian","Priabonian",56,33.9,,,,,,
 1351,"Mollusca","Bivalvia","Veneroida","Benthocardiella",5.33,3.6,"Zanclean","Zanclean",5.333,3.6,"Mollusca","Bivalvia","Carditida","Condylocardiidae","Benthocardiella","17404"
 1352,"Mollusca","Bivalvia","Veneroida","Blagraveia",56,33.9,"Ypresian","Priabonian",56,33.9,"Mollusca","Bivalvia","Venerida","Glossidae","Blagraveia","17405"
@@ -1750,7 +1750,7 @@
 1752,"Mollusca","Bivalvia","Veneroida","Leukomoides",3.6,2.58,"Piacenzian","Piacenzian",3.6,2.58,"Mollusca","Bivalvia","Venerida","NO_FAMILY_SPECIFIED","Leukomoides","17812"
 1753,"Mollusca","Bivalvia","Veneroida","Leuroactis",56,48.07,"Ypresian","Ypresian",56,48.07,,,,,,
 1754,"Mollusca","Bivalvia","Veneroida","Levimyrtaea",3.6,2.58,"Piacenzian","Piacenzian",3.6,2.58,,,,,,
-1755,"Mollusca","Bivalvia","Veneroida","Linearia",132.6,66.04,"Hauterivian","Maastrichtian",132.6,66,,,,,,
+1755,"Mollusca","Bivalvia","Veneroida","Linearia",132.6,66.04,"Hauterivian","Maastrichtian",132.6,66,"Mollusca","Bivalvia","Cardiida","Tellinidae","Linearis","60879"
 1756,"Mollusca","Bivalvia","Veneroida","Linetia",174.7,161.53,"Aalenian","Callovian",174.7,161.5,"Mollusca","Bivalvia","Lucinida","Mactromyidae","Linetia","17816"
 1757,"Mollusca","Bivalvia","Veneroida","Linga",56,0,"Ypresian","Holocene",56,0,,,,,,
 1758,"Mollusca","Bivalvia","Veneroida","Lioconcha",5.33,2.59,"Zanclean","Piacenzian",5.333,2.58,"Mollusca","Bivalvia","Venerida","Veneridae","Lioconcha","17818"
@@ -1915,7 +1915,7 @@
 1917,"Mollusca","Bivalvia","Veneroida","Nitidittellina",27.29,0,"Chattian","Holocene",27.3,0,,,,,,
 1918,"Mollusca","Bivalvia","Veneroida","Notirus",5.33,3.6,"Zanclean","Zanclean",5.333,3.6,,,,,,
 1919,"Mollusca","Bivalvia","Veneroida","Notocallista",5.33,2.59,"Zanclean","Piacenzian",5.333,2.58,"Mollusca","Bivalvia","Venerida","Veneridae","Notocallista","17981"
-1920,"Mollusca","Bivalvia","Veneroida","Notochione",23.04,2.59,"Aquitanian","Piacenzian",23.04,2.58,,,,,,
+1920,"Mollusca","Bivalvia","Veneroida","Notochione",23.04,2.59,"Aquitanian","Piacenzian",23.04,2.58,"Mollusca","Bivalvia","Venerida","Veneridae","Leukoma","90372"
 1921,"Mollusca","Bivalvia","Veneroida","Notodonax",100.5,66.04,"Cenomanian","Maastrichtian",100.5,66,"Mollusca","Bivalvia","Cardiida","Donacidae","Notodonax","17983"
 1922,"Mollusca","Bivalvia","Veneroida","Notopaphia",2.59,0.0117,"Piacenzian","Late Pleistocene",3.6,0.0117,,,,,,
 1923,"Mollusca","Bivalvia","Veneroida","Novathaca",2.59,0.0117,"Piacenzian","Late Pleistocene",3.6,0.0117,,,,,,
@@ -2208,7 +2208,7 @@
 2210,"Mollusca","Bivalvia","Veneroida","Sphaeriola",201.36,165.29,"Hettangian","Bathonian",201.4,165.3,"Mollusca","Bivalvia","Lucinida","Lucinidae","Sphaeriola","18273"
 2211,"Mollusca","Bivalvia","Veneroida","Spissatella",41.03,37.71,"Bartonian","Bartonian",41.03,37.71,"Mollusca","Bivalvia","Carditida","Crassatellidae","Spissatella","18274"
 2212,"Mollusca","Bivalvia","Veneroida","Spisula",59.24,0,"Thanetian","Holocene",59.24,0,"Mollusca","Bivalvia","Venerida","Mactridae","Spisula","18275"
-2213,"Mollusca","Bivalvia","Veneroida","Spisulona",3.6,2.58,"Piacenzian","Piacenzian",3.6,2.58,,,,,,
+2213,"Mollusca","Bivalvia","Veneroida","Spisulona",3.6,2.58,"Piacenzian","Piacenzian",3.6,2.58,"Mollusca","Bivalvia","Venerida","Mactridae","Spisula","18275"
 2214,"Mollusca","Bivalvia","Veneroida","Sportella",66.04,2.58,"Danian","Piacenzian",66,2.58,"Mollusca","Bivalvia","Cardiida","Sportellidae","Sportella","18277"
 2215,"Mollusca","Bivalvia","Veneroida","Staffinella",168.17,165.29,"Bathonian","Bathonian",168.2,165.3,"Mollusca","Bivalvia","Venerida","Arcticidae","Staffinella","18278"
 2216,"Mollusca","Bivalvia","Veneroida","Stahlia",184.2,174.7,"Toarcian","Toarcian",184.2,174.7,"Mollusca","Bivalvia","Cardiida","Kalenteridae","Stahlia","18279"
@@ -2229,7 +2229,7 @@
 2231,"Mollusca","Bivalvia","Veneroida","Sulcocardia",33.9,23.04,"Rupelian","Chattian",33.9,23.04,,,,,,
 2232,"Mollusca","Bivalvia","Veneroida","Sunetta",59.24,0,"Thanetian","Holocene",59.24,0,"Mollusca","Bivalvia","Venerida","Veneridae","Sunetta","18295"
 2233,"Mollusca","Bivalvia","Veneroida","Sunettina",5.33,2.59,"Zanclean","Piacenzian",5.333,2.58,,,,,,
-2234,"Mollusca","Bivalvia","Veneroida","Symmorphomactra",3.6,2.58,"Piacenzian","Piacenzian",3.6,2.58,,,,,,
+2234,"Mollusca","Bivalvia","Veneroida","Symmorphomactra",3.6,2.58,"Piacenzian","Piacenzian",3.6,2.58,"Mollusca","Bivalvia","Venerida","Mactridae","Simomactra","98039"
 2235,"Mollusca","Bivalvia","Veneroida","Syndosmya",56,48.07,"Ypresian","Ypresian",56,48.07,,,,,,
 2236,"Mollusca","Bivalvia","Veneroida","Tagelus",27.29,0,"Chattian","Holocene",27.3,0,"Mollusca","Bivalvia","Cardiida","Solecurtidae","Tagelus","18299"
 2237,"Mollusca","Bivalvia","Veneroida","Taiwancorbicula",33.9,23.04,"Rupelian","Chattian",33.9,23.04,"Mollusca","Bivalvia","Venerida","NO_FAMILY_SPECIFIED","Taiwancorbicula","18300"
@@ -2400,7 +2400,7 @@
 2402,"Mollusca","Bivalvia","Myoida","Lentidium",66.04,61.66,"Danian","Danian",66,61.66,"Mollusca","Bivalvia","Pholadida","Corbulidae","Lentidium","18469"
 2403,"Mollusca","Bivalvia","Myoida","Lyrodobankia",56,48.07,"Ypresian","Ypresian",56,48.07,,,,,,
 2404,"Mollusca","Bivalvia","Myoida","Martesia",100.5,0,"Cenomanian","Holocene",100.5,0,"Mollusca","Bivalvia","Pholadida","Pholadidae","Martesia","18471"
-2405,"Mollusca","Bivalvia","Myoida","Monothyra",100.5,93.9,"Cenomanian","Cenomanian",100.5,93.9,"Mollusca","Bivalvia","Pholadida","Pholadidae","Monothyra","18472"
+2405,"Mollusca","Bivalvia","Myoida","Monothyra",100.5,93.9,"Cenomanian","Cenomanian",100.5,93.9,,,,,,
 2406,"Mollusca","Bivalvia","Myoida","Mya",33.9,0,"Rupelian","Holocene",33.9,0,"Mollusca","Bivalvia","Pholadida","Myidae","Mya","18473"
 2407,"Mollusca","Bivalvia","Myoida","Netastoma",56,0,"Ypresian","Holocene",56,0,"Mollusca","Bivalvia","Pholadida","Pholadidae","Netastoma","18474"
 2408,"Mollusca","Bivalvia","Myoida","Nettastomella",5.33,2.59,"Zanclean","Piacenzian",5.333,2.58,"Mollusca","Bivalvia","Pholadida","Pholadidae","Netastoma","18474"
@@ -2756,11 +2756,11 @@
 2758,"Mollusca","Bivalvia","Pholadomyoida","Tellinomorpha",346.73,330.34,"Visean","Visean",346.7,330.3,"Mollusca","Bivalvia","NO_ORDER_SPECIFIED","Sanguinolitidae","Wilkingia","18845"
 2759,"Mollusca","Bivalvia","Pholadomyoida","Tergulina",33.9,23.04,"Rupelian","Chattian",33.9,23.04,,,,,,
 2760,"Mollusca","Bivalvia","Pholadomyoida","Tetorimya",161.53,154.78,"Oxfordian","Oxfordian",161.5,154.8,"Mollusca","Bivalvia","Pholadomyida","Pholadomyidae","Tetorimya","18834"
-2761,"Mollusca","Bivalvia","Pholadomyoida","Tosarca",5.33,2.59,"Zanclean","Piacenzian",5.333,2.58,,,,,,
+2761,"Mollusca","Bivalvia","Pholadomyoida","Tosarca",5.33,2.59,"Zanclean","Piacenzian",5.333,2.58,"Mollusca","Bivalvia","Arcida","Arcidae","Anadara","16201"
 2762,"Mollusca","Bivalvia","Pholadomyoida","Thracia",201.36,0,"Hettangian","Holocene",201.4,0,"Mollusca","Bivalvia","Thraciida","Thraciidae","Thracia","18836"
 2763,"Mollusca","Bivalvia","Pholadomyoida","Trichomyella",165.29,161.53,"Callovian","Callovian",165.3,161.5,,,,,,
 2764,"Mollusca","Bivalvia","Pholadomyoida","Trigonulina",56,48.07,"Ypresian","Ypresian",56,48.07,"Mollusca","Bivalvia","Poromyida","Verticordiidae","Trigonulina","18838"
-2765,"Mollusca","Bivalvia","Pholadomyoida","Triplicosta",56,33.9,"Ypresian","Priabonian",56,33.9,"Mollusca","Bivalvia","Pholadomyida","Pholadomyidae","Triplicosta","18839"
+2765,"Mollusca","Bivalvia","Pholadomyoida","Triplicosta",56,33.9,"Ypresian","Priabonian",56,33.9,,,,,,
 2766,"Mollusca","Bivalvia","Pholadomyoida","Undulomya",286,251.902,"Artinskian","Changhsingian",290.1,251.902,"Mollusca","Bivalvia","NO_ORDER_SPECIFIED","Sanguinolitidae","Undulomya","18840"
 2767,"Mollusca","Bivalvia","Pholadomyoida","Unklesbyella",330.34,303.68,"Serpukhovian","Kasimovian",330.3,303.7,"Mollusca","Bivalvia","Pholadomyida","Megadesmidae","Unklesbayella","18841"
 2768,"Mollusca","Bivalvia","Pholadomyoida","Vacunella",278.248,259.55,"Kungurian","Capitanian",283.3,259.51,"Mollusca","Bivalvia","NO_ORDER_SPECIFIED","Sanguinolitidae","Vacunella","18842"
@@ -3109,7 +3109,7 @@
 3111,"Mollusca","Cephalopoda","Orthocerida","Mitorthoceras",359.3,323.7,"Tournaisian","Serpukhovian",358.86,323.4,"Mollusca","Cephalopoda","Pseudorthocerida","Pseudorthoceratidae","Mitorthoceras","12543"
 3112,"Mollusca","Cephalopoda","Orthocerida","Mongoceras",438.59,432.93,"Telychian","Telychian",438.6,432.9,"Mollusca","Cephalopoda","Pseudorthocerida","Pseudorthoceratidae","Mongoceras","12544"
 3113,"Mollusca","Cephalopoda","Orthocerida","Monomuchites",458.18,451.3,"Sandbian","Katian",458.2,445.2,"Mollusca","Cephalopoda","Orthocerida","Proteoceratidae","Monomuchites","12545"
-3114,"Mollusca","Cephalopoda","Orthocerida","Mooreoceras",378.9,259.55,"Frasnian","Capitanian",382.31,259.51,"Mollusca","Cephalopoda","Pseudorthocerida","Pseudorthoceratidae","Pseudorthoceras","12584"
+3114,"Mollusca","Cephalopoda","Orthocerida","Mooreoceras",378.9,259.55,"Frasnian","Capitanian",382.31,259.51,,,,,,
 3115,"Mollusca","Cephalopoda","Orthocerida","Murchisoniceras",430.62,419,"Homerian","GAP",430.6,419,"Mollusca","Cephalopoda","Orthocerida","NO_FAMILY_SPECIFIED","Murchisoniceras","12547"
 3116,"Mollusca","Cephalopoda","Orthocerida","Mysterioceras",461.2,451.3,"Darriwilian","Katian",469.4,445.2,"Mollusca","Cephalopoda","Orthocerida","Mysterioceratidae","Mysterioceras","12548"
 3117,"Mollusca","Cephalopoda","Orthocerida","Naivs",340.2,330.34,"Visean","Visean",346.7,330.3,"Mollusca","Cephalopoda","Orthocerida","NO_FAMILY_SPECIFIED","Naivs","12549"
@@ -4188,7 +4188,7 @@
 4197,"Mollusca","Cephalopoda","Goniatitida","Branneroceras",318.8,314.8,"Bashkirian","Moscovian",323.4,307,"Mollusca","Cephalopoda","Goniatitida","Schistoceratidae","Branneroceras","13647"
 4198,"Mollusca","Cephalopoda","Goniatitida","Branneroceratoides",346.73,330.34,"Visean","Visean",346.7,330.3,,,,,,
 4199,"Mollusca","Cephalopoda","Goniatitida","Brevikites",321.9,318.9,"Bashkirian","Bashkirian",323.4,315.2,"Mollusca","Cephalopoda","Goniatitida","Homoceratidae","Brevikites","13649"
-4200,"Mollusca","Cephalopoda","Goniatitida","Caenocyclus",359.3,323.4,"Tournaisian","Serpukhovian",358.86,323.4,,,,,,
+4200,"Mollusca","Cephalopoda","Goniatitida","Caenocyclus",359.3,323.4,"Tournaisian","Serpukhovian",358.86,323.4,"Mollusca","Cephalopoda","Goniatitida","Pericyclidae","Caenocyclus","13650"
 4201,"Mollusca","Cephalopoda","Goniatitida","Caenolyroceras",330.34,323.7,"Serpukhovian","Serpukhovian",330.3,323.4,"Mollusca","Cephalopoda","Goniatitida","Cravenoceratidae","Caenolyroceras","13651"
 4202,"Mollusca","Cephalopoda","Goniatitida","Cancelloceras",321.9,318.9,"Bashkirian","Bashkirian",323.4,315.2,"Mollusca","Cephalopoda","Goniatitida","Gastrioceratidae","Cancelloceras","13652"
 4203,"Mollusca","Cephalopoda","Goniatitida","Cardiella",298.89,278.248,"Asselian","Kungurian",298.9,274.4,"Mollusca","Cephalopoda","Goniatitida","Marathonitidae","Cardiella","13653"
@@ -4640,7 +4640,7 @@
 4650,"Mollusca","Cephalopoda","Ceratitida","Discotropites",233.6,227.3,"Carnian","Carnian",237,227.3,"Mollusca","Cephalopoda","Ceratitida","Tropitidae","Discotropites","14103"
 4651,"Mollusca","Cephalopoda","Ceratitida","Distichites",217.49,214.03,"Norian","Norian",227.3,205.7,"Mollusca","Cephalopoda","Ceratitida","Distichitidae","Distichites","14104"
 4652,"Mollusca","Cephalopoda","Ceratitida","Dittmarites",237,233.6,"Carnian","Carnian",237,227.3,"Mollusca","Cephalopoda","Ceratitida","Trachyceratidae","Dittmarites","14105"
-4653,"Mollusca","Cephalopoda","Ceratitida","Dobrogeites",246.7,237,"Anisian","Ladinian",246.7,237,"Mollusca","Cephalopoda","Ceratitida","Megaphyllitidae","Dobrogeites","14106"
+4653,"Mollusca","Cephalopoda","Ceratitida","Dobrogeites",246.7,237,"Anisian","Ladinian",246.7,237,,,,,,
 4654,"Mollusca","Cephalopoda","Ceratitida","Dorikranites",248.1,246.7,"Olenekian","Olenekian",249.9,246.7,"Mollusca","Cephalopoda","Ceratitida","Tirolitidae","Dorikranites","14107"
 4655,"Mollusca","Cephalopoda","Ceratitida","Drepanites",217.49,214.03,"Norian","Norian",227.3,205.7,"Mollusca","Cephalopoda","Ceratitida","Tibetitidae","Drepanites","14108"
 4656,"Mollusca","Cephalopoda","Ceratitida","Drumoceras",239.48,237,"Ladinian","Ladinian",241.464,237,"Mollusca","Cephalopoda","Ceratitida","Thanamitidae","Drumoceras","14109"
@@ -5140,7 +5140,7 @@
 5151,"Mollusca","Cephalopoda","Ammonoidea","Baronnites",135.2,132.6,"Valanginian","Valanginian",137.05,132.6,"Mollusca","Cephalopoda","Ammonitida","Olcostephanidae","Baronnites","14607"
 5152,"Mollusca","Cephalopoda","Ammonoidea","Barroisiceras",89.39,87.545,"Coniacian","Coniacian",89.8,85.7,"Mollusca","Cephalopoda","Ammonitida","Collignoniceratidae","Barroisiceras","14608"
 5153,"Mollusca","Cephalopoda","Ammonoidea","Baskaniiceras",100.5,98,"Cenomanian","Cenomanian",100.5,93.9,"Mollusca","Cephalopoda","Ammonitida","Pachydiscidae","Baskaniceras","14609"
-5154,"Mollusca","Cephalopoda","Ammonoidea","Bauchioceras",93.9,91.645,"Turonian","Turonian",93.9,89.8,,,,,,
+5154,"Mollusca","Cephalopoda","Ammonoidea","Bauchioceras",93.9,91.645,"Turonian","Turonian",93.9,89.8,"Mollusca","Cephalopoda","Ammonitida","Pseudotissotiidae","Pseudotissotia","15541"
 5155,"Mollusca","Cephalopoda","Ammonoidea","Bayleites",85.7,77.91,"Santonian","Campanian",85.7,72.2,"Mollusca","Cephalopoda","Ammonitida","Stephanoceratidae","Cadomites","14657"
 5156,"Mollusca","Cephalopoda","Ammonoidea","Beaniceras",192.9,188,"Pliensbachian","Pliensbachian",192.9,184.2,,,,,,
 5157,"Mollusca","Cephalopoda","Ammonoidea","Benacoceras",154.78,152.1,"Kimmeridgian","Kimmeridgian",154.8,149.2,"Mollusca","Cephalopoda","Ammonitida","Simoceratidae","Benacoceras","14613"
@@ -5253,7 +5253,7 @@
 5265,"Mollusca","Cephalopoda","Ammonoidea","Costidiscus",126.5,118.8,"Barremian","Aptian",125.77,113.2,,,,,,
 5266,"Mollusca","Cephalopoda","Ammonoidea","Costileioceras",174.7,170.9,"Aalenian","Aalenian",174.7,170.9,"Mollusca","Cephalopoda","Ammonitida","Graphoceratidae","Costileioceras","14722"
 5267,"Mollusca","Cephalopoda","Ammonoidea","Cottreauites",107.6,98,"Albian","Cenomanian",113.2,93.9,"Mollusca","Cephalopoda","Ammonitida","Lyelliceratidae","Paracalycoceras","15325"
-5268,"Mollusca","Cephalopoda","Ammonoidea","Couloniceras",100.5,93.9,"Cenomanian","Cenomanian",100.5,93.9,,,,,,
+5268,"Mollusca","Cephalopoda","Ammonoidea","Couloniceras",100.5,93.9,"Cenomanian","Cenomanian",100.5,93.9,"Mollusca","Cephalopoda","Ammonitida","Acanthoceratidae","Mantelliceras","15158"
 5269,"Mollusca","Cephalopoda","Ammonoidea","Cowtoniceras",157.8,154.78,"Oxfordian","Oxfordian",161.5,154.8,,,,,,
 5270,"Mollusca","Cephalopoda","Ammonoidea","Cranocephalites",169.7,166.9,"Bajocian","Bathonian",170.9,165.3,,,,,,
 5271,"Mollusca","Cephalopoda","Ammonoidea","Craspedites",143.1,141.78,"Berriasian","Berriasian",143.1,137.05,"Mollusca","Cephalopoda","Ammonitida","Craspeditidae","Craspedites","14727"
@@ -5261,7 +5261,7 @@
 5273,"Mollusca","Cephalopoda","Ammonoidea","Crassiceras",179.82,169.74,"Toarcian","Bajocian",184.2,168.2,"Mollusca","Cephalopoda","Ammonitida","Phymatoceratidae","Crassiceras","14729"
 5274,"Mollusca","Cephalopoda","Ammonoidea","Crassiplanulites",165.29,163.47,"Callovian","Callovian",165.3,161.5,"Mollusca","Cephalopoda","Ammonitida","Perisphinctidae","Proplanulites","15472"
 5275,"Mollusca","Cephalopoda","Ammonoidea","Creniceras",161.53,159.2,"Oxfordian","Oxfordian",161.5,154.8,"Mollusca","Cephalopoda","Ammonitida","Oppeliidae","Creniceras","14731"
-5276,"Mollusca","Cephalopoda","Ammonoidea","Crioceras",132.6,130,"Hauterivian","Hauterivian",132.6,125.77,,,,,,
+5276,"Mollusca","Cephalopoda","Ammonoidea","Crioceras",132.6,130,"Hauterivian","Hauterivian",132.6,125.77,"Mollusca","Cephalopoda","Ammonitida","Crioceratitidae","Crioceratites","14733"
 5277,"Mollusca","Cephalopoda","Ammonoidea","Crioceratites",135.2,121.4,"Valanginian","Barremian",137.05,121.4,"Mollusca","Cephalopoda","Ammonitida","Crioceratitidae","Crioceratites","14733"
 5278,"Mollusca","Cephalopoda","Ammonoidea","Cruasiceras",130,126.5,"Hauterivian","Hauterivian",132.6,125.77,"Mollusca","Cephalopoda","Ammonitida","Neocomitidae","Cruasiceras","14734"
 5279,"Mollusca","Cephalopoda","Ammonoidea","Crucilobiceras",196.4,192.9,"Sinemurian","Sinemurian",199.5,192.9,"Mollusca","Cephalopoda","Ammonitida","Eoderoceratidae","Crucilobiceras","14735"
@@ -5535,7 +5535,7 @@
 5548,"Mollusca","Cephalopoda","Ammonoidea","Holcodiscus",130,124.2,"Hauterivian","Barremian",132.6,121.4,"Mollusca","Cephalopoda","Ammonitida","Holcodiscidae","Holcodiscus","15004"
 5549,"Mollusca","Cephalopoda","Ammonoidea","Holcolytoceras",192.9,169.74,"Pliensbachian","Bajocian",192.9,168.2,"Mollusca","Cephalopoda","Ammonitida","Lytoceratidae","Holcolytoceras","15005"
 5550,"Mollusca","Cephalopoda","Ammonoidea","Holcoptychites",132.6,130,"Hauterivian","Hauterivian",132.6,125.77,"Mollusca","Cephalopoda","Ammonitida","Holcodiscidae","Holcoptychites","15006"
-5551,"Mollusca","Cephalopoda","Ammonoidea","Holzbergia",166.9,166.04,"Bathonian","Bathonian",168.2,165.3,"Mollusca","Cephalopoda","Ammonitida","Tulitidae","Morrisiceras","15214"
+5551,"Mollusca","Cephalopoda","Ammonoidea","Holzbergia",166.9,166.04,"Bathonian","Bathonian",168.2,165.3,,,,,,
 5552,"Mollusca","Cephalopoda","Ammonoidea","Homoeoplanulites",166.04,162.9,"Bathonian","Callovian",168.2,161.5,"Mollusca","Cephalopoda","Ammonitida","Perisphinctidae","Homoeoplanulites","15008"
 5553,"Mollusca","Cephalopoda","Ammonoidea","Hoplikosmokas",163.47,162.9,"Callovian","Callovian",165.3,161.5,"Mollusca","Cephalopoda","Ammonitida","Kosmoceratidae","Hoplikosmokeras","15009"
 5554,"Mollusca","Cephalopoda","Ammonoidea","Hoplites",113.2,100.5,"Albian","Albian",113.2,100.5,"Mollusca","Cephalopoda","Ammonitida","Hoplitidae","Hoplites","15010"
@@ -5819,7 +5819,7 @@
 5835,"Mollusca","Cephalopoda","Ammonoidea","Ostlingoceras",110.3,98,"Albian","Cenomanian",113.2,93.9,"Mollusca","Cephalopoda","Ammonitida","Turrilitidae","Ostlingoceras","15293"
 5836,"Mollusca","Cephalopoda","Ammonoidea","Otohoplites",113.2,107.6,"Albian","Albian",113.2,100.5,"Mollusca","Cephalopoda","Ammonitida","Hoplitidae","Otohoplites","15294"
 5837,"Mollusca","Cephalopoda","Ammonoidea","Otoites",170.9,169.7,"Bajocian","Bajocian",170.9,168.2,"Mollusca","Cephalopoda","Ammonitida","Otoitidae","Otoites","15295"
-5838,"Mollusca","Cephalopoda","Ammonoidea","Otoscaphites",100.5,87.545,"Cenomanian","Coniacian",100.5,85.7,,,,,,
+5838,"Mollusca","Cephalopoda","Ammonoidea","Otoscaphites",100.5,87.545,"Cenomanian","Coniacian",100.5,85.7,"Mollusca","Cephalopoda","Ammonitida","Scaphitidae","Yezoites","15818"
 5839,"Mollusca","Cephalopoda","Ammonoidea","Ovaticeras",184.2,179.82,"Toarcian","Toarcian",184.2,174.7,"Mollusca","Cephalopoda","Ammonitida","Hildoceratidae","Ovaticeras","15297"
 5840,"Mollusca","Cephalopoda","Ammonoidea","Oxybeloceras",77.91,72.17,"Campanian","Campanian",83.6,72.2,"Mollusca","Cephalopoda","Ammonitida","Diplomoceratidae","Oxybeloceras","15298"
 5841,"Mollusca","Cephalopoda","Ammonoidea","Oxycerites",169.7,162.9,"Bajocian","Callovian",170.9,161.5,"Mollusca","Cephalopoda","Ammonitida","Oppeliidae","Oxycerites","15299"
@@ -6020,7 +6020,7 @@
 6036,"Mollusca","Cephalopoda","Ammonoidea","Pseudacompsoceras",100.5,98,"Cenomanian","Cenomanian",100.5,93.9,"Mollusca","Cephalopoda","Ammonitida","Acanthoceratidae","Acompsoceras","14516"
 6037,"Mollusca","Cephalopoda","Ammonoidea","Pseudaetomoceras",200.96,199.46,"Hettangian","Hettangian",201.4,199.5,"Mollusca","Cephalopoda","Ammonitida","Alsatitinae","Pseudaetomoceras","15495"
 6038,"Mollusca","Cephalopoda","Ammonoidea","Pseudoaganides",166.04,165.29,"Bathonian","Bathonian",168.2,165.3,,,,,,
-6039,"Mollusca","Cephalopoda","Ammonoidea","Pseudammatoceras",174.7,170.9,"Aalenian","Aalenian",174.7,170.9,,,,,,
+6039,"Mollusca","Cephalopoda","Ammonoidea","Pseudammatoceras",174.7,170.9,"Aalenian","Aalenian",174.7,170.9,"Mollusca","Cephalopoda","Ammonitida","Hammatoceratidae","Bredyia","14646"
 6040,"Mollusca","Cephalopoda","Ammonoidea","Pseudargentiniceras",145.2,137.7,"Tithonian","Berriasian",149.2,137.05,"Mollusca","Cephalopoda","Ammonitida","Neocomitidae","Pseudargentiniceras","15498"
 6041,"Mollusca","Cephalopoda","Ammonoidea","Pseudarisphinctes",157.8,154.78,"Oxfordian","Oxfordian",161.5,154.8,"Mollusca","Cephalopoda","Ammonitida","Perisphinctidae","Pseudarisphinctes","15499"
 6042,"Mollusca","Cephalopoda","Ammonoidea","Pseudaspidoceras",96,91.645,"Cenomanian","Turonian",100.5,89.8,"Mollusca","Cephalopoda","Ammonitida","Acanthoceratidae","Pseudaspidoceras","15500"
@@ -6056,8 +6056,8 @@
 6072,"Mollusca","Cephalopoda","Ammonoidea","Pseudoperisphinctes",166.9,165.29,"Bathonian","Bathonian",168.2,165.3,"Mollusca","Cephalopoda","Ammonitida","Perisphinctidae","Pseudoperisphinctes","15530"
 6073,"Mollusca","Cephalopoda","Ammonoidea","Pseudophyllites",85.3,66.04,"Santonian","Maastrichtian",85.7,66,"Mollusca","Cephalopoda","Ammonitida","Tetragonitidae","Pseudophyllites","15531"
 6074,"Mollusca","Cephalopoda","Ammonoidea","Pseudoplacenticeras",89.39,85.7,"Coniacian","Coniacian",89.8,85.7,"Mollusca","Cephalopoda","Ammonitida","Placenticeratidae","Placenticeras","15403"
-6075,"Mollusca","Cephalopoda","Ammonoidea","Pseudopolyplectus",184.2,169.74,"Toarcian","Bajocian",184.2,168.2,,,,,,
-6076,"Mollusca","Cephalopoda","Ammonoidea","Pseudoppelia",154.78,152.1,"Kimmeridgian","Kimmeridgian",154.8,149.2,,,,,,
+6075,"Mollusca","Cephalopoda","Ammonoidea","Pseudopolyplectus",184.2,169.74,"Toarcian","Bajocian",184.2,168.2,"Mollusca","Cephalopoda","Ammonitida","Hildoceratidae","Osperleioceras","230995"
+6076,"Mollusca","Cephalopoda","Ammonoidea","Pseudoppelia",154.78,152.1,"Kimmeridgian","Kimmeridgian",154.8,149.2,"Mollusca","Cephalopoda","Ammonitida","Oppeliidae","Paroxycerites","343502"
 6077,"Mollusca","Cephalopoda","Ammonoidea","Pseudopuzosia",91.645,89.39,"Turonian","Turonian",93.9,89.8,"Mollusca","Cephalopoda","Ammonitida","Pachydiscidae","Pseudojacobites","15519"
 6078,"Mollusca","Cephalopoda","Ammonoidea","Pseudosaynella",121.4,110.3,"Aptian","Albian",121.4,100.5,"Mollusca","Cephalopoda","Ammonitida","Desmoceratidae","Pseudosaynella","15536"
 6079,"Mollusca","Cephalopoda","Ammonoidea","Pseudoschloenbachia",85.7,77.91,"Santonian","Campanian",85.7,72.2,"Mollusca","Cephalopoda","Ammonitida","Muniericeratidae","Pseudoschloenbachia","15537"
@@ -6129,13 +6129,13 @@
 6145,"Mollusca","Cephalopoda","Ammonoidea","Scaphites",107.6,72.17,"Albian","Campanian",113.2,72.2,"Mollusca","Cephalopoda","Ammonitida","Scaphitidae","Scaphites","15603"
 6146,"Mollusca","Cephalopoda","Ammonoidea","Scaphitodites",161.53,159.2,"Oxfordian","Oxfordian",161.5,154.8,"Mollusca","Cephalopoda","Ammonitida","Oppeliidae","Scaphitodites","15604"
 6147,"Mollusca","Cephalopoda","Ammonoidea","Scarburgiceras",161.53,159.2,"Oxfordian","Oxfordian",161.5,154.8,,,,,,
-6148,"Mollusca","Cephalopoda","Ammonoidea","Schindewolfites",93.9,89.39,"Turonian","Turonian",93.9,89.8,,,,,,
+6148,"Mollusca","Cephalopoda","Ammonoidea","Schindewolfites",93.9,89.39,"Turonian","Turonian",93.9,89.8,"Mollusca","Cephalopoda","Ammonitida","Acanthoceratidae","Kamerunoceras","15057"
 6149,"Mollusca","Cephalopoda","Ammonoidea","Schloenbachia",107.6,93.9,"Albian","Cenomanian",113.2,93.9,"Mollusca","Cephalopoda","Ammonitida","Schloenbachiidae","Schloenbachia","15607"
 6150,"Mollusca","Cephalopoda","Ammonoidea","Schlotheimia",200.96,199.46,"Hettangian","Hettangian",201.4,199.5,,,,,,
 6151,"Mollusca","Cephalopoda","Ammonoidea","Schwandorfia",166.9,166.04,"Bathonian","Bathonian",168.2,165.3,"Mollusca","Cephalopoda","Ammonitida","Tulitidae","Schwandorfia","15609"
 6152,"Mollusca","Cephalopoda","Ammonoidea","Sciponoceras",107.6,89.39,"Albian","Turonian",113.2,89.8,"Mollusca","Cephalopoda","Ammonitida","Baculitidae","Sciponoceras","15610"
 6153,"Mollusca","Cephalopoda","Ammonoidea","Scoticardioceras",161.53,154.78,"Oxfordian","Oxfordian",161.5,154.8,,,,,,
-6154,"Mollusca","Cephalopoda","Ammonoidea","Selwynoceras",93.9,89.39,"Turonian","Turonian",93.9,89.8,,,,,,
+6154,"Mollusca","Cephalopoda","Ammonoidea","Selwynoceras",93.9,89.39,"Turonian","Turonian",93.9,89.8,"Mollusca","Cephalopoda","Ammonitida","Collignoniceratidae","Collignoniceras","14709"
 6155,"Mollusca","Cephalopoda","Ammonoidea","Semenovites",107.6,100.5,"Albian","Albian",113.2,100.5,"Mollusca","Cephalopoda","Ammonitida","Hoplitidae","Semenoviceras","300987"
 6156,"Mollusca","Cephalopoda","Ammonoidea","Semiformiceras",149.1,145.2,"Tithonian","Tithonian",149.2,143.1,"Mollusca","Cephalopoda","Ammonitida","Oppeliidae","Semiformiceras","15614"
 6157,"Mollusca","Cephalopoda","Ammonoidea","Seymourites",165.29,163.47,"Callovian","Callovian",165.3,161.5,"Mollusca","Cephalopoda","Ammonitida","Kosmoceratidae","Seymourites","15615"
@@ -6199,8 +6199,8 @@
 6215,"Mollusca","Cephalopoda","Ammonoidea","Strungia",168.17,163.47,"Bathonian","Callovian",168.2,161.5,"Mollusca","Cephalopoda","Ammonitida","Oppeliidae","Strungia","15674"
 6216,"Mollusca","Cephalopoda","Ammonoidea","Styracoceras",163.47,162.9,"Callovian","Callovian",165.3,161.5,"Mollusca","Cephalopoda","Ammonitida","Oppeliidae","Styracoceras","15675"
 6217,"Mollusca","Cephalopoda","Ammonoidea","Subalpinites",143.1,137.7,"Berriasian","Berriasian",143.1,137.05,"Mollusca","Cephalopoda","Ammonitida","Neocomitidae","Subalpinites","15676"
-6218,"Mollusca","Cephalopoda","Ammonoidea","Subarcthoplites",110.3,107.6,"Albian","Albian",113.2,100.5,,,,,,
-6219,"Mollusca","Cephalopoda","Ammonoidea","Subastieria",132.6,130,"Hauterivian","Hauterivian",132.6,125.77,,,,,,
+6218,"Mollusca","Cephalopoda","Ammonoidea","Subarcthoplites",110.3,107.6,"Albian","Albian",113.2,100.5,"Mollusca","Cephalopoda","Ammonitida","Cleoniceratidae","Arcthoplites","14569"
+6219,"Mollusca","Cephalopoda","Ammonoidea","Subastieria",132.6,130,"Hauterivian","Hauterivian",132.6,125.77,"Mollusca","Cephalopoda","Ammonitida","Olcostephanidae","Olcostephanus","15281"
 6220,"Mollusca","Cephalopoda","Ammonoidea","Subbarroisiceras",89.39,85.7,"Coniacian","Coniacian",89.8,85.7,"Mollusca","Cephalopoda","Ammonitida","Collignoniceratidae","Barroisiceras","14608"
 6221,"Mollusca","Cephalopoda","Ammonoidea","Subbonarellia",162.9,161.53,"Callovian","Callovian",165.3,161.5,"Mollusca","Cephalopoda","Ammonitida","Oppeliidae","Subbonarellia","15680"
 6222,"Mollusca","Cephalopoda","Ammonoidea","Subcollina",170.9,169.7,"Bajocian","Bajocian",170.9,168.2,"Mollusca","Cephalopoda","Ammonitida","Stephanoceratidae","Subcollina","15681"
@@ -6224,7 +6224,7 @@
 6240,"Mollusca","Cephalopoda","Ammonoidea","Subthurmannia",143.1,137.7,"Berriasian","Berriasian",143.1,137.05,"Mollusca","Cephalopoda","Ammonitida","Neocomitidae","Subthurmannia","15699"
 6241,"Mollusca","Cephalopoda","Ammonoidea","Subtissotia",87.545,85.7,"Coniacian","Coniacian",89.8,85.7,"Mollusca","Cephalopoda","Ammonitida","Tissotiidae","Subtissotia","15700"
 6242,"Mollusca","Cephalopoda","Ammonoidea","Subvertebriceras",161.53,154.78,"Oxfordian","Oxfordian",161.5,154.8,,,,,,
-6243,"Mollusca","Cephalopoda","Ammonoidea","Sulciferites",199.46,196.4,"Sinemurian","Sinemurian",199.5,192.9,,,,,,
+6243,"Mollusca","Cephalopoda","Ammonoidea","Sulciferites",199.46,196.4,"Sinemurian","Sinemurian",199.5,192.9,"Mollusca","Cephalopoda","Ammonitida","Schlotheimiidae","Angulaticeras","14563"
 6244,"Mollusca","Cephalopoda","Ammonoidea","Sulcohamites",167,166.04,"Bathonian","Bathonian",168.2,165.3,"Mollusca","Cephalopoda","Ammonitida","Morphoceratidae","Sulcohamites","15703"
 6245,"Mollusca","Cephalopoda","Ammonoidea","Sulcohamitoides",167,166.04,"Bathonian","Bathonian",168.2,165.3,"Mollusca","Cephalopoda","Ammonitida","Morphoceratidae","Sulcohamitoides","15704"
 6246,"Mollusca","Cephalopoda","Ammonoidea","Sulcohoplites",110.3,100.5,"Albian","Albian",113.2,100.5,"Mollusca","Cephalopoda","Ammonitida","Hoplitidae","Sulcohoplites","15705"
@@ -6839,7 +6839,7 @@
 6856,"Mollusca","Gastropoda","Archaeogastropoda","Aequispirella",3.6,2.58,"Piacenzian","Piacenzian",3.6,2.58,"Mollusca","Gastropoda","NO_ORDER_SPECIFIED","Skeneidae","Aequispirella","8522"
 6857,"Mollusca","Gastropoda","Archaeogastropoda","Affiniptyxis",143.1,141.78,"Berriasian","Berriasian",143.1,137.05,"Mollusca","Gastropoda","Heterostropha","Nerinellidae","Affiniptyxis","8523"
 6858,"Mollusca","Gastropoda","Archaeogastropoda","Affrollonia",59.24,56,"Thanetian","Thanetian",59.24,56,"Mollusca","Gastropoda","Archaeogastropoda","NO_FAMILY_SPECIFIED","Affrollonia","8524"
-6859,"Mollusca","Gastropoda","Archaeogastropoda","Agathistoma",5.33,2.59,"Zanclean","Piacenzian",5.333,2.58,"Mollusca","Gastropoda","NO_ORDER_SPECIFIED","Tegulidae","Tegula","9297"
+6859,"Mollusca","Gastropoda","Archaeogastropoda","Agathistoma",5.33,2.59,"Zanclean","Piacenzian",5.333,2.58,,,,,,
 6860,"Mollusca","Gastropoda","Archaeogastropoda","Agathodonta",143.1,126.5,"Berriasian","Hauterivian",143.1,125.77,"Mollusca","Gastropoda","NO_ORDER_SPECIFIED","Chilodontaidae","Agathodonta","8526"
 6861,"Mollusca","Gastropoda","Archaeogastropoda","Agnesia",410.51,264.34,"Emsian","Wordian",410.62,264.28,"Mollusca","Gastropoda","Murchisoniina","Porcelliidae","Agnesia","8527"
 6862,"Mollusca","Gastropoda","Archaeogastropoda","Agniesella",410.51,385.3,"Emsian","Eifelian",410.62,387.95,"Mollusca","Gastropoda","NO_ORDER_SPECIFIED","NO_FAMILY_SPECIFIED","Agniesella","8528"
@@ -6913,7 +6913,7 @@
 6930,"Mollusca","Gastropoda","Archaeogastropoda","Bathybembix",37.71,0,"Priabonian","Holocene",37.71,0,"Mollusca","Gastropoda","NO_ORDER_SPECIFIED","Eucyclidae","Bathybembix","8598"
 6931,"Mollusca","Gastropoda","Archaeogastropoda","Bathyclides",237,201.36,"Carnian","Rhaetian",237,201.4,"Mollusca","Gastropoda","Euomphalina","Codonocheilidae","Bathyclides","8599"
 6932,"Mollusca","Gastropoda","Archaeogastropoda","Baylea",394.3,254.24,"Eifelian","Wuchiapingian",393.47,254.14,"Mollusca","Gastropoda","Murchisoniina","Gosseletinidae","Baylea","8600"
-6933,"Mollusca","Gastropoda","Archaeogastropoda","Bellastraea",5.33,2.59,"Zanclean","Piacenzian",5.333,2.58,"Mollusca","Gastropoda","NO_ORDER_SPECIFIED","Turbinidae","Astralium","8575"
+6933,"Mollusca","Gastropoda","Archaeogastropoda","Bellastraea",5.33,2.59,"Zanclean","Piacenzian",5.333,2.58,,,,,,
 6934,"Mollusca","Gastropoda","Archaeogastropoda","Bellazona",340.2,323.4,"Visean","Serpukhovian",346.7,323.4,"Mollusca","Gastropoda","Murchisoniina","Murchisoniidae","Bellazona","8602"
 6935,"Mollusca","Gastropoda","Archaeogastropoda","Bembexia",419,323.4,"Lochkovian","Serpukhovian",419.62,323.4,"Mollusca","Gastropoda","Murchisoniina","Eotomariidae","Bembexia","8603"
 6936,"Mollusca","Gastropoda","Archaeogastropoda","Beraunia",426.74,378.9,"Gorstian","Givetian",426.7,382.31,"Mollusca","Gastropoda","Euomphalina","Oriostomatidae","Beraunia","8604"
@@ -7117,7 +7117,7 @@
 7134,"Mollusca","Gastropoda","Archaeogastropoda","Euriclanculus",5.33,2.59,"Zanclean","Piacenzian",5.333,2.58,"Mollusca","Gastropoda","Archaeogastropoda","NO_FAMILY_SPECIFIED","Euriclanculus","8804"
 7135,"Mollusca","Gastropoda","Archaeogastropoda","Euryalox",246.7,201.36,"Anisian","Rhaetian",246.7,201.4,"Mollusca","Gastropoda","Murchisoniina","Phymatopleuridae","Euryalox","8805"
 7136,"Mollusca","Gastropoda","Archaeogastropoda","Euryzone",426.74,371.1,"Gorstian","Frasnian",426.7,372.15,"Mollusca","Gastropoda","Murchisoniina","Gosseletinidae","Euryzone","8806"
-7137,"Mollusca","Gastropoda","Archaeogastropoda","Euthyrachis",385.3,378.9,"Givetian","Givetian",387.95,382.31,"Mollusca","Gastropoda","Archaeogastropoda","NO_FAMILY_SPECIFIED","Euthyrachis","8807"
+7137,"Mollusca","Gastropoda","Archaeogastropoda","Euthyrachis",385.3,378.9,"Givetian","Givetian",387.95,382.31,,,,,,
 7138,"Mollusca","Gastropoda","Archaeogastropoda","Eutinochilus",56,33.9,"Ypresian","Priabonian",56,33.9,,,,,,
 7139,"Mollusca","Gastropoda","Archaeogastropoda","Euzone",246.7,227.3,"Anisian","Carnian",246.7,227.3,"Mollusca","Gastropoda","Murchisoniina","Gosseletinidae","Euzone","8809"
 7140,"Mollusca","Gastropoda","Archaeogastropoda","Eymarella",241.46,201.36,"Ladinian","Rhaetian",241.464,201.4,"Mollusca","Gastropoda","Murchisoniina","Phymatopleuridae","Eymarella","8810"
@@ -7366,7 +7366,7 @@
 7383,"Mollusca","Gastropoda","Archaeogastropoda","Otukaia",5.33,2.59,"Zanclean","Piacenzian",5.333,2.58,,,,,,
 7384,"Mollusca","Gastropoda","Archaeogastropoda","Ovinotis",3.6,2.58,"Piacenzian","Piacenzian",3.6,2.58,"Mollusca","Gastropoda","Archaeogastropoda","NO_FAMILY_SPECIFIED","Ovinotis","9058"
 7385,"Mollusca","Gastropoda","Archaeogastropoda","Oxystele",33.9,27.29,"Rupelian","Rupelian",33.9,27.3,"Mollusca","Gastropoda","NO_ORDER_SPECIFIED","Trochidae","Oxystele","9059"
-7386,"Mollusca","Gastropoda","Archaeogastropoda","Ozarkispira",485.85,481.465,"Tremadocian","Tremadocian",486.85,477.1,,,,,,
+7386,"Mollusca","Gastropoda","Archaeogastropoda","Ozarkispira",485.85,481.465,"Tremadocian","Tremadocian",486.85,477.1,"Mollusca","Gastropoda","Euomphalina","Ophiletidae","Ophileta","8478"
 7387,"Mollusca","Gastropoda","Archaeogastropoda","Ozodochilus",170.9,149.24,"Bajocian","Kimmeridgian",170.9,149.2,"Mollusca","Gastropoda","NO_ORDER_SPECIFIED","Trochidae","Ozodochilus","9061"
 7388,"Mollusca","Gastropoda","Archaeogastropoda","Pachydontella",3.6,2.58,"Piacenzian","Piacenzian",3.6,2.58,"Mollusca","Gastropoda","NO_ORDER_SPECIFIED","Trochidae","Pachydontella","9062"
 7389,"Mollusca","Gastropoda","Archaeogastropoda","Pachyomphalus",249.88,237,"Olenekian","Ladinian",249.9,237,"Mollusca","Gastropoda","Neritoina","Tricolnaticopsidae","Pachyomphalus","9063"
@@ -7819,15 +7819,15 @@
 7837,"Mollusca","Gastropoda","Neotaenioglossa","Austroaporrhais",72.17,56,"Maastrichtian","Thanetian",72.2,56,"Mollusca","Gastropoda","Sorbeoconcha","Aporrhaidae","Austroaporrhais","9518"
 7838,"Mollusca","Gastropoda","Neotaenioglossa","Austrocochlis",23.04,11.63,"Aquitanian","Tortonian",23.04,7.246,"Mollusca","Gastropoda","Sorbeoconcha","Naticidae","Austrocochlis","9519"
 7839,"Mollusca","Gastropoda","Neotaenioglossa","Austrocypraea",41.03,11.63,"Bartonian","Tortonian",41.03,7.246,"Mollusca","Gastropoda","Sorbeoconcha","Cypraeidae","Austrocypraea","9520"
-7840,"Mollusca","Gastropoda","Neotaenioglossa","Austrosassia",56,33.9,"Ypresian","Priabonian",56,33.9,,,,,,
-7841,"Mollusca","Gastropoda","Neotaenioglossa","Austrotriton",56,15.99,"Ypresian","Burdigalian",56,15.98,,,,,,
+7840,"Mollusca","Gastropoda","Neotaenioglossa","Austrosassia",56,33.9,"Ypresian","Priabonian",56,33.9,"Mollusca","Gastropoda","Sorbeoconcha","Ranellidae","Sassia","106010"
+7841,"Mollusca","Gastropoda","Neotaenioglossa","Austrotriton",56,15.99,"Ypresian","Burdigalian",56,15.98,"Mollusca","Gastropoda","Sorbeoconcha","Ranellidae","Sassia","106010"
 7842,"Mollusca","Gastropoda","Neotaenioglossa","Bactrospira",5.33,2.59,"Zanclean","Piacenzian",5.333,2.58,,,,,,
 7843,"Mollusca","Gastropoda","Neotaenioglossa","Balcis",66.04,0,"Danian","Holocene",66,0,"Mollusca","Gastropoda","NO_ORDER_SPECIFIED","Eulimidae","Balcis","9524"
 7844,"Mollusca","Gastropoda","Neotaenioglossa","Banis",85.7,85.3,"Santonian","Santonian",85.7,83.6,"Mollusca","Gastropoda","Sorbeoconcha","Naticidae","Banis","9525"
 7845,"Mollusca","Gastropoda","Neotaenioglossa","Barleeia",37.71,33.9,"Priabonian","Priabonian",37.71,33.9,"Mollusca","Gastropoda","Sorbeoconcha","Barleeiidae","Barleeia","9526"
 7846,"Mollusca","Gastropoda","Neotaenioglossa","Barycypraea",33.9,3.6,"Rupelian","Zanclean",33.9,3.6,"Mollusca","Gastropoda","Sorbeoconcha","Cypraeidae","Barycypraea","9527"
 7847,"Mollusca","Gastropoda","Neotaenioglossa","Basilirata",66.04,23.04,"Danian","Chattian",66,23.04,,,,,,
-7848,"Mollusca","Gastropoda","Neotaenioglossa","Basilitrona",23.04,15.99,"Aquitanian","Burdigalian",23.04,15.98,,,,,,
+7848,"Mollusca","Gastropoda","Neotaenioglossa","Basilitrona",23.04,15.99,"Aquitanian","Burdigalian",23.04,15.98,"Mollusca","Gastropoda","Sorbeoconcha","Cypraeidae","Luria","115679"
 7849,"Mollusca","Gastropoda","Neotaenioglossa","Bathraspira",143.1,66,"Berriasian","Danian",143.1,61.66,"Mollusca","Gastropoda","Allogastropoda","Mathildidae","Bathraspira","9530"
 7850,"Mollusca","Gastropoda","Neotaenioglossa","Bathygalea",3.6,2.58,"Piacenzian","Piacenzian",3.6,2.58,"Mollusca","Gastropoda","Sorbeoconcha","Cassidae","Echinophoria","9793"
 7851,"Mollusca","Gastropoda","Neotaenioglossa","Batillaria",66.04,0,"Danian","Holocene",66,0,"Mollusca","Gastropoda","NO_ORDER_SPECIFIED","Batillariidae","Batillaria","9532"
@@ -7867,7 +7867,7 @@
 7885,"Mollusca","Gastropoda","Neotaenioglossa","Brochina",3.6,0,"Piacenzian","Holocene",3.6,0,,,,,,
 7886,"Mollusca","Gastropoda","Neotaenioglossa","Brookesena",20.45,0,"Burdigalian","Holocene",20.45,0,,,,,,
 7887,"Mollusca","Gastropoda","Neotaenioglossa","Brunonia",126.5,66,"Barremian","Danian",125.77,61.66,"Mollusca","Gastropoda","NO_ORDER_SPECIFIED","Carinariidae","Brunonia","9568"
-7888,"Mollusca","Gastropoda","Neotaenioglossa","Bufonariella",3.6,2.58,"Piacenzian","Piacenzian",3.6,2.58,,,,,,
+7888,"Mollusca","Gastropoda","Neotaenioglossa","Bufonariella",3.6,2.58,"Piacenzian","Piacenzian",3.6,2.58,"Mollusca","Gastropoda","Sorbeoconcha","Bursidae","Bursa","9572"
 7889,"Mollusca","Gastropoda","Neotaenioglossa","Bulbus",11.63,0,"Tortonian","Holocene",11.63,0,"Mollusca","Gastropoda","Sorbeoconcha","Naticidae","Bulbus","9570"
 7890,"Mollusca","Gastropoda","Neotaenioglossa","Bulimorpha",346.73,323.7,"Visean","Serpukhovian",346.7,323.4,"Mollusca","Gastropoda","Murchisoniina","Soleniscidae","Bulimorpha","9571"
 7891,"Mollusca","Gastropoda","Neotaenioglossa","Bursa",59.24,0,"Thanetian","Holocene",59.24,0,"Mollusca","Gastropoda","Sorbeoconcha","Bursidae","Bursa","9572"
@@ -7879,7 +7879,7 @@
 7897,"Mollusca","Gastropoda","Neotaenioglossa","Callispira",315.15,307.02,"Moscovian","Moscovian",315.2,307,"Mollusca","Gastropoda","NO_ORDER_SPECIFIED","Acanthonematidae","Callispira","9578"
 7898,"Mollusca","Gastropoda","Neotaenioglossa","Callistocypraea",37.71,33.9,"Priabonian","Priabonian",37.71,33.9,,,,,,
 7899,"Mollusca","Gastropoda","Neotaenioglossa","Callusaria",23.04,0.0117,"Aquitanian","Late Pleistocene",23.04,0.0117,,,,,,
-7900,"Mollusca","Gastropoda","Neotaenioglossa","Calpurna",56,0,"Ypresian","Holocene",56,0,,,,,,
+7900,"Mollusca","Gastropoda","Neotaenioglossa","Calpurna",56,0,"Ypresian","Holocene",56,0,"Mollusca","Gastropoda","Sorbeoconcha","Ovulidae","Simnia","10466"
 7901,"Mollusca","Gastropoda","Neotaenioglossa","Calvadosiella",157.8,154.78,"Oxfordian","Oxfordian",161.5,154.8,"Mollusca","Gastropoda","Sorbeoconcha","Rissoidae","Calvadosiella","9582"
 7902,"Mollusca","Gastropoda","Neotaenioglossa","Calyptraea",100.5,0,"Cenomanian","Holocene",100.5,0,"Mollusca","Gastropoda","Sorbeoconcha","Calyptraeidae","Calyptraea","9583"
 7903,"Mollusca","Gastropoda","Neotaenioglossa","Calyptroides",48.07,33.9,"Lutetian","Priabonian",48.07,33.9,"Mollusca","Gastropoda","Sorbeoconcha","Calyptraeidae","Calyptroides","9584"
@@ -7899,11 +7899,11 @@
 7917,"Mollusca","Gastropoda","Neotaenioglossa","Casimiria",56,33.9,"Ypresian","Priabonian",56,33.9,"Mollusca","Gastropoda","Sorbeoconcha","Trypanaxidae","Casimiria","9598"
 7918,"Mollusca","Gastropoda","Neotaenioglossa","Casmaria",2.59,0.0117,"Piacenzian","Late Pleistocene",3.6,0.0117,"Mollusca","Gastropoda","Sorbeoconcha","Cassidae","Casmaria","9599"
 7919,"Mollusca","Gastropoda","Neotaenioglossa","Cassianozyga",239.48,237,"Ladinian","Ladinian",241.464,237,"Mollusca","Gastropoda","NO_ORDER_SPECIFIED","NO_FAMILY_SPECIFIED","Cassianozyga","9600"
-7920,"Mollusca","Gastropoda","Neotaenioglossa","Cassidaria",56,48.07,"Ypresian","Ypresian",56,48.07,,,,,,
+7920,"Mollusca","Gastropoda","Neotaenioglossa","Cassidaria",56,48.07,"Ypresian","Ypresian",56,48.07,"Mollusca","Gastropoda","Sorbeoconcha","Cassidae","Galeodea","9878"
 7921,"Mollusca","Gastropoda","Neotaenioglossa","Cassiope",121.4,72.17,"Aptian","Campanian",121.4,72.2,"Mollusca","Gastropoda","Sorbeoconcha","Cassiopidae","Cassiope","9602"
 7922,"Mollusca","Gastropoda","Neotaenioglossa","Cassiopella",143.1,100.5,"Berriasian","Albian",143.1,100.5,,,,,,
 7923,"Mollusca","Gastropoda","Neotaenioglossa","Cassis",59.24,0,"Thanetian","Holocene",59.24,0,"Mollusca","Gastropoda","Sorbeoconcha","Cassidae","Cassis","9604"
-7924,"Mollusca","Gastropoda","Neotaenioglossa","Catenoscala",3.6,2.58,"Piacenzian","Piacenzian",3.6,2.58,,,,,,
+7924,"Mollusca","Gastropoda","Neotaenioglossa","Catenoscala",3.6,2.58,"Piacenzian","Piacenzian",3.6,2.58,"Mollusca","Gastropoda","NO_ORDER_SPECIFIED","Epitoniidae","Boreoscala","9559"
 7925,"Mollusca","Gastropoda","Neotaenioglossa","CaucasellaA",83.65,72.17,"Campanian","Campanian",83.6,72.2,,,,,,
 7926,"Mollusca","Gastropoda","Neotaenioglossa","Cautotriphora",5.33,2.59,"Zanclean","Piacenzian",5.333,2.58,"Mollusca","Gastropoda","Sorbeoconcha","Triphoridae","Cautotriphora","9607"
 7927,"Mollusca","Gastropoda","Neotaenioglossa","Cavernisa",11.63,5.33,"Tortonian","Messinian",11.63,5.333,"Mollusca","Gastropoda","Sorbeoconcha","Hydrobiidae","Cavernisa","9608"
@@ -7934,7 +7934,7 @@
 7952,"Mollusca","Gastropoda","Neotaenioglossa","Charadreum",37.71,33.9,"Priabonian","Priabonian",37.71,33.9,"Mollusca","Gastropoda","Neotaenioglossa","NO_FAMILY_SPECIFIED","Charadreum","9633"
 7953,"Mollusca","Gastropoda","Neotaenioglossa","Charonia",77.91,0,"Campanian","Holocene",83.6,0,"Mollusca","Gastropoda","Sorbeoconcha","Ranellidae","Charonia","9634"
 7954,"Mollusca","Gastropoda","Neotaenioglossa","Chasmotheca",3.6,2.58,"Piacenzian","Piacenzian",3.6,2.58,,,,,,
-7955,"Mollusca","Gastropoda","Neotaenioglossa","Chavanicerithium",23.04,2.59,"Aquitanian","Piacenzian",23.04,2.58,,,,,,
+7955,"Mollusca","Gastropoda","Neotaenioglossa","Chavanicerithium",23.04,2.59,"Aquitanian","Piacenzian",23.04,2.58,"Mollusca","Gastropoda","NO_ORDER_SPECIFIED","Cerithiidae","Chavanicerithium","9636"
 7956,"Mollusca","Gastropoda","Neotaenioglossa","Chedevillia",59.24,48.07,"Thanetian","Ypresian",59.24,48.07,"Mollusca","Gastropoda","Sorbeoconcha","Rostellariidae","Chedevillia","9637"
 7957,"Mollusca","Gastropoda","Neotaenioglossa","Cheilea",41.03,0,"Bartonian","Holocene",41.03,0,"Mollusca","Gastropoda","Sorbeoconcha","Hipponicidae","Cheilea","9638"
 7958,"Mollusca","Gastropoda","Neotaenioglossa","Chevallieria",59.24,0,"Thanetian","Holocene",59.24,0,"Mollusca","Gastropoda","Sorbeoconcha","Iravadiidae","Chevallieria","9639"
@@ -7951,7 +7951,7 @@
 7969,"Mollusca","Gastropoda","Neotaenioglossa","Cirsomphalus",59.24,56,"Thanetian","Thanetian",59.24,56,"Mollusca","Gastropoda","Sorbeoconcha","Emmerciidae","Cirsomphalus","9650"
 7970,"Mollusca","Gastropoda","Neotaenioglossa","Cirsope",59.24,27.29,"Thanetian","Rupelian",59.24,27.3,"Mollusca","Gastropoda","Sorbeoconcha","Elachisinidae","Cirsope","9651"
 7971,"Mollusca","Gastropoda","Neotaenioglossa","Cirsotrema",48.07,0,"Lutetian","Holocene",48.07,0,"Mollusca","Gastropoda","NO_ORDER_SPECIFIED","Epitoniidae","Cirsotrema","9652"
-7972,"Mollusca","Gastropoda","Neotaenioglossa","Clathrobaculus",201.36,33.9,"Hettangian","Priabonian",201.4,33.9,"Mollusca","Gastropoda","Allogastropoda","Gordenellidae","Promathildia","12174"
+7972,"Mollusca","Gastropoda","Neotaenioglossa","Clathrobaculus",201.36,33.9,"Hettangian","Priabonian",201.4,33.9,,,,,,
 7973,"Mollusca","Gastropoda","Neotaenioglossa","Clathronema",389.6,378.9,"Eifelian","Givetian",393.47,382.31,"Mollusca","Gastropoda","Murchisoniina","Loxonematidae","Clathronema","9654"
 7974,"Mollusca","Gastropoda","Neotaenioglossa","Clathroscala",20.45,0,"Burdigalian","Holocene",20.45,0,"Mollusca","Gastropoda","NO_ORDER_SPECIFIED","Epitoniidae","Clathroscala","9655"
 7975,"Mollusca","Gastropoda","Neotaenioglossa","Clathrus",56,33.9,"Ypresian","Priabonian",56,33.9,"Mollusca","Gastropoda","NO_ORDER_SPECIFIED","Epitoniidae","Clathrus","9656"
@@ -7961,7 +7961,7 @@
 7979,"Mollusca","Gastropoda","Neotaenioglossa","Cleotrivia",15.99,11.63,"Langhian","Tortonian",15.98,7.246,"Mollusca","Gastropoda","Sorbeoconcha","Triviidae","Cleotrivia","9660"
 7980,"Mollusca","Gastropoda","Neotaenioglossa","Climacina",199.46,192.9,"Sinemurian","Sinemurian",199.5,192.9,"Mollusca","Gastropoda","Sorbeoconcha","Procerithiidae","Climacina","9661"
 7981,"Mollusca","Gastropoda","Neotaenioglossa","Cloughtonia",192.9,143.1,"Pliensbachian","Tithonian",192.9,143.1,,,,,,
-7982,"Mollusca","Gastropoda","Neotaenioglossa","Clypeola",37.71,33.9,"Priabonian","Priabonian",37.71,33.9,"Mollusca","Gastropoda","Sorbeoconcha","Calyptraeidae","Clypeola","9663"
+7982,"Mollusca","Gastropoda","Neotaenioglossa","Clypeola",37.71,33.9,"Priabonian","Priabonian",37.71,33.9,,,,,,
 7983,"Mollusca","Gastropoda","Neotaenioglossa","Clypeomorus",23.04,0,"Aquitanian","Holocene",23.04,0,"Mollusca","Gastropoda","NO_ORDER_SPECIFIED","Cerithiidae","Clypeomorus","9664"
 7984,"Mollusca","Gastropoda","Neotaenioglossa","Coalingodea",48.07,37.71,"Lutetian","Bartonian",48.07,37.71,"Mollusca","Gastropoda","Sorbeoconcha","Cassidae","Coalingodea","9665"
 7985,"Mollusca","Gastropoda","Neotaenioglossa","Cochiolepis",11.63,5.33,"Tortonian","Messinian",11.63,5.333,"Mollusca","Gastropoda","Sorbeoconcha","Vitrinellidae","Cochiolepis","9666"
@@ -8049,7 +8049,7 @@
 8067,"Mollusca","Gastropoda","Neotaenioglossa","Diaerecallus",15.99,11.63,"Langhian","Tortonian",15.98,7.246,,,,,,
 8068,"Mollusca","Gastropoda","Neotaenioglossa","Diala",23.04,0,"Aquitanian","Holocene",23.04,0,"Mollusca","Gastropoda","NO_ORDER_SPECIFIED","Dialidae","Diala","9749"
 8069,"Mollusca","Gastropoda","Neotaenioglossa","Dialopsis",48.07,2.58,"Lutetian","Piacenzian",48.07,2.58,"Mollusca","Gastropoda","NO_ORDER_SPECIFIED","Diastomatidae","Dialopsis","9750"
-8070,"Mollusca","Gastropoda","Neotaenioglossa","Dialytostoma",48.07,2.58,"Lutetian","Piacenzian",48.07,2.58,"Mollusca","Gastropoda","NO_ORDER_SPECIFIED","Vanikoridae","Macromphalus","12303"
+8070,"Mollusca","Gastropoda","Neotaenioglossa","Dialytostoma",48.07,2.58,"Lutetian","Piacenzian",48.07,2.58,,,,,,
 8071,"Mollusca","Gastropoda","Neotaenioglossa","Diameza",48.07,41.03,"Lutetian","Lutetian",48.07,41.03,"Mollusca","Gastropoda","Sorbeoconcha","Seraphsidae","Diameza","9752"
 8072,"Mollusca","Gastropoda","Neotaenioglossa","Diarthema",167,93.9,"Bathonian","Cenomanian",168.2,93.9,"Mollusca","Gastropoda","Sorbeoconcha","Aporrhaidae","Diarthema","9753"
 8073,"Mollusca","Gastropoda","Neotaenioglossa","Diastoma",83.65,0,"Campanian","Holocene",83.6,0,"Mollusca","Gastropoda","NO_ORDER_SPECIFIED","Diastomatidae","Diastoma","9754"
@@ -8063,7 +8063,7 @@
 8081,"Mollusca","Gastropoda","Neotaenioglossa","Dilatilabrum",48.07,20.45,"Lutetian","Aquitanian",48.07,20.45,"Mollusca","Gastropoda","Sorbeoconcha","Strombidae","Dilatilabrum","9762"
 8082,"Mollusca","Gastropoda","Neotaenioglossa","Diminovula",2.59,0.0117,"Piacenzian","Late Pleistocene",3.6,0.0117,"Mollusca","Gastropoda","Sorbeoconcha","Ovulidae","Diminovula","9763"
 8083,"Mollusca","Gastropoda","Neotaenioglossa","Dinaxis",66.04,56,"Danian","Thanetian",66,56,"Mollusca","Gastropoda","Heterostropha","Architectonicidae","Dinaxis","9764"
-8084,"Mollusca","Gastropoda","Neotaenioglossa","Diplocyma",37.71,33.9,"Priabonian","Priabonian",37.71,33.9,"Mollusca","Gastropoda","NO_ORDER_SPECIFIED","Potamididae","Diplocyma","9765"
+8084,"Mollusca","Gastropoda","Neotaenioglossa","Diplocyma",37.71,33.9,"Priabonian","Priabonian",37.71,33.9,,,,,,
 8085,"Mollusca","Gastropoda","Neotaenioglossa","Diptychochilus",56,33.9,"Ypresian","Priabonian",56,33.9,,,,,,
 8086,"Mollusca","Gastropoda","Neotaenioglossa","Dircella",72.17,69.9,"Maastrichtian","Maastrichtian",72.2,66,"Mollusca","Gastropoda","NO_ORDER_SPECIFIED","Potamididae","Dircella","9767"
 8087,"Mollusca","Gastropoda","Neotaenioglossa","Dirocerithium",48.07,33.9,"Lutetian","Priabonian",48.07,33.9,"Mollusca","Gastropoda","NO_ORDER_SPECIFIED","Cerithiidae","Dirocerithium","9768"
@@ -8153,7 +8153,7 @@
 8171,"Mollusca","Gastropoda","Neotaenioglossa","Fastigiella",59.24,56,"Thanetian","Thanetian",59.24,56,"Mollusca","Gastropoda","NO_ORDER_SPECIFIED","Cerithiidae","Fastigiella","9852"
 8172,"Mollusca","Gastropoda","Neotaenioglossa","Faxxia",66.04,61.66,"Danian","Danian",66,61.66,"Mollusca","Gastropoda","Neotaenioglossa","NO_FAMILY_SPECIFIED","Faxxia","9853"
 8173,"Mollusca","Gastropoda","Neotaenioglossa","Fibula",209.51,201.36,"Rhaetian","Rhaetian",205.7,201.4,,,,,,
-8174,"Mollusca","Gastropoda","Neotaenioglossa","Ficopsis",59.24,33.9,"Thanetian","Priabonian",59.24,33.9,"Mollusca","Gastropoda","Sorbeoconcha","Ficidae","Ficus","9857"
+8174,"Mollusca","Gastropoda","Neotaenioglossa","Ficopsis",59.24,33.9,"Thanetian","Priabonian",59.24,33.9,,,,,,
 8175,"Mollusca","Gastropoda","Neotaenioglossa","Fictonoba",5.33,3.6,"Zanclean","Zanclean",5.333,3.6,"Mollusca","Gastropoda","Sorbeoconcha","Barleeiidae","Fictonoba","9856"
 8176,"Mollusca","Gastropoda","Neotaenioglossa","Ficus",59.24,0,"Thanetian","Holocene",59.24,0,"Mollusca","Gastropoda","Sorbeoconcha","Ficidae","Ficus","9857"
 8177,"Mollusca","Gastropoda","Neotaenioglossa","Fimbriatella",59.24,2.59,"Thanetian","Piacenzian",59.24,2.58,"Mollusca","Gastropoda","Allogastropoda","Mathildidae","Fimbriatella","9858"
@@ -8179,7 +8179,7 @@
 8197,"Mollusca","Gastropoda","Neotaenioglossa","Galeodea",59.24,0,"Thanetian","Holocene",59.24,0,"Mollusca","Gastropoda","Sorbeoconcha","Cassidae","Galeodea","9878"
 8198,"Mollusca","Gastropoda","Neotaenioglossa","Galeodina",2.59,0.0117,"Piacenzian","Late Pleistocene",3.6,0.0117,,,,,,
 8199,"Mollusca","Gastropoda","Neotaenioglossa","Galeodinopsis",27.29,2.59,"Chattian","Piacenzian",27.3,2.58,"Mollusca","Gastropoda","Sorbeoconcha","Rissoidae","Galeodinopsis","9880"
-8200,"Mollusca","Gastropoda","Neotaenioglossa","Galeoocorys",20.45,0,"Burdigalian","Holocene",20.45,0,,,,,,
+8200,"Mollusca","Gastropoda","Neotaenioglossa","Galeoocorys",20.45,0,"Burdigalian","Holocene",20.45,0,"Mollusca","Gastropoda","Sorbeoconcha","Cassidae","Galeodea","9878"
 8201,"Mollusca","Gastropoda","Neotaenioglossa","Galericulus",107.6,100.5,"Albian","Albian",113.2,100.5,"Mollusca","Gastropoda","NO_ORDER_SPECIFIED","NO_FAMILY_SPECIFIED","Galericulus","9882"
 8202,"Mollusca","Gastropoda","Neotaenioglossa","Gamizyga",311.7,274.37,"Moscovian","Kungurian",315.2,274.4,"Mollusca","Gastropoda","NO_ORDER_SPECIFIED","Pseudozygopleuridae","Gamizyga","9883"
 8203,"Mollusca","Gastropoda","Neotaenioglossa","Garnotia",3.6,2.58,"Piacenzian","Piacenzian",3.6,2.58,,,,,,
@@ -8191,7 +8191,7 @@
 8209,"Mollusca","Gastropoda","Neotaenioglossa","Gigantocapulus",83.65,77.91,"Campanian","Campanian",83.6,72.2,"Mollusca","Gastropoda","NO_ORDER_SPECIFIED","Gigantocapulidae","Gigantocapulus","9891"
 8210,"Mollusca","Gastropoda","Neotaenioglossa","Gigantocypraea",27.29,11.63,"Chattian","Tortonian",27.3,7.246,"Mollusca","Gastropoda","Sorbeoconcha","Cypraeidae","Zoila","10703"
 8211,"Mollusca","Gastropoda","Neotaenioglossa","Gigantogonia",241.46,237,"Ladinian","Ladinian",241.464,237,"Mollusca","Gastropoda","NO_ORDER_SPECIFIED","Coelostylinidae","Gigantogonia","9893"
-8212,"Mollusca","Gastropoda","Neotaenioglossa","Girvania",451.3,449.2,"Katian","Katian",452.8,445.2,,,,,,
+8212,"Mollusca","Gastropoda","Neotaenioglossa","Girvania",451.3,449.2,"Katian","Katian",452.8,445.2,"Mollusca","Gastropoda","Murchisoniina","Loxonematidae","Spiroecus","10491"
 8213,"Mollusca","Gastropoda","Neotaenioglossa","Gisortia",59.24,33.9,"Thanetian","Priabonian",59.24,33.9,"Mollusca","Gastropoda","Sorbeoconcha","Cypraeidae","Gisortia","9895"
 8214,"Mollusca","Gastropoda","Neotaenioglossa","Glauconia",143.1,66.04,"Berriasian","Maastrichtian",143.1,66,,,,,,
 8215,"Mollusca","Gastropoda","Neotaenioglossa","Glauconiella",89.39,72.17,"Coniacian","Campanian",89.8,72.2,"Mollusca","Gastropoda","Sorbeoconcha","Cassiopidae","Glauconiella","9897"
@@ -8258,14 +8258,14 @@
 8276,"Mollusca","Gastropoda","Neotaenioglossa","Heterogyrella",241.46,227.3,"Ladinian","Carnian",241.464,227.3,"Mollusca","Gastropoda","NO_ORDER_SPECIFIED","Cerithiidae","Heterogyrella","9958"
 8277,"Mollusca","Gastropoda","Neotaenioglossa","Heterospira",241.46,201.36,"Ladinian","Rhaetian",241.464,201.4,"Mollusca","Gastropoda","Sorbeoconcha","Littorinidae","Heterospira","9959"
 8278,"Mollusca","Gastropoda","Neotaenioglossa","Hexaglauconia",100.5,85.7,"Cenomanian","Coniacian",100.5,85.7,"Mollusca","Gastropoda","Sorbeoconcha","Cassiopidae","Hexaglauconia","9960"
-8279,"Mollusca","Gastropoda","Neotaenioglossa","Hilda",56,11.63,"Ypresian","Tortonian",56,7.246,,,,,,
+8279,"Mollusca","Gastropoda","Neotaenioglossa","Hilda",56,11.63,"Ypresian","Tortonian",56,7.246,"Mollusca","Gastropoda","Neogastropoda","Buccinidae","Pisania","11526"
 8280,"Mollusca","Gastropoda","Neotaenioglossa","Hippochrene",66.04,27.29,"Danian","Rupelian",66,27.3,,,,,,
 8281,"Mollusca","Gastropoda","Neotaenioglossa","Hipponix",107.6,0,"Albian","Holocene",113.2,0,"Mollusca","Gastropoda","Sorbeoconcha","Hipponicidae","Hipponix","9963"
 8282,"Mollusca","Gastropoda","Neotaenioglossa","Hirsonella",168.17,165.29,"Bathonian","Bathonian",168.2,165.3,"Mollusca","Gastropoda","NO_ORDER_SPECIFIED","NO_FAMILY_SPECIFIED","Hirsonella","9964"
 8283,"Mollusca","Gastropoda","Neotaenioglossa","Hirtoscala",3.6,2.58,"Piacenzian","Piacenzian",3.6,2.58,,,,,,
-8284,"Mollusca","Gastropoda","Neotaenioglossa","Hopkinsiana",56,33.9,"Ypresian","Priabonian",56,33.9,"Mollusca","Gastropoda","Neotaenioglossa","NO_FAMILY_SPECIFIED","Hopkinsiana","9966"
+8284,"Mollusca","Gastropoda","Neotaenioglossa","Hopkinsiana",56,33.9,"Ypresian","Priabonian",56,33.9,,,,,,
 8285,"Mollusca","Gastropoda","Neotaenioglossa","Hordeulima",11.63,7.25,"Tortonian","Tortonian",11.63,7.246,,,,,,
-8286,"Mollusca","Gastropoda","Neotaenioglossa","Horizostoma",110.3,93.9,"Albian","Cenomanian",113.2,93.9,"Mollusca","Gastropoda","Neotaenioglossa","NO_FAMILY_SPECIFIED","Horizostoma","9968"
+8286,"Mollusca","Gastropoda","Neotaenioglossa","Horizostoma",110.3,93.9,"Albian","Cenomanian",113.2,93.9,,,,,,
 8287,"Mollusca","Gastropoda","Neotaenioglossa","Hudlestonella",170.9,161.53,"Bajocian","Callovian",170.9,161.5,"Mollusca","Gastropoda","NO_ORDER_SPECIFIED","Pseudomelaniidae","Hudlestonella","9969"
 8288,"Mollusca","Gastropoda","Neotaenioglossa","Hwaania",201.36,174.7,"Hettangian","Toarcian",201.4,174.7,"Mollusca","Gastropoda","Neotaenioglossa","NO_FAMILY_SPECIFIED","Hwaania","9970"
 8289,"Mollusca","Gastropoda","Neotaenioglossa","Hyala",27.29,23.04,"Chattian","Chattian",27.3,23.04,"Mollusca","Gastropoda","Sorbeoconcha","Capulidae","Hyala","9971"
@@ -8380,12 +8380,12 @@
 8398,"Mollusca","Gastropoda","Neotaenioglossa","Lyncina",23.04,15.99,"Aquitanian","Burdigalian",23.04,15.98,"Mollusca","Gastropoda","Sorbeoconcha","Cypraeidae","Lyncina","115692"
 8399,"Mollusca","Gastropoda","Neotaenioglossa","Lysiogyrus",66.04,23.04,"Danian","Chattian",66,23.04,"Mollusca","Gastropoda","Sorbeoconcha","Hydrobiidae","Lysiogyrus","10081"
 8400,"Mollusca","Gastropoda","Neotaenioglossa","Lysis",85.7,66.04,"Santonian","Maastrichtian",85.7,66,"Mollusca","Gastropoda","Sorbeoconcha","Capulidae","Lysis","10082"
-8401,"Mollusca","Gastropoda","Neotaenioglossa","Macilentos",56,41.03,"Ypresian","Lutetian",56,41.03,"Mollusca","Gastropoda","Sorbeoconcha","Strombidae","Rimella","10416"
+8401,"Mollusca","Gastropoda","Neotaenioglossa","Macilentos",56,41.03,"Ypresian","Lutetian",56,41.03,,,,,,
 8402,"Mollusca","Gastropoda","Neotaenioglossa","Macrocypraea",23.04,15.99,"Aquitanian","Burdigalian",23.04,15.98,"Mollusca","Gastropoda","Sorbeoconcha","Cypraeidae","Macrocypraea","10084"
 8403,"Mollusca","Gastropoda","Neotaenioglossa","Magnatica",66.04,5.33,"Danian","Messinian",66,5.333,"Mollusca","Gastropoda","Sorbeoconcha","Naticidae","Magnatica","86400"
 8404,"Mollusca","Gastropoda","Neotaenioglossa","Malea",56,0,"Ypresian","Holocene",56,0,"Mollusca","Gastropoda","Sorbeoconcha","Tonnidae","Malea","10086"
 8405,"Mollusca","Gastropoda","Neotaenioglossa","Malluvium",3.6,2.58,"Piacenzian","Piacenzian",3.6,2.58,,,,,,
-8406,"Mollusca","Gastropoda","Neotaenioglossa","Mambrinia",56,27.29,"Ypresian","Rupelian",56,27.3,"Mollusca","Gastropoda","Sorbeoconcha","Cassidae","Galeodea","9878"
+8406,"Mollusca","Gastropoda","Neotaenioglossa","Mambrinia",56,27.29,"Ypresian","Rupelian",56,27.3,,,,,,
 8407,"Mollusca","Gastropoda","Neotaenioglossa","Mammilla",56,33.9,"Ypresian","Priabonian",56,33.9,"Mollusca","Gastropoda","Sorbeoconcha","Naticidae","Mammilla","10089"
 8408,"Mollusca","Gastropoda","Neotaenioglossa","Manawatawhia",5.33,3.6,"Zanclean","Zanclean",5.333,3.6,,,,,,
 8409,"Mollusca","Gastropoda","Neotaenioglossa","Mandolina",33.9,11.63,"Rupelian","Tortonian",33.9,7.246,"Mollusca","Gastropoda","Sorbeoconcha","Cypraeidae","Mandolina","10091"
@@ -8629,10 +8629,10 @@
 8647,"Mollusca","Gastropoda","Neotaenioglossa","Protorcula",244.24,201.36,"Anisian","Rhaetian",246.7,201.4,"Mollusca","Gastropoda","NO_ORDER_SPECIFIED","Protorculidae","Protorcula","10332"
 8648,"Mollusca","Gastropoda","Neotaenioglossa","Protostylifera",239.48,237,"Ladinian","Ladinian",241.464,237,"Mollusca","Gastropoda","Neotaenioglossa","NO_FAMILY_SPECIFIED","Protostylifera","10333"
 8649,"Mollusca","Gastropoda","Neotaenioglossa","Protostylus",293.52,251.901,"Sakmarian","Induan",293.52,249.9,"Mollusca","Gastropoda","NO_ORDER_SPECIFIED","Coelostylinidae","Protostylus","10334"
-8650,"Mollusca","Gastropoda","Neotaenioglossa","Protuba",241.46,237,"Ladinian","Ladinian",241.464,237,,,,,,
+8650,"Mollusca","Gastropoda","Neotaenioglossa","Protuba",241.46,237,"Ladinian","Ladinian",241.464,237,"Mollusca","Gastropoda","Allogastropoda","Mathildidae","Protuba","10335"
 8651,"Mollusca","Gastropoda","Neotaenioglossa","Proturboella",143.1,137.7,"Berriasian","Berriasian",143.1,137.05,,,,,,
 8652,"Mollusca","Gastropoda","Neotaenioglossa","Provermicularia",241.46,201.36,"Ladinian","Rhaetian",241.464,201.4,,,,,,
-8653,"Mollusca","Gastropoda","Neotaenioglossa","Proxicharonia",23.04,20.45,"Aquitanian","Aquitanian",23.04,20.45,,,,,,
+8653,"Mollusca","Gastropoda","Neotaenioglossa","Proxicharonia",23.04,20.45,"Aquitanian","Aquitanian",23.04,20.45,"Mollusca","Gastropoda","Sorbeoconcha","Ranellidae","Sassia","106010"
 8654,"Mollusca","Gastropoda","Neotaenioglossa","Proxiuber",15.99,0,"Langhian","Holocene",15.98,0,"Mollusca","Gastropoda","Sorbeoconcha","Naticidae","Proxiuber","10339"
 8655,"Mollusca","Gastropoda","Neotaenioglossa","Psammodulus",15.99,11.63,"Langhian","Tortonian",15.98,7.246,"Mollusca","Gastropoda","NO_ORDER_SPECIFIED","Modulidae","Psammodulus","10340"
 8656,"Mollusca","Gastropoda","Neotaenioglossa","Pseudalaria",192.9,154.78,"Pliensbachian","Oxfordian",192.9,154.8,,,,,,
@@ -8968,7 +8968,7 @@
 8987,"Mollusca","Gastropoda","Neotaenioglossa","Wateletia",56,48.07,"Ypresian","Ypresian",56,48.07,"Mollusca","Gastropoda","Sorbeoconcha","Rostellariidae","Wateletia","10676"
 8988,"Mollusca","Gastropoda","Neotaenioglossa","Watsonia",59.24,56,"Thanetian","Thanetian",59.24,56,,,,,,
 8989,"Mollusca","Gastropoda","Neotaenioglossa","Wendella",59.24,56,"Thanetian","Thanetian",59.24,56,"Mollusca","Gastropoda","NO_ORDER_SPECIFIED","Cerithiidae","Wendella","10678"
-8990,"Mollusca","Gastropoda","Neotaenioglossa","Wexfordia",5.33,2.59,"Zanclean","Piacenzian",5.333,2.58,"Mollusca","Gastropoda","Sorbeoconcha","Trichotropidae","Wexfordia","10679"
+8990,"Mollusca","Gastropoda","Neotaenioglossa","Wexfordia",5.33,2.59,"Zanclean","Piacenzian",5.333,2.58,,,,,,
 8991,"Mollusca","Gastropoda","Neotaenioglossa","Willungia",41.03,37.71,"Bartonian","Bartonian",41.03,37.71,"Mollusca","Gastropoda","Sorbeoconcha","Eocypraeidae","Willungia","10680"
 8992,"Mollusca","Gastropoda","Neotaenioglossa","Woodsalia",100.5,33.9,"Cenomanian","Priabonian",100.5,33.9,"Mollusca","Gastropoda","NO_ORDER_SPECIFIED","Turritellidae","Woodsalia","10681"
 8993,"Mollusca","Gastropoda","Neotaenioglossa","Wyatella",48.07,33.9,"Lutetian","Priabonian",48.07,33.9,"Mollusca","Gastropoda","NO_ORDER_SPECIFIED","Turritellidae","Wyatella","10682"
@@ -9388,7 +9388,7 @@
 9407,"Mollusca","Gastropoda","Neogastropoda","Euplica",23.04,15.99,"Aquitanian","Burdigalian",23.04,15.98,"Mollusca","Gastropoda","Neogastropoda","Columbellidae","Euplica","11100"
 9408,"Mollusca","Gastropoda","Neogastropoda","Eurydike",23.04,5.33,"Aquitanian","Messinian",23.04,5.333,"Mollusca","Gastropoda","Neogastropoda","NO_FAMILY_SPECIFIED","Eurydike","11101"
 9409,"Mollusca","Gastropoda","Neogastropoda","Euryentmema",23.04,15.99,"Aquitanian","Burdigalian",23.04,15.98,"Mollusca","Gastropoda","Neogastropoda","Mangeliidae","Euryentmema","11102"
-9410,"Mollusca","Gastropoda","Neogastropoda","Euryentome",41.03,37.71,"Bartonian","Bartonian",41.03,37.71,"Mollusca","Gastropoda","Neogastropoda","NO_FAMILY_SPECIFIED","Euryentome","11103"
+9410,"Mollusca","Gastropoda","Neogastropoda","Euryentome",41.03,37.71,"Bartonian","Bartonian",41.03,37.71,,,,,,
 9411,"Mollusca","Gastropoda","Neogastropoda","Euryochetus",56,37.71,"Ypresian","Bartonian",56,37.71,"Mollusca","Gastropoda","Neogastropoda","Buccinidae","Euryochetus","11104"
 9412,"Mollusca","Gastropoda","Neogastropoda","Eurypyrene",23.04,15.99,"Aquitanian","Burdigalian",23.04,15.98,"Mollusca","Gastropoda","Neogastropoda","Columbellidae","Eurypyrene","11105"
 9413,"Mollusca","Gastropoda","Neogastropoda","Euscobinella",37.71,33.9,"Priabonian","Priabonian",37.71,33.9,"Mollusca","Gastropoda","Neogastropoda","NO_FAMILY_SPECIFIED","Euscobinella","11106"
@@ -9492,7 +9492,7 @@
 9511,"Mollusca","Gastropoda","Neogastropoda","Hispidofusus",23.04,11.63,"Aquitanian","Tortonian",23.04,7.246,"Mollusca","Gastropoda","Neogastropoda","NO_FAMILY_SPECIFIED","Hispidofusus","11205"
 9512,"Mollusca","Gastropoda","Neogastropoda","Hiwia",27.29,5.33,"Chattian","Messinian",27.3,5.333,"Mollusca","Gastropoda","Neogastropoda","NO_FAMILY_SPECIFIED","Hiwia","11206"
 9513,"Mollusca","Gastropoda","Neogastropoda","Holzapfelia",83.65,72.17,"Campanian","Campanian",83.6,72.2,"Mollusca","Gastropoda","Neogastropoda","NO_FAMILY_SPECIFIED","Holzapfelia","11207"
-9514,"Mollusca","Gastropoda","Neogastropoda","Houzeauia",66.04,57.62,"Danian","Thanetian",66,56,"Mollusca","Gastropoda","Neogastropoda","NO_FAMILY_SPECIFIED","Houzeauia","11208"
+9514,"Mollusca","Gastropoda","Neogastropoda","Houzeauia",66.04,57.62,"Danian","Thanetian",66,56,,,,,,
 9515,"Mollusca","Gastropoda","Neogastropoda","Hyalina",2.59,0.0117,"Piacenzian","Late Pleistocene",3.6,0.0117,"Mollusca","Gastropoda","Neogastropoda","Marginellidae","Hyalina","11209"
 9516,"Mollusca","Gastropoda","Neogastropoda","Hydrotribulus",87.545,69.9,"Coniacian","Maastrichtian",89.8,66,"Mollusca","Gastropoda","Neogastropoda","Buccinidae","Hydrotribulus","11210"
 9517,"Mollusca","Gastropoda","Neogastropoda","Illyanassa",23.04,15.99,"Aquitanian","Burdigalian",23.04,15.98,"Mollusca","Gastropoda","Neogastropoda","NO_FAMILY_SPECIFIED","Illyanassa","11211"
@@ -9657,7 +9657,7 @@
 9676,"Mollusca","Gastropoda","Neogastropoda","Mitridomus",77.91,66.04,"Campanian","Maastrichtian",83.6,66,"Mollusca","Gastropoda","Neogastropoda","Costellariidae","Mitridomus","11371"
 9677,"Mollusca","Gastropoda","Neogastropoda","Mitrithara",27.29,23.04,"Chattian","Chattian",27.3,23.04,"Mollusca","Gastropoda","Neogastropoda","Mitromorphidae","Mitromorpha","11375"
 9678,"Mollusca","Gastropoda","Neogastropoda","Mitrodrillia",33.9,27.29,"Rupelian","Rupelian",33.9,27.3,"Mollusca","Gastropoda","Neogastropoda","NO_FAMILY_SPECIFIED","Mitrodrillia","11373"
-9679,"Mollusca","Gastropoda","Neogastropoda","Mitrolumna",41.03,0,"Bartonian","Holocene",41.03,0,,,,,,
+9679,"Mollusca","Gastropoda","Neogastropoda","Mitrolumna",41.03,0,"Bartonian","Holocene",41.03,0,"Mollusca","Gastropoda","Neogastropoda","Mitromorphidae","Mitromorpha","11375"
 9680,"Mollusca","Gastropoda","Neogastropoda","Mitromorpha",56,0,"Ypresian","Holocene",56,0,"Mollusca","Gastropoda","Neogastropoda","Mitromorphidae","Mitromorpha","11375"
 9681,"Mollusca","Gastropoda","Neogastropoda","Molopophorus",37.71,5.33,"Priabonian","Messinian",37.71,5.333,"Mollusca","Gastropoda","Neogastropoda","Nassariidae","Molopophorus","11376"
 9682,"Mollusca","Gastropoda","Neogastropoda","Moniliopsis",56,48.07,"Ypresian","Ypresian",56,48.07,"Mollusca","Gastropoda","Neogastropoda","Conidae","Moniliopsis","11377"
@@ -9678,7 +9678,7 @@
 9697,"Mollusca","Gastropoda","Neogastropoda","Myobarbum",77.91,66.04,"Campanian","Maastrichtian",83.6,66,"Mollusca","Gastropoda","Neogastropoda","Volutidae","Myobarbum","11393"
 9698,"Mollusca","Gastropoda","Neogastropoda","Myristica",33.9,0,"Rupelian","Holocene",33.9,0,,,,,,
 9699,"Mollusca","Gastropoda","Neogastropoda","Myurella",27.29,0,"Chattian","Holocene",27.3,0,"Mollusca","Gastropoda","Neogastropoda","Terebridae","Myurella","11395"
-9700,"Mollusca","Gastropoda","Neogastropoda","Myurellina",3.6,2.58,"Piacenzian","Piacenzian",3.6,2.58,,,,,,
+9700,"Mollusca","Gastropoda","Neogastropoda","Myurellina",3.6,2.58,"Piacenzian","Piacenzian",3.6,2.58,"Mollusca","Gastropoda","Neogastropoda","Terebridae","Terebra","11754"
 9701,"Mollusca","Gastropoda","Neogastropoda","Nannamoria",27.29,0,"Chattian","Holocene",27.3,0,"Mollusca","Gastropoda","Neogastropoda","Volutidae","Nannamoria","11397"
 9702,"Mollusca","Gastropoda","Neogastropoda","Nannodiella",23.04,15.99,"Aquitanian","Burdigalian",23.04,15.98,"Mollusca","Gastropoda","Neogastropoda","Clathurellidae","Nannodiella","11398"
 9703,"Mollusca","Gastropoda","Neogastropoda","Naquetia",27.29,23.04,"Chattian","Chattian",27.3,23.04,,,,,,
@@ -9700,14 +9700,14 @@
 9719,"Mollusca","Gastropoda","Neogastropoda","Nepotilla",20.45,15.99,"Burdigalian","Burdigalian",20.45,15.98,"Mollusca","Gastropoda","Neogastropoda","Raphitomidae","Nepotilla","11416"
 9720,"Mollusca","Gastropoda","Neogastropoda","Neptunea",37.71,0,"Priabonian","Holocene",37.71,0,"Mollusca","Gastropoda","NO_ORDER_SPECIFIED","Neptuneidae","Neptunea","11417"
 9721,"Mollusca","Gastropoda","Neogastropoda","Nicema",23.04,11.63,"Aquitanian","Tortonian",23.04,7.246,"Mollusca","Gastropoda","Neogastropoda","Buccinidae","Nicema","11418"
-9722,"Mollusca","Gastropoda","Neogastropoda","Nicolia",48.07,37.71,"Lutetian","Bartonian",48.07,37.71,"Mollusca","Gastropoda","Neogastropoda","NO_FAMILY_SPECIFIED","Nicolia","11419"
+9722,"Mollusca","Gastropoda","Neogastropoda","Nicolia",48.07,37.71,"Lutetian","Bartonian",48.07,37.71,,,,,,
 9723,"Mollusca","Gastropoda","Neogastropoda","Nigerapana",59.24,56,"Thanetian","Thanetian",59.24,56,,,,,,
 9724,"Mollusca","Gastropoda","Neogastropoda","Nihonia",15.99,11.63,"Langhian","Tortonian",15.98,7.246,"Mollusca","Gastropoda","Neogastropoda","Cochlespiridae","Nihonia","11421"
 9725,"Mollusca","Gastropoda","Neogastropoda","Niotha",3.6,0,"Piacenzian","Holocene",3.6,0,,,,,,
 9726,"Mollusca","Gastropoda","Neogastropoda","Nipponitys",77.91,69.9,"Campanian","Maastrichtian",83.6,66,"Mollusca","Gastropoda","Neogastropoda","Melongenidae","Nipponitys","11423"
 9727,"Mollusca","Gastropoda","Neogastropoda","Nitidella",3.6,2.58,"Piacenzian","Piacenzian",3.6,2.58,"Mollusca","Gastropoda","Neogastropoda","Columbellidae","Nitidella","11424"
 9728,"Mollusca","Gastropoda","Neogastropoda","Nodisurculina",15.99,11.63,"Langhian","Tortonian",15.98,7.246,"Mollusca","Gastropoda","Neogastropoda","Costellariidae","Nodisurculina","11425"
-9729,"Mollusca","Gastropoda","Neogastropoda","Noditerebra",56,0,"Ypresian","Holocene",56,0,,,,,,
+9729,"Mollusca","Gastropoda","Neogastropoda","Noditerebra",56,0,"Ypresian","Holocene",56,0,"Mollusca","Gastropoda","Neogastropoda","Terebridae","Duplicaria","11047"
 9730,"Mollusca","Gastropoda","Neogastropoda","Northia",23.04,15.99,"Aquitanian","Burdigalian",23.04,15.98,"Mollusca","Gastropoda","Neogastropoda","Buccinidae","Northia","11427"
 9731,"Mollusca","Gastropoda","Neogastropoda","Notocytharella",15.99,11.63,"Langhian","Tortonian",15.98,7.246,"Mollusca","Gastropoda","Neogastropoda","Mangeliidae","Notocytharella","11428"
 9732,"Mollusca","Gastropoda","Neogastropoda","Notogenota",48.07,37.71,"Lutetian","Bartonian",48.07,37.71,"Mollusca","Gastropoda","Neogastropoda","NO_FAMILY_SPECIFIED","Notogenota","11429"
@@ -14164,7 +14164,7 @@
 14188,"Brachiopoda","Articulata","Terebratulida","Minithyris",169.7,165.29,"Bajocian","Bathonian",170.9,165.3,"Brachiopoda","Rhynchonellata","Terebratulida","NO_FAMILY_SPECIFIED","Minithyris","30336"
 14189,"Brachiopoda","Articulata","Terebratulida","Miogryphus",3.6,2.58,"Piacenzian","Piacenzian",3.6,2.58,"Brachiopoda","Rhynchonellata","Terebratulida","NO_FAMILY_SPECIFIED","Miogryphus","30337"
 14190,"Brachiopoda","Articulata","Terebratulida","Mirisquamea",192.9,184.2,"Pliensbachian","Pliensbachian",192.9,184.2,"Brachiopoda","Rhynchonellata","Terebratulida","Lobothyrididae","Lobothyris","30296"
-14191,"Brachiopoda","Articulata","Terebratulida","Miyakothyris",3.6,2.58,"Piacenzian","Piacenzian",3.6,2.58,,,,,,
+14191,"Brachiopoda","Articulata","Terebratulida","Miyakothyris",3.6,2.58,"Piacenzian","Piacenzian",3.6,2.58,"Brachiopoda","Rhynchonellata","Terebratulida","Dallinidae","Nipponithyris","30366"
 14192,"Brachiopoda","Articulata","Terebratulida","Modestella",113.2,110.3,"Albian","Albian",113.2,100.5,,,,,,
 14193,"Brachiopoda","Articulata","Terebratulida","Moeschia",165.29,154.78,"Callovian","Oxfordian",165.3,154.8,"Brachiopoda","Rhynchonellata","Terebratulida","Postepithyrididae","Moeschia","30341"
 14194,"Brachiopoda","Articulata","Terebratulida","Monsardithyris",179.82,165.29,"Toarcian","Bathonian",184.2,165.3,"Brachiopoda","Rhynchonellata","Terebratulida","Lissajousithyrididae","Monsardithyris","30342"
@@ -15419,7 +15419,7 @@
 15444,"Bryozoa","Stenolaemata",,"Glossotrypa",394.3,385.3,"Eifelian","Eifelian",393.47,387.95,"Bryozoa","Stenolaemata","Trepostomata","NO_FAMILY_SPECIFIED","Glossotrypa","25675"
 15445,"Bryozoa","Stenolaemata",,"Magnederella",410.51,378.9,"Emsian","Givetian",410.62,382.31,,,,,,
 15446,"Bryozoa","Stenolaemata",,"Niigaella",410.51,385.3,"Emsian","Eifelian",410.62,387.95,"Bryozoa","Stenolaemata","NO_ORDER_SPECIFIED","NO_FAMILY_SPECIFIED","Niigaella","25677"
-15447,"Bryozoa","Stenolaemata",,"Pycnobasis",394.3,371.1,"Eifelian","Frasnian",393.47,372.15,"Bryozoa","Stenolaemata","NO_ORDER_SPECIFIED","NO_FAMILY_SPECIFIED","Pycnobasis","25678"
+15447,"Bryozoa","Stenolaemata",,"Pycnobasis",394.3,371.1,"Eifelian","Frasnian",393.47,372.15,,,,,,
 15448,"Bryozoa","Stenolaemata",,"Radiotrypa",449.2,443.07,"Katian","Hirnantian",452.8,443.1,"Bryozoa","Stenolaemata","Trepostomida","Amplexoporidae","Radiotrypa","25679"
 15449,"Bryozoa","Stenolaemata",,"Rhenanerella",410.51,394.3,"Emsian","Emsian",410.62,393.47,,,,,,
 15450,"Bryozoa","Stenolaemata",,"Schischatella",419,394.3,"Lochkovian","Emsian",419.62,393.47,"Bryozoa","Stenolaemata","NO_ORDER_SPECIFIED","NO_FAMILY_SPECIFIED","Schischatella","25681"
@@ -16298,7 +16298,7 @@
 16325,"Cnidaria","Anthozoa","Tabulata","Adetopora",323.4,298.89,"Bashkirian","Gzhelian",323.4,298.9,"Cnidaria","Anthozoa","Auloporida","Aulocystidae","Adetopora","4797"
 16326,"Cnidaria","Anthozoa","Tabulata","Agetolitella",449.9,445.21,"Katian","Katian",452.8,445.2,"Cnidaria","Anthozoa","Favositida","Agetolitidae","Agetolitella","4798"
 16327,"Cnidaria","Anthozoa","Tabulata","Agetolites",451.3,445.21,"Katian","Katian",452.8,445.2,"Cnidaria","Anthozoa","Favositida","Agetolitidae","Agetolites","4799"
-16328,"Cnidaria","Anthozoa","Tabulata","Ainia",426.74,422.73,"Gorstian","Ludfordian",426.7,422.7,,,,,,
+16328,"Cnidaria","Anthozoa","Tabulata","Ainia",426.74,422.73,"Gorstian","Ludfordian",426.7,422.7,"Cnidaria","Anthozoa","Auloporida","Romingeriidae","Ainia","4800"
 16329,"Cnidaria","Anthozoa","Tabulata","Alveolites",440.49,371.1,"Aeronian","Frasnian",440.5,372.15,"Cnidaria","Anthozoa","Favositida","Alveolitidae","Alveolites","4801"
 16330,"Cnidaria","Anthozoa","Tabulata","Amniopora",315.15,307.02,"Moscovian","Moscovian",315.2,307,"Cnidaria","Anthozoa","Auloporida","Pyrgiidae","Amniopora","4802"
 16331,"Cnidaria","Anthozoa","Tabulata","Antherolites",432.93,426.74,"Sheinwoodian","Homerian",432.9,426.7,"Cnidaria","Anthozoa","Favositida","Multisoleniidae","Antherolites","4803"
@@ -17024,7 +17024,7 @@
 17052,"Cnidaria","Anthozoa","Rugosa","Iowaphyllum",408.905,371.1,"Emsian","Frasnian",410.62,372.15,"Cnidaria","Anthozoa","Stauriida","Endophyllidae","Iowaphyllum","5528"
 17053,"Cnidaria","Anthozoa","Rugosa","Ipsiphyllum",282.124,251.901,"Kungurian","Induan",283.3,249.9,"Cnidaria","Anthozoa","NO_ORDER_SPECIFIED","NO_FAMILY_SPECIFIED","Ipsiphyllum","5529"
 17054,"Cnidaria","Anthozoa","Rugosa","Iranophyllum",298.89,251.901,"Asselian","Induan",298.9,249.9,"Cnidaria","Anthozoa","Stauriida","Waagenophyllidae","Iranophyllum","5530"
-17055,"Cnidaria","Anthozoa","Rugosa","Ivanovia",314.8,307.02,"Moscovian","Moscovian",315.2,307,"Cnidaria","Anthozoa","Stauriida","Petalaxidae","Ivanovia","5531"
+17055,"Cnidaria","Anthozoa","Rugosa","Ivanovia",314.8,307.02,"Moscovian","Moscovian",315.2,307,,,,,,
 17056,"Cnidaria","Anthozoa","Rugosa","Ivdelephyllum",394.3,385.3,"Eifelian","Eifelian",393.47,387.95,"Cnidaria","Anthozoa","Stauriida","Disphyllidae","Ivdelephyllum","5532"
 17057,"Cnidaria","Anthozoa","Rugosa","Jintingophyllum",323.4,298.89,"Bashkirian","Gzhelian",323.4,298.9,"Cnidaria","Anthozoa","Stauriida","Geyerophyllidae","Jintingophyllum","5533"
 17058,"Cnidaria","Anthozoa","Rugosa","Jipaolasma",385.3,378.9,"Givetian","Givetian",387.95,382.31,"Cnidaria","Anthozoa","NO_ORDER_SPECIFIED","NO_FAMILY_SPECIFIED","Jipaolasma","5534"
@@ -17792,7 +17792,7 @@
 17824,"Cnidaria","Anthozoa","Scleractinia","Cyclophyllopsis",188,113.2,"Pliensbachian","Aptian",192.9,113.2,"Cnidaria","Anthozoa","Scleractinia","Cyclophyllopsiidae","Cyclophyllopsis","6318"
 17825,"Cnidaria","Anthozoa","Scleractinia","Cycloseris",121.4,0,"Aptian","Holocene",121.4,0,"Cnidaria","Anthozoa","Scleractinia","Fungiidae","Cycloseris","6319"
 17826,"Cnidaria","Anthozoa","Scleractinia","Cyclindrocyathus",100.5,66.04,"Cenomanian","Maastrichtian",100.5,66,,,,,,
-17827,"Cnidaria","Anthozoa","Scleractinia","Cylindrophyllia",33.9,0,"Rupelian","Holocene",33.9,0,,,,,,
+17827,"Cnidaria","Anthozoa","Scleractinia","Cylindrophyllia",33.9,0,"Rupelian","Holocene",33.9,0,"Cnidaria","Anthozoa","Scleractinia","Turbinoliidae","Peponocyathus","6715"
 17828,"Cnidaria","Anthozoa","Scleractinia","Cylindrosmilia",170.9,149.2,"Bajocian","Tithonian",170.9,143.1,"Cnidaria","Anthozoa","Scleractinia","Donacosmilidae","Cyclismilia","89105"
 17829,"Cnidaria","Anthozoa","Scleractinia","Cylismilia",154.78,152.1,"Kimmeridgian","Kimmeridgian",154.8,149.2,"Cnidaria","Anthozoa","Scleractinia","Donacosmilidae","Cyclismilia","89105"
 17830,"Cnidaria","Anthozoa","Scleractinia","Cymosmilia",161.53,149.24,"Oxfordian","Kimmeridgian",161.5,149.2,"Cnidaria","Anthozoa","Scleractinia","Aplosmiliidae","Cymosmilia","6324"
@@ -21701,7 +21701,7 @@
 21750,"Echinodermata","Echinoidea","Clypasteroida","Remondella",11.63,3.6,"Tortonian","Zanclean",11.63,3.6,"Echinodermata","Echinoidea","Clypeasteroida","Echinarachniidae","Remondella","33163"
 21751,"Echinodermata","Echinoidea","Clypasteroida","Rotula",23.04,0,"Aquitanian","Holocene",23.04,0,"Echinodermata","Echinoidea","Clypeasteroida","Rotulidae","Rotula","33164"
 21752,"Echinodermata","Echinoidea","Clypasteroida","Rotuloidea",20.45,2.59,"Burdigalian","Piacenzian",20.45,2.58,"Echinodermata","Echinoidea","Clypeasteroida","Rotulidae","Rotuloidea","33165"
-21753,"Echinodermata","Echinoidea","Clypasteroida","Rumphia",27.29,23.04,"Chattian","Chattian",27.3,23.04,"Echinodermata","Echinoidea","Clypeasteroida","Laganidae","Rumphia","33166"
+21753,"Echinodermata","Echinoidea","Clypasteroida","Rumphia",27.29,23.04,"Chattian","Chattian",27.3,23.04,,,"Clypeasteroida",,,
 21754,"Echinodermata","Echinoidea","Clypasteroida","Runa",3.6,2.58,"Piacenzian","Piacenzian",3.6,2.58,"Echinodermata","Echinoidea","Clypeasteroida","NO_FAMILY_SPECIFIED","Runa","33167"
 21755,"Echinodermata","Echinoidea","Clypasteroida","Samlandaster",37.71,33.9,"Priabonian","Priabonian",37.71,33.9,"Echinodermata","Echinoidea","Clypeasteroida","NO_FAMILY_SPECIFIED","Samlandaster","33168"
 21756,"Echinodermata","Echinoidea","Clypasteroida","Sanchezella",37.71,33.9,"Priabonian","Priabonian",37.71,33.9,"Echinodermata","Echinoidea","Clypeasteroida","Neolaganidae","Sanchezella","33169"
@@ -21753,7 +21753,7 @@
 21802,"Echinodermata","Echinoidea","Cassiduloida","Gentilia",96,93.9,"Cenomanian","Cenomanian",100.5,93.9,"Echinodermata","Echinoidea","NO_ORDER_SPECIFIED","Archiaciidae","Gentilia","33217"
 21803,"Echinodermata","Echinoidea","Cassiduloida","Gitolampas",83.65,11.63,"Campanian","Tortonian",83.6,7.246,"Echinodermata","Echinoidea","Cassiduloida","NO_FAMILY_SPECIFIED","Gitolampas","33218"
 21804,"Echinodermata","Echinoidea","Cassiduloida","Gongrochanus",85.7,83.65,"Santonian","Santonian",85.7,83.6,"Echinodermata","Echinoidea","Clypeasteroida","Faujasiidae","Gongrochanus","33219"
-21805,"Echinodermata","Echinoidea","Cassiduloida","Hardouinia",93.9,66.04,"Turonian","Maastrichtian",93.9,66,"Echinodermata","Echinoidea","Cassiduloida","NO_FAMILY_SPECIFIED","Harduinia","33220"
+21805,"Echinodermata","Echinoidea","Cassiduloida","Hardouinia",93.9,66.04,"Turonian","Maastrichtian",93.9,66,,,,,,
 21806,"Echinodermata","Echinoidea","Cassiduloida","Hemicara",72.17,66.04,"Maastrichtian","Maastrichtian",72.2,66,"Echinodermata","Echinoidea","NO_ORDER_SPECIFIED","Nucleolitidae","Hemicara","33221"
 21807,"Echinodermata","Echinoidea","Cassiduloida","Hypopygurus",100.5,93.9,"Cenomanian","Cenomanian",100.5,93.9,"Echinodermata","Echinoidea","NO_ORDER_SPECIFIED","Nucleolitidae","Hypopygurus","33222"
 21808,"Echinodermata","Echinoidea","Cassiduloida","Hypsopygaster",66.04,56,"Danian","Thanetian",66,56,"Echinodermata","Echinoidea","Cassiduloida","Cassidulidae","Hypsopygaster","33223"
@@ -22605,7 +22605,7 @@
 22655,"Mollusca","Monoplacophora","Pelagiellida","Costipellagiella",510.4,504.5,"Stage 4","Wulian",514.5,504.5,"Mollusca","Helcionelloida","Pelagiellida","Pelagiellidae","Pelagiella","7874"
 22656,"Mollusca","Monoplacophora","Pelagiellida","Paraaldanella",525.4,523.8,"Stage 2","Stage 2",529,521,"Mollusca","Helcionelloida","Pelagiellida","Aldanellidae","Aldanella","7870"
 22657,"Mollusca","Monoplacophora","Pelagiellida","Pelagiella",518.5,488.6,"Stage 3","Stage 10",521,486.85,"Mollusca","Helcionelloida","Pelagiellida","Pelagiellidae","Pelagiella","7874"
-22658,"Mollusca","Monoplacophora","Pelagiellida","Protospira",488.8,488.6,"Stage 10","Stage 10",491,486.85,"Mollusca","Gastropoda","Murchisoniina","Murchisoniidae","Protospira","7875"
+22658,"Mollusca","Monoplacophora","Pelagiellida","Protospira",488.8,488.6,"Stage 10","Stage 10",491,486.85,,,,,,
 22659,"Mollusca","Monoplacophora","Tuarangiida","Pseudomyona",506.48,497,"Wulian","Guzhangian",506.48,497,"Mollusca","Rostroconchia","Tuarangiida","Pseudomyonidae","Pseudomyona","7877"
 22660,"Mollusca","Monoplacophora","Tuarangiida","Tuarangia",505.16,497,"Wulian","Guzhangian",505.16,497,"Mollusca","Rostroconchia","Tuarangiida","Tuarangiidae","Tuarangia","7878"
 22661,"Mollusca","Monoplacophora","Hemithecellitina","Conodia",485.85,477.08,"Tremadocian","Tremadocian",486.85,477.1,"Mollusca","NO_CLASS_SPECIFIED","Paleoloricata","Mattheviidae","Conodia","7880"
@@ -22887,7 +22887,7 @@
 22938,"Mollusca","Scaphopoda",,"Fustiaria",37.71,33.9,"Priabonian","Priabonian",37.71,33.9,"Mollusca","Scaphopoda","Dentaliida","Fustiariidae","Fustiaria","8177"
 22939,"Mollusca","Scaphopoda",,"Gadila",143.1,0,"Berriasian","Holocene",143.1,0,"Mollusca","Scaphopoda","Gadilida","Gadilidae","Gadila","8178"
 22940,"Mollusca","Scaphopoda",,"Gadilina",23.04,15.99,"Aquitanian","Burdigalian",23.04,15.98,"Mollusca","Scaphopoda","Dentaliida","Gadilinidae","Gadilina","8179"
-22941,"Mollusca","Scaphopoda",,"Graptacme",59.24,0,"Thanetian","Holocene",59.24,0,,,,,,
+22941,"Mollusca","Scaphopoda",,"Graptacme",59.24,0,"Thanetian","Holocene",59.24,0,"Mollusca","Scaphopoda","Dentaliida","Dentaliidae","Graptacme","8180"
 22942,"Mollusca","Scaphopoda",,"Laevidentalium",241.46,0,"Ladinian","Holocene",241.464,0,"Mollusca","Scaphopoda","Dentaliida","Laevidentaliidae","Laevidentalium","8181"
 22943,"Mollusca","Scaphopoda",,"Lobantale",48.07,37.71,"Lutetian","Bartonian",48.07,37.71,"Mollusca","Scaphopoda","Dentaliida","Gadilinidae","Lobantale","8182"
 22944,"Mollusca","Scaphopoda",,"Paradentalium",3.6,0,"Piacenzian","Holocene",3.6,0,"Mollusca","Scaphopoda","Dentaliida","Dentaliidae","Paradentalium","8183"
@@ -24316,7 +24316,7 @@
 24369,"Arthropoda","Ostracoda","Podocopida","Leguminocythereis",59.24,0.0117,"Thanetian","Late Pleistocene",59.24,0.0117,"Arthropoda","Ostracoda","Podocopida","Leguminocythereidae","Leguminocythereis","24224"
 24370,"Arthropoda","Ostracoda","Podocopida","Leniocythere",72.17,33.9,"Maastrichtian","Priabonian",72.2,33.9,"Arthropoda","Ostracoda","Podocopida","Trachyleberididae","Leniocythere","24225"
 24371,"Arthropoda","Ostracoda","Podocopida","Leptocythere",33.9,0,"Rupelian","Holocene",33.9,0,"Arthropoda","Ostracoda","Podocopida","Leptocytheridae","Leptocythere","24226"
-24372,"Arthropoda","Ostracoda","Podocopida","Lesleya",166.04,165.29,"Bathonian","Bathonian",168.2,165.3,"Arthropoda","Ostracoda","Podocopida","NO_FAMILY_SPECIFIED","Lesleya","24227"
+24372,"Arthropoda","Ostracoda","Podocopida","Lesleya",166.04,165.29,"Bathonian","Bathonian",168.2,165.3,,,,,,
 24373,"Arthropoda","Ostracoda","Podocopida","Leviella",239.48,227.3,"Ladinian","Carnian",241.464,227.3,"Arthropoda","Ostracoda","Platycopida","Cytherellidae","Leviella","24228"
 24374,"Arthropoda","Ostracoda","Podocopida","Liasina",196.4,179.82,"Sinemurian","Toarcian",199.5,174.7,"Arthropoda","Ostracoda","Podocopida","Pontocyprididae","Liasina","24229"
 24375,"Arthropoda","Ostracoda","Podocopida","Liasopteron",184.2,170.9,"Toarcian","Aalenian",184.2,170.9,"Arthropoda","Ostracoda","Podocopida","NO_FAMILY_SPECIFIED","Liasopteron","24230"
@@ -24905,7 +24905,7 @@
 24959,"Porifera","Demospongia","Astrophorida","Halina",100.5,66.04,"Cenomanian","Maastrichtian",100.5,66,"Porifera","Demospongiae","Pachastrellida","Pachastrellidae","Dercitus","466321"
 24960,"Porifera","Demospongia","Astrophorida","Helminthophyllum",154.78,152.1,"Kimmeridgian","Kimmeridgian",154.8,149.2,"Porifera","Demospongiae","NO_ORDER_SPECIFIED","Helminthophyllidae","Helminthophyllum","2970"
 24961,"Porifera","Demospongia","Astrophorida","Heteroraphidites",100.5,66.04,"Cenomanian","Maastrichtian",100.5,66,"Porifera","Demospongiae","NO_ORDER_SPECIFIED","Cephaloraphiditidae","Heteroraphidites","2971"
-24962,"Porifera","Demospongia","Astrophorida","Loganiella",468.1,461.4,"Darriwilian","Darriwilian",469.4,458.2,"Porifera","Demospongiae","Sigmatosclerophorida","Dystactospongiidae","Loganiella","2972"
+24962,"Porifera","Demospongia","Astrophorida","Loganiella",468.1,461.4,"Darriwilian","Darriwilian",469.4,458.2,,,,,,
 24963,"Porifera","Demospongia","Astrophorida","Megaloraphium",83.65,77.91,"Campanian","Campanian",83.6,72.2,"Porifera","Demospongiae","NO_ORDER_SPECIFIED","Cephaloraphiditidae","Megaloraphium","2973"
 24964,"Porifera","Demospongia","Astrophorida","Ophiraphidites",89.39,37.71,"Coniacian","Bartonian",89.8,37.71,"Porifera","Demospongiae","NO_ORDER_SPECIFIED","Cephaloraphiditidae","Ophiraphidites","2974"
 24965,"Porifera","Demospongia","Astrophorida","Ortmannia",77.91,72.17,"Campanian","Campanian",83.6,72.2,"Porifera","Demospongiae","Spirosclerophorida","NO_FAMILY_SPECIFIED","Ortmannispongia","3186"
@@ -24937,7 +24937,7 @@
 24991,"Porifera","Demospongia","Lithistida","Arborohindia",458.18,449.8,"Sandbian","Katian",458.2,445.2,"Porifera","Demospongiae","Streptosclerophorida","Hindiidae","Arborohindia","3004"
 24992,"Porifera","Demospongia","Lithistida","Archaeodoryderma",346.73,330.34,"Visean","Visean",346.7,330.3,"Porifera","Demospongiae","Megalithistida","Archaeodorydermatidae","Archaeodoryderma","3006"
 24993,"Porifera","Demospongia","Lithistida","Archaeoscyphia",477.08,425.01,"Floian","Gorstian",477.1,425,"Porifera","Demospongiae","Lithistida","Anthaspidellidae","Archaeoscyphia","3007"
-24994,"Porifera","Demospongia","Lithistida","Asterocalyx",100.5,66.04,"Cenomanian","Maastrichtian",100.5,66,"Porifera","Demospongiae","Tetralithistida","Siphoniidae","Asterocalyx","3008"
+24994,"Porifera","Demospongia","Lithistida","Asterocalyx",100.5,66.04,"Cenomanian","Maastrichtian",100.5,66,,,,,,
 24995,"Porifera","Demospongia","Lithistida","Asterospongia",89.39,66,"Coniacian","Danian",89.8,61.66,"Porifera","Demospongiae","Tetralithistida","Astrocladiidae","Astrocladia","3011"
 24996,"Porifera","Demospongia","Lithistida","Astrobolia",100.5,66.04,"Cenomanian","Maastrichtian",100.5,66,"Porifera","Demospongiae","Spirosclerophorida","Azoricidae","Astrobolia","3010"
 24997,"Porifera","Demospongia","Lithistida","Astrocladia",85.7,66.04,"Santonian","Maastrichtian",85.7,66,"Porifera","Demospongiae","Tetralithistida","Astrocladiidae","Astrocladia","3011"
@@ -25994,7 +25994,7 @@
 26050,"Porifera","Hexactinellida","Reticulosa","Physospongia",346.73,340.2,"Visean","Visean",346.7,330.3,"Porifera","Hexactinellida","Reticulosa","Dictyospongiidae","Physospongia","4125"
 26051,"Porifera","Hexactinellida","Reticulosa","Plectoderma",425.01,422.73,"Ludfordian","Ludfordian",425,422.7,,,,,,
 26052,"Porifera","Hexactinellida","Reticulosa","Polylophidium",278.248,274.37,"Kungurian","Kungurian",283.3,274.4,"Porifera","Hexactinellida","Reticulosa","Dierespongiidae","Polylophidium","4127"
-26053,"Porifera","Hexactinellida","Reticulosa","Polyplectella",451.3,449.9,"Katian","Katian",452.8,445.2,,,,,,
+26053,"Porifera","Hexactinellida","Reticulosa","Polyplectella",451.3,449.9,"Katian","Katian",452.8,445.2,"Porifera","Hexactinellida","Reticulosa","Dierespongiidae","Polyplectella","4128"
 26054,"Porifera","Hexactinellida","Reticulosa","Prismodictya",373.4,340.2,"Frasnian","Visean",382.31,330.3,"Porifera","Hexactinellida","Reticulosa","Dictyospongiidae","Prismodictya","4129"
 26055,"Porifera","Hexactinellida","Reticulosa","Protoarmstrongia",376.4,373.4,"Frasnian","Frasnian",382.31,372.15,"Porifera","Hexactinellida","Reticulosa","Titusvillidae","Protoarmstrongia","4130"
 26056,"Porifera","Hexactinellida","Reticulosa","Protospongia",538.8,426.74,"Fortunian","Homerian",538.8,426.7,"Porifera","Hexactinellida","Reticulosa","Protospongiidae","Protospongia","4131"
@@ -26937,7 +26937,7 @@
 26995,"Arthropoda","Trilobita","Corynexochida","Stephenaspis",511.7,510.4,"Stage 4","Stage 4",514.5,506.5,"Arthropoda","Trilobita","Corynexochida","Zacanthoididae","Stephenaspis","19692"
 26996,"Arthropoda","Trilobita","Corynexochida","Strettonia",516,508.44,"Stage 3","Wulian",521,508.44,"Arthropoda","Trilobita","Corynexochida","Dorypygidae","Strettonia","19693"
 26997,"Arthropoda","Trilobita","Corynexochida","Stygina",459.8,445.21,"Darriwilian","Katian",469.4,445.2,"Arthropoda","Trilobita","Corynexochida","Styginidae","Stygina","19694"
-26998,"Arthropoda","Trilobita","Corynexochida","Sunia",510.4,504.5,"Stage 4","Wulian",514.5,504.5,,,,,,
+26998,"Arthropoda","Trilobita","Corynexochida","Sunia",510.4,504.5,"Stage 4","Wulian",514.5,504.5,"Arthropoda","Trilobita","Corynexochida","Dolichometopidae","Amphoton","19481"
 26999,"Arthropoda","Trilobita","Corynexochida","Tabatopygellina",516,513,"Stage 3","Stage 4",521,506.5,"Arthropoda","Trilobita","Corynexochida","Dorypygidae","Tabatopygellina","19696"
 27000,"Arthropoda","Trilobita","Corynexochida","Taitzuia",506.48,504.5,"Wulian","Wulian",506.48,504.5,"Arthropoda","Trilobita","Asaphida","Ordosiidae","Taitzuia","19697"
 27001,"Arthropoda","Trilobita","Corynexochida","Tarynaspis",516,514.5,"Stage 3","Stage 3",521,514.5,"Arthropoda","Trilobita","NO_ORDER_SPECIFIED","Namanoiidae","Tarynaspis","19698"
@@ -26973,7 +26973,7 @@
 27031,"Arthropoda","Trilobita","Lichida","Ceratarges",400.1,385.3,"Emsian","Eifelian",410.62,387.95,"Arthropoda","Trilobita","Lichida","Lichidae","Ceratarges","19730"
 27032,"Arthropoda","Trilobita","Lichida","Ceratolichas",394.3,385.3,"Eifelian","Eifelian",393.47,387.95,"Arthropoda","Trilobita","Lichida","Lichidae","Ceratolichas","19731"
 27033,"Arthropoda","Trilobita","Lichida","Conolichas",458.18,449.8,"Sandbian","Katian",458.2,445.2,"Arthropoda","Trilobita","Lichida","Lichidae","Conolichas","19732"
-27034,"Arthropoda","Trilobita","Lichida","Craspedarges",410.51,407.3,"Emsian","Emsian",410.62,393.47,"Arthropoda","Trilobita","Lichida","Lichidae","Craspedarges","19733"
+27034,"Arthropoda","Trilobita","Lichida","Craspedarges",410.51,407.3,"Emsian","Emsian",410.62,393.47,,,,,,
 27035,"Arthropoda","Trilobita","Lichida","Dicranogmus",449.8,422.73,"Katian","Ludfordian",452.8,422.7,"Arthropoda","Trilobita","Lichida","Lichidae","Dicranogmus","19734"
 27036,"Arthropoda","Trilobita","Lichida","Dicranopeltis",449.9,425.01,"Katian","Gorstian",452.8,425,"Arthropoda","Trilobita","Lichida","Lichidae","Dicranopeltis","19735"
 27037,"Arthropoda","Trilobita","Lichida","Echinolichas",419,385.3,"Lochkovian","Eifelian",419.62,387.95,"Arthropoda","Trilobita","Lichida","Lichidae","Echinolichas","19736"
@@ -26988,7 +26988,7 @@
 27046,"Arthropoda","Trilobita","Lichida","Lichas",449.8,426.74,"Katian","Homerian",452.8,426.7,"Arthropoda","Trilobita","Lichida","Lichidae","Lichas","19745"
 27047,"Arthropoda","Trilobita","Lichida","Lichakephalina",477.08,468.1,"Floian","Darriwilian",477.1,458.2,"Arthropoda","Trilobita","Lichida","Lichakephalidae","Lichakephalina","19746"
 27048,"Arthropoda","Trilobita","Lichida","Lichakephalus",485.85,481.465,"Tremadocian","Tremadocian",486.85,477.1,"Arthropoda","Trilobita","Lichida","Lichakephalidae","Lichakephalus","19747"
-27049,"Arthropoda","Trilobita","Lichida","Lobopyge",438.59,385.3,"Telychian","Eifelian",438.6,387.95,,,,,,
+27049,"Arthropoda","Trilobita","Lichida","Lobopyge",438.59,385.3,"Telychian","Eifelian",438.6,387.95,"Arthropoda","Trilobita","Lichida","Lichidae","Belenopyge","353546"
 27050,"Arthropoda","Trilobita","Lichida","Lyralichas",461.2,458.18,"Darriwilian","Darriwilian",469.4,458.2,"Arthropoda","Trilobita","Lichida","Lichidae","Lyralichas","19749"
 27051,"Arthropoda","Trilobita","Lichida","Mephiarges",394.3,378.9,"Eifelian","Givetian",393.47,382.31,"Arthropoda","Trilobita","Lichida","Lichidae","Mephiarges","19750"
 27052,"Arthropoda","Trilobita","Lichida","Metopolichas",471.3,458.18,"Floian","Darriwilian",477.1,458.2,"Arthropoda","Trilobita","Lichida","Lichidae","Metopolichas","19752"
@@ -27499,7 +27499,7 @@
 27557,"Arthropoda","Trilobita","Ptychopariida","Amecephalina",513,510.4,"Stage 4","Stage 4",514.5,506.5,"Arthropoda","Trilobita","Ptychopariida","Alokistocaridae","Amecephalina","20271"
 27558,"Arthropoda","Trilobita","Ptychopariida","Amecephalus",511.7,506.48,"Stage 4","Wulian",514.5,506.48,"Arthropoda","Trilobita","Ptychopariida","Alokistocaridae","Amecephalus","20273"
 27559,"Arthropoda","Trilobita","Ptychopariida","Amiaspis",500.75,497,"Drumian","Guzhangian",504.5,497,"Arthropoda","Trilobita","Ptychopariida","Lonchocephalidae","Amiaspis","20274"
-27560,"Arthropoda","Trilobita","Ptychopariida","Amicus",458.18,443.07,"Sandbian","Hirnantian",458.2,443.1,"Arthropoda","Trilobita","Asaphida","Cyclopygidae","Amicus","20275"
+27560,"Arthropoda","Trilobita","Ptychopariida","Amicus",458.18,443.07,"Sandbian","Hirnantian",458.2,443.1,,,,,,
 27561,"Arthropoda","Trilobita","Ptychopariida","Amphorella",488.8,488.6,"Stage 10","Stage 10",491,486.85,"Arthropoda","Trilobita","Ptychopariida","NO_FAMILY_SPECIFIED","Amphorella","20276"
 27562,"Arthropoda","Trilobita","Ptychopariida","Amquia",504.5,500.75,"Drumian","Drumian",504.5,500.5,"Arthropoda","Trilobita","NO_ORDER_SPECIFIED","Llanoaspididae","Amquia","20277"
 27563,"Arthropoda","Trilobita","Ptychopariida","Amzasskiella",485.85,481.465,"Tremadocian","Tremadocian",486.85,477.1,"Arthropoda","Trilobita","Olenida","Eulomidae","Amzasskiella","20278"
@@ -28306,7 +28306,7 @@
 28364,"Arthropoda","Trilobita","Proetida","Aulacopleurina",410.51,385.3,"Emsian","Eifelian",410.62,387.95,"Arthropoda","Trilobita","Proetida","Proetidae","Aulacopleurina","21082"
 28365,"Arthropoda","Trilobita","Proetida","Australokaskia",358.9,346.73,"Tournaisian","Tournaisian",358.86,346.7,"Arthropoda","Trilobita","Proetida","Phillipsiidae","Australokaskia","21083"
 28366,"Arthropoda","Trilobita","Proetida","Australosutura",358.9,352,"Tournaisian","Tournaisian",358.86,346.7,"Arthropoda","Trilobita","Proetida","Brachymetopidae","Australosutura","21084"
-28367,"Arthropoda","Trilobita","Proetida","Bailielloides",410.51,385.3,"Emsian","Eifelian",410.62,387.95,,,,,,
+28367,"Arthropoda","Trilobita","Proetida","Bailielloides",410.51,385.3,"Emsian","Eifelian",410.62,387.95,"Arthropoda","Trilobita","Proetida","Proetidae","Bailielloides","21085"
 28368,"Arthropoda","Trilobita","Proetida","Bapingaspis",373.4,360.2,"Frasnian","Famennian",382.31,358.86,"Arthropoda","Trilobita","Proetida","Proetidae","Bapingaspis","21086"
 28369,"Arthropoda","Trilobita","Proetida","Basidechenella",412.4,385.3,"Pragian","Eifelian",413.02,387.95,"Arthropoda","Trilobita","Proetida","Proetidae","Basidechenella","21087"
 28370,"Arthropoda","Trilobita","Proetida","Bathyurellus",481.465,461.4,"Tremadocian","Darriwilian",486.85,458.2,"Arthropoda","Trilobita","Proetida","Bathyuridae","Bathyurellus","21088"
@@ -28341,7 +28341,7 @@
 28399,"Arthropoda","Trilobita","Proetida","Chuanqianoproetus",432.93,430.62,"Sheinwoodian","Sheinwoodian",432.9,430.6,"Arthropoda","Trilobita","Proetida","Proetidae","Chuanqianoproetus","21119"
 28400,"Arthropoda","Trilobita","Proetida","Clavibole",378.9,371.1,"Frasnian","Frasnian",382.31,372.15,"Arthropoda","Trilobita","Proetida","Proetidae","Clavibole","21120"
 28401,"Arthropoda","Trilobita","Proetida","Clypoproetus",449.8,443.07,"Katian","Hirnantian",452.8,443.1,"Arthropoda","Trilobita","Proetida","Proetidae","Astroproetus","21079"
-28402,"Arthropoda","Trilobita","Proetida","Coignops",340.2,318.9,"Visean","Bashkirian",346.7,315.2,,,,,,
+28402,"Arthropoda","Trilobita","Proetida","Coignops",340.2,318.9,"Visean","Bashkirian",346.7,315.2,"Arthropoda","Trilobita","Proetida","Aulacopleuridae","Coignops","21122"
 28403,"Arthropoda","Trilobita","Proetida","Comptonaspis",358.9,352,"Tournaisian","Tournaisian",358.86,346.7,"Arthropoda","Trilobita","Proetida","Phillipsiidae","Comptonaspis","21123"
 28404,"Arthropoda","Trilobita","Proetida","Coniproetus",422.73,400.1,"GAP","Emsian",422.73,393.47,"Arthropoda","Trilobita","Proetida","Proetidae","Coniproetus","123403"
 28405,"Arthropoda","Trilobita","Proetida","Conophillipsia",358.9,330.34,"Tournaisian","Visean",358.86,330.3,"Arthropoda","Trilobita","Proetida","Proetidae","Monodechenella","21256"
@@ -28526,7 +28526,7 @@
 28584,"Arthropoda","Trilobita","Proetida","Piriproetus",400.1,385.3,"Emsian","Eifelian",410.62,387.95,"Arthropoda","Trilobita","Proetida","Proetidae","Piriproetus","21311"
 28585,"Arthropoda","Trilobita","Proetida","Platyantyx",468.1,458.18,"Darriwilian","Darriwilian",469.4,458.2,"Arthropoda","Trilobita","Proetida","Tropidocoryphidae","Platyantyx","21312"
 28586,"Arthropoda","Trilobita","Proetida","Podoliproetus",410.51,400.1,"Emsian","Emsian",410.62,393.47,"Arthropoda","Trilobita","Proetida","Proetidae","Podoliproetus","21313"
-28587,"Arthropoda","Trilobita","Proetida","Pontipalpebralia",371.1,359.3,"Famennian","Famennian",372.15,358.86,"Arthropoda","Trilobita","Proetida","Proetidae","Pontipalpebralia","21314"
+28587,"Arthropoda","Trilobita","Proetida","Pontipalpebralia",371.1,359.3,"Famennian","Famennian",372.15,358.86,,,,,,
 28588,"Arthropoda","Trilobita","Proetida","Praedechenella",410.51,394.3,"Emsian","Emsian",410.62,393.47,"Arthropoda","Trilobita","Proetida","Proetidae","Praedechenella","21315"
 28589,"Arthropoda","Trilobita","Proetida","Pragoproetus",414.755,407.3,"Lochkovian","Emsian",419.62,393.47,"Arthropoda","Trilobita","Proetida","Proetidae","Pragoproetus","21316"
 28590,"Arthropoda","Trilobita","Proetida","Prantlia",438.59,410.51,"Telychian","Pragian",438.6,410.62,"Arthropoda","Trilobita","Proetida","Proetidae","Prantlia","21317"
@@ -28570,7 +28570,7 @@
 28628,"Arthropoda","Trilobita","Proetida","Richteraspis",378.9,371.1,"Frasnian","Frasnian",382.31,372.15,"Arthropoda","Trilobita","Proetida","Tropidocoryphidae","Richteraspis","21356"
 28629,"Arthropoda","Trilobita","Proetida","Richterella",358.9,340.2,"Tournaisian","Visean",358.86,330.3,,,,,,
 28630,"Arthropoda","Trilobita","Proetida","Rorringtonia",459.8,445.21,"Darriwilian","Katian",469.4,445.2,"Arthropoda","Trilobita","Proetida","Rorringtoniidae","Rorringtonia","21358"
-28631,"Arthropoda","Trilobita","Proetida","Ryckholtia",425.01,410.51,"Ludfordian","Pragian",425,410.62,,,,,,
+28631,"Arthropoda","Trilobita","Proetida","Ryckholtia",425.01,410.51,"Ludfordian","Pragian",425,410.62,"Arthropoda","Trilobita","Proetida","Proetidae","Rijckholtia","467833"
 28632,"Arthropoda","Trilobita","Proetida","Scharyia",461.2,391.1,"Darriwilian","Eifelian",469.4,387.95,"Arthropoda","Trilobita","Proetida","Scharyiidae","Scharyia","21360"
 28633,"Arthropoda","Trilobita","Proetida","Schizophillipsia",352,330.34,"Tournaisian","Visean",358.86,330.3,"Arthropoda","Trilobita","Proetida","Phillipsiidae","Schizophillipsia","21361"
 28634,"Arthropoda","Trilobita","Proetida","Schizoproetina",419,394.3,"Lochkovian","Emsian",419.62,393.47,"Arthropoda","Trilobita","Proetida","Proetidae","Schizoproetina","21362"
@@ -28584,7 +28584,7 @@
 28642,"Arthropoda","Trilobita","Proetida","Skemmatopyge",365.1,362.2,"Famennian","Famennian",372.15,358.86,"Arthropoda","Trilobita","Proetida","Phillipsiidae","Skemmatopyge","21370"
 28643,"Arthropoda","Trilobita","Proetida","Solariproetus",445.21,443.07,"Hirnantian","Hirnantian",445.2,443.1,"Arthropoda","Trilobita","Proetida","Rorringtoniidae","Solariproetus","21371"
 28644,"Arthropoda","Trilobita","Proetida","Songkania",438.59,432.93,"Telychian","Telychian",438.6,432.9,"Arthropoda","Trilobita","Proetida","Aulacopleuridae","Songkania","21372"
-28645,"Arthropoda","Trilobita","Proetida","Spatulina",346.73,330.34,"Visean","Visean",346.7,330.3,,,,,,
+28645,"Arthropoda","Trilobita","Proetida","Spatulina",346.73,330.34,"Visean","Visean",346.7,330.3,"Arthropoda","Trilobita","Proetida","Phillipsiidae","Spatulata","353576"
 28646,"Arthropoda","Trilobita","Proetida","Sperginaspis",359.3,323.4,"Tournaisian","Serpukhovian",358.86,323.4,"Arthropoda","Trilobita","Proetida","NO_FAMILY_SPECIFIED","Sperginaspis","21374"
 28647,"Arthropoda","Trilobita","Proetida","Spinibole",346.73,340.2,"Visean","Visean",346.7,330.3,"Arthropoda","Trilobita","Proetida","Phillipsiidae","Spinibole","21375"
 28648,"Arthropoda","Trilobita","Proetida","Stenoblepharum",459.8,443.07,"Darriwilian","Hirnantian",469.4,443.1,"Arthropoda","Trilobita","Proetida","Tropidocoryphidae","Stenoblepharum","21376"
@@ -31012,7 +31012,7 @@
 31087,"Chordata","Osteichtyes","Perciformes","Brama",5.33,2.59,"Zanclean","Piacenzian",5.333,2.58,"Chordata","Osteichthyes","Scombriformes","Bramidae","Brama","35967"
 31088,"Chordata","Osteichtyes","Perciformes","Bramoides",56,48.07,"Ypresian","Ypresian",56,48.07,"Chordata","Osteichthyes","Scombriformes","Bramidae","Bramoides","35968"
 31089,"Chordata","Osteichtyes","Perciformes","Branchiostegus",11.63,5.33,"Tortonian","Messinian",11.63,5.333,"Chordata","Osteichthyes","NO_ORDER_SPECIFIED","Malacanthidae","Branchiostegus","35969"
-31090,"Chordata","Osteichtyes","Perciformes","Burtinia",48.07,41.03,"Lutetian","Lutetian",48.07,41.03,"Chordata","Osteichthyes","Perciformes","NO_FAMILY_SPECIFIED","Burtinia","35970"
+31090,"Chordata","Osteichtyes","Perciformes","Burtinia",48.07,41.03,"Lutetian","Lutetian",48.07,41.03,,,,,,
 31091,"Chordata","Osteichtyes","Perciformes","Caesio",48.07,41.03,"Lutetian","Lutetian",48.07,41.03,"Chordata","Osteichthyes","Perciformes","Pomadasyidae","Caesio","35971"
 31092,"Chordata","Osteichtyes","Perciformes","Calamus",33.9,0,"Rupelian","Holocene",33.9,0,,,,,,
 31093,"Chordata","Osteichtyes","Perciformes","Callionymus",56,0,"Ypresian","Holocene",56,0,"Chordata","Osteichthyes","Syngnathiformes","Callionymidae","Callionymus","35973"
@@ -32031,7 +32031,7 @@
 32109,"Annelida","Polychaeta","Eunicemorpha","Rhytiprion",458.18,443.07,"Sandbian","Hirnantian",458.2,443.1,"Annelida","Polychaeta","Eunicemorpha","NO_FAMILY_SPECIFIED","Rhytiprion","7084"
 32110,"Annelida","Polychaeta","Eunicemorpha","Schistomeringos",192.9,188,"Pliensbachian","Pliensbachian",192.9,184.2,"Annelida","Polychaeta","Eunicemorpha","NO_FAMILY_SPECIFIED","Schistomeringos","7085"
 32111,"Annelida","Polychaeta","Eunicemorpha","Sciotoprion",394.3,385.3,"Eifelian","Eifelian",393.47,387.95,"Annelida","Polychaeta","Eunicemorpha","NO_FAMILY_SPECIFIED","Sciotoprion","7086"
-32112,"Annelida","Polychaeta","Eunicemorpha","Serratula",373.4,371.1,"Frasnian","Frasnian",382.31,372.15,"Annelida","Polychaeta","Eunicemorpha","NO_FAMILY_SPECIFIED","Serratula","7087"
+32112,"Annelida","Polychaeta","Eunicemorpha","Serratula",373.4,371.1,"Frasnian","Frasnian",382.31,372.15,,,,,,
 32113,"Annelida","Polychaeta","Eunicemorpha","Skalenoprion",449.8,251.902,"Katian","Changhsingian",452.8,251.902,"Annelida","Polychaeta","Eunicemorpha","NO_FAMILY_SPECIFIED","Skalenoprion","7088"
 32114,"Annelida","Polychaeta","Eunicemorpha","Staurocephalites",468.1,149.2,"Darriwilian","Tithonian",469.4,143.1,"Annelida","Polychaeta","Eunicemorpha","NO_FAMILY_SPECIFIED","Staurocephalites","7089"
 32115,"Annelida","Polychaeta","Eunicemorpha","Symmetroprion",432.93,425.01,"Sheinwoodian","Gorstian",432.9,425,"Annelida","Polychaeta","Eunicemorpha","NO_FAMILY_SPECIFIED","Symmetroprion","7090"

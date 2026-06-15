@@ -9,6 +9,7 @@ library(jsonlite)
 ### EXTERNAL DATA FILES FOR SEPKOSKI & MARINE AND TERRESTRAIL TAXA
 fb.timescale <- read.csv(file="../Timescale/timescale_2020.csv") # ICS 2024 of the PBDB
 timescale <- read.csv(file="../Timescale/timescale_2024.csv") # ICS 2024 of the PBDB
+
 # repeat interval_name, age_bottom, and age_top columns with new names to use with fossil brush
 timescale$Interval <- timescale$interval_name
 timescale$FAD <- timescale$age_bottom
@@ -140,6 +141,10 @@ for(i in unused.classes) {
           #print(i)
      }
 }
+
+## THERE ARE SOME GENERA WHOSE PBDB and SEPKOSKI CLASSES DO NOT MATCH
+# Take care of those here
+
 
 write.csv(sepkoski, file="sepkoski.csv", na="", row.names = FALSE)
 write.csv(sep.pbdb, file="pbdb_genenera_in_sepkoski.csv") # just in case you want it
