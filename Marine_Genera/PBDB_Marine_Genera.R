@@ -47,7 +47,7 @@ marine.genera$pbdb.fad <- pbdb.fad[match(marine.genera$class_genus, names(pbdb.f
 marine.genera$pbdb.lad <- pbdb.lad[match(marine.genera$class_genus, names(pbdb.lad))]
 
 # append sepkoski
-marine.genera$sepk.fad <- sepkoski$RANGE_BASE[match(marine.genera$class_genus, sepkoski$class_genus)]
-marine.genera$sepk.lad <- sepkoski$RANGE_TOP[match(marine.genera$class_genus, sepkoski$class_genus)]
+#marine.genera$sepk.fad <- sepkoski$RANGE_BASE[match(marine.genera$class_genus, sepkoski$class_genus)]
+#marine.genera$sepk.lad <- sepkoski$RANGE_TOP[match(marine.genera$class_genus, sepkoski$class_genus)]
 
 write.csv(marine.genera, file=gzfile("marine_genera.csv.gz"), na="", row.names=FALSE)
