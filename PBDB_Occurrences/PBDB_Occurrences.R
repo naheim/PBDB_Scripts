@@ -366,7 +366,7 @@ pbdb.occs <- subset(pbdb.occs, is.element(early_interval, pbdb.ages))
 
 # optionally limit to those with exactly one-stage-resolution
 if(one.stage.reso == TRUE) {
-     pbdb.occs <- subset(pbdb.occs, (late_interval == "" | is.element(late_interval, pbdb.ages)) )
+     pbdb.occs <- subset(pbdb.occs, (late_interval == "" | late_interval == early_interval) )
 }
 
 ##### GitHub won't let us upload the uncompressed occurrence dataset.
