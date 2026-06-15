@@ -188,7 +188,6 @@ for(i in 1:nrow(subgenera)) {
      pbdb.occs$genus_no[pbdb.occs$accepted_no == subgen[i]] <- subgenera$genus_no[subgenera$orig_no == subgen[i]]
      pbdb.occs$genus_name[pbdb.occs$accepted_no == subgen[i]] <- subgenera$genus[subgenera$orig_no == subgen[i]]
 }
-
 pbdb.occs$class_genus <- paste(pbdb.occs$class, pbdb.occs$genus_name, sep="_")
 
 ##### UPDATE HIGHER TAXA ONE-BY-ONE
