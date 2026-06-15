@@ -6,6 +6,14 @@ setwd(my.wd)
 library(fossilbrush)
 library(jsonlite)
 
+### EXTERNAL DATA FILES FOR SEPKOSKI & MARINE AND TERRESTRAIL TAXA
+fb.timescale <- read.csv(file="../Timescale/timescale_2020.csv") # ICS 2024 of the PBDB
+timescale <- read.csv(file="../Timescale/timescale_2024.csv") # ICS 2024 of the PBDB
+# repeat interval_name, age_bottom, and age_top columns with new names to use with fossil brush
+timescale$Interval <- timescale$interval_name
+timescale$FAD <- timescale$age_bottom
+timescale$LAD <- timescale$age_top
+
 ### General Set Up
 api.base <- "https://paleobiodb.org/data1.2/taxa/list.json?"
 
@@ -21,6 +29,15 @@ params <- paste(c(
 
 ###### ADD & CLEAN UP SEPKOSKI DATASET
 data("sepkoski")
+sepkoski$early_interval <- ""
+sepkoski$late_interval <- ""
+# add ICS 2024 timescale
+for(i in 1:nrow(fb.timescale)) {
+     sepkoski$early_interval[sepkoski$RANGE_BASE <= fb.timescale$age_bottom[i] & sepkoski$RANGE_BASE > fb.timescale$age_top[i]] <- fb.timescale$Age[i]
+     sepkoski$late_interval[sepkoski$RANGE_top < fb.timescale$age_bottom[i] & sepkoski$RANGE_TOP >= fb.timescale$age_top[i]] <- fb.timescale$Age[i]
+}
+sepkoski <- chrono_scale(sepkoski, tscale=timescale, srt = "early_interval", end = "late_interval", max_ma = "RANGE_BASE", min_ma = "RANGE_TOP")
+
 sepkoski <- subset(sepkoski, PHYLUM != "Protista")
 sepkoski <- cbind('index' = 1:nrow(sepkoski), sepkoski)
 mult.gen <- table(sepkoski$GENUS)
