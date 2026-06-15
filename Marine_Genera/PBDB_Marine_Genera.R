@@ -16,7 +16,6 @@ api.base <- "https://paleobiodb.org/data1.2/occs/list.csv?"
 ### EXTERNAL DATA FILES FOR SEPKOSKI & MARINE AND TERRESTRAIL TAXA
 pbdb.occs <- read.csv(file=gzfile("../PBDB_Occurrences/pbdb_occs.csv.gz"))
 sepkoski <- read.csv(file="../Sepkoski/sepkoski.csv") # this will overwrite the sepkoski data fram from fossil brush
-timescale <- read.csv(file="../Timescale/timescale_2020.csv")
 
 ########
 ##
@@ -41,8 +40,8 @@ sepkoski$range_duration <- sepkoski$RANGE_BASE - sepkoski$RANGE_TOP
 
 # make some important calculations
 pbdb.n.occ <- table(marine.occs$class_genus)
-pbdb.fad <- tapply(marine.occs$newFAD, marine.occs$class_genus, max)
-pbdb.lad <- tapply(marine.occs$newLAD, marine.occs$class_genus, min)
+pbdb.fad <- tapply(marine.occs$max_ma, marine.occs$class_genus, max)
+pbdb.lad <- tapply(marine.occs$min_ma, marine.occs$class_genus, min)
 marine.genera$n.occs <- pbdb.n.occ[match(marine.genera$class_genus, names(pbdb.n.occ))]
 marine.genera$pbdb.fad <- pbdb.fad[match(marine.genera$class_genus, names(pbdb.fad))]
 marine.genera$pbdb.lad <- pbdb.lad[match(marine.genera$class_genus, names(pbdb.lad))]
@@ -50,6 +49,5 @@ marine.genera$pbdb.lad <- pbdb.lad[match(marine.genera$class_genus, names(pbdb.l
 # append sepkoski
 marine.genera$sepk.fad <- sepkoski$RANGE_BASE[match(marine.genera$class_genus, sepkoski$class_genus)]
 marine.genera$sepk.lad <- sepkoski$RANGE_TOP[match(marine.genera$class_genus, sepkoski$class_genus)]
-
 
 write.csv(marine.genera, file=gzfile("marine_genera.csv.gz"), na="", row.names=FALSE)
