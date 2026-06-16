@@ -166,6 +166,7 @@ for(i in 1:nrow(bad.class)) {
      # for this we have to use the name autofill option to get all the valid names and their id
      url1 <- URLencode(paste0(api.base.auto, "name=", bad.class$GENUS[i], "&limit=100"))
      temp.taxa <- fromJSON(url1)$records
+     
      overwrite.pbdb.to.na <- FALSE
      
      if(!is.null(nrow(temp.taxa))) {
