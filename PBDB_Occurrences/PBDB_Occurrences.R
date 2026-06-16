@@ -191,41 +191,7 @@ for(i in 1:nrow(subgenera)) {
 pbdb.occs$class_genus <- paste(pbdb.occs$class, pbdb.occs$genus_name, sep="_")
 
 ##### UPDATE HIGHER TAXA ONE-BY-ONE
-# families
-pbdb.occs$family[pbdb.occs$family == "Chilidiopsidae" & pbdb.occs$genus_name == "Hipparionix"] <- "Orthotetidae"
-pbdb.occs$family[pbdb.occs$family == "Strophodontidae" & pbdb.occs$genus_name == "Strophomena"] <- "Strophomenidae"
-pbdb.occs$family[pbdb.occs$family == "Hiatellidae" & pbdb.occs$genus_name == "Glycymeris"] <- "Glycymerididae"
 
-# orders
-pbdb.occs$order[pbdb.occs$order == "Adapedonta" & pbdb.occs$genus_name == "Glycymeris"] <- "Arcida"
-pbdb.occs$order[pbdb.occs$order == "Porcellanidea" & pbdb.occs$genus_name == "Porcellana"] <- "Porcellanidae"
-pbdb.occs$order[pbdb.occs$order == "Cidaroida" & pbdb.occs$genus_name == "Mesodiadema"] <- "Diadematoida"
-
-###### FIX KNOWN NO_ORDER_SPECIFIED & NO_FAMILY_SPECIFIED
-pbdb.occs$order[pbdb.occs$order == "NO_ORDER_SPECIFIED" & pbdb.occs$family == "Lepisosteidae"] <- "Lepisosteiformes"
-pbdb.occs$order[pbdb.occs$order == "NO_ORDER_SPECIFIED" & pbdb.occs$family == "Sciaenidae"] <- "Lutjaniformes"
-pbdb.occs$order[pbdb.occs$order == "NO_ORDER_SPECIFIED" & pbdb.occs$genus_name == "Frechastraea"] <- "Stauriida"
-pbdb.occs$order[pbdb.occs$order == "NO_ORDER_SPECIFIED" & pbdb.occs$genus_name == "Bakevellia"] <- "Ostreida"
-pbdb.occs$order[pbdb.occs$order == "NO_ORDER_SPECIFIED" & pbdb.occs$genus_name == "Nanogyra"] <- "Ostreida"
-pbdb.occs$order[pbdb.occs$order == "NO_ORDER_SPECIFIED" & pbdb.occs$genus_name == "Didymoceras"] <- "Ammonitida"
-pbdb.occs$order[pbdb.occs$order == "NO_ORDER_SPECIFIED" & pbdb.occs$genus_name == "Mesodiadema"] <- "Diadematoida"
-pbdb.occs$order[pbdb.occs$order == "NO_ORDER_SPECIFIED" & pbdb.occs$genus_name == "Itieria"] <- "Heterostropha"
-pbdb.occs$order[pbdb.occs$order == "NO_ORDER_SPECIFIED" & pbdb.occs$genus_name == "Pterynotus"] <- "Neogastropoda"
-pbdb.occs$order[pbdb.occs$order == "NO_ORDER_SPECIFIED" & pbdb.occs$genus_name == "Forolinia"] <- "Labechiida"
-
-pbdb.occs$family[pbdb.occs$family == "NO_FAMILY_SPECIFIED" & pbdb.occs$genus_name == "Atrypoidea"] <- "Septatrypidae"
-pbdb.occs$family[pbdb.occs$family == "NO_FAMILY_SPECIFIED" & pbdb.occs$genus_name == "Frechastraea"] <- "Phillipsastreidae"
-pbdb.occs$family[pbdb.occs$family == "NO_FAMILY_SPECIFIED" & pbdb.occs$genus_name == "Thamnasteria"] <- "Thamnasteriidae"
-pbdb.occs$family[pbdb.occs$family == "NO_FAMILY_SPECIFIED" & pbdb.occs$genus_name == "Bakevellia"] <- "Bakevelliidae"
-pbdb.occs$family[pbdb.occs$family == "NO_FAMILY_SPECIFIED" & pbdb.occs$genus_name == "Nanogyra"] <- "Gryphaeidae"
-pbdb.occs$family[pbdb.occs$family == "NO_FAMILY_SPECIFIED" & pbdb.occs$genus_name == "Didymoceras"] <- "Nostoceratidae"
-pbdb.occs$family[pbdb.occs$family == "NO_FAMILY_SPECIFIED" & pbdb.occs$genus_name == "Mesodiadema"] <- "Diadematidae"
-pbdb.occs$family[pbdb.occs$family == "NO_FAMILY_SPECIFIED" & pbdb.occs$genus_name == "Itieria"] <- "Nerineidae"
-pbdb.occs$family[pbdb.occs$family == "NO_FAMILY_SPECIFIED" & pbdb.occs$genus_name == "Pterynotus"] <- "Muricidae"
-pbdb.occs$family[pbdb.occs$family == "NO_FAMILY_SPECIFIED" & pbdb.occs$genus_name == "Tiberia"] <- "Pyramidellidae"
-pbdb.occs$family[pbdb.occs$family == "NO_FAMILY_SPECIFIED" & pbdb.occs$genus_name == "Rossella"] <- "Rossellidae"
-pbdb.occs$family[pbdb.occs$family == "NO_FAMILY_SPECIFIED" & pbdb.occs$genus_name == "Atrypoidea"] <- "Atrypida"
-pbdb.occs$family[pbdb.occs$family == "NO_FAMILY_SPECIFIED" & pbdb.occs$genus_name == "Forolinia"] <- "Rosenellidae"
 
 ##### GENERA TO DROP
 genera.to.drop <- c(

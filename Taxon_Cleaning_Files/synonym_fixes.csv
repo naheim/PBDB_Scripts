@@ -33,22 +33,22 @@ order,Heterostrophia,Heterostropha,Gastropoda,120,7258,0.2,t2,T1 is a misspellin
 order,Cephalaspida,Cephalaspidea,Gastropoda,123,2750,0,t2,"T1 is a misspelling, but it's also a fish order"
 order,Aulacocerida,Aulacoceratida,Cephalopoda,45,130,0.0909090909090909,t2,T1 is likely a misspelling
 order,Phylloceratitida,Phylloceratida,Cephalopoda,1,4394,0.0833333333333334,t2,T1 is a suborder with in T2
-family,Namanoiidae,Naraoiidae,No,9,144,0.444444444444444,,
+family,Namanoiidae,Naraoiidae,No,9,144,0.444444444444444,no_change,These are separate families
 family,Anaspididae,Amgaspididae,No,1,8,0.3,,
-family,Karaunguriidae,Karaungiridae,No,2,1,0.111111111111111,,
+family,Karaunguriidae,Karaungiridae,No,2,1,0.111111111111111,no_change,These are separate families
 family,Triadophlebiidae,Tarsophlebiidae,No,2,23,0.0833333333333334,,
 family,Baenidae,Batkeniidae,No,347,2,0.25,,
 family,Troodontidae,Toxodotidae,No,185,1,0.4,,
-family,Carinariidae,Cardiarinidae,No,12,1,0,,
+family,Carinariidae,Cardiarinidae,No,12,1,0,no_change,These are separate families
 family,Protosuchidae,Proterosuchidae,No,22,20,0,,
 family,Osteolepididae,Osteolepidae,No,22,8,0.1,,
-family,Spinosauridae,Scincosauridae,No,55,4,0.166666666666667,,
-family,Sphaerodomidae,Sphaerodontidae,No,6,11,0.25,,
-family,Allosauridae,Ankylosauridae,No,2,120,0.230769230769231,,
+family,Spinosauridae,Scincosauridae,No,55,4,0.166666666666667,no_change,These are separate families
+family,Sphaerodomidae,Sphaerodontidae,No,6,11,0.25,no_change,These are separate families
+family,Allosauridae,Ankylosauridae,No,2,120,0.230769230769231,no_change,These are separate families
 family,Balochisauridae,Brachiosauridae,No,20,71,0.0833333333333334,,
 family,Teratosauridae,Telmatosauridae,No,2,25,0.166666666666667,,
 family,Pleuroceridae,Pleurosternidae,No,34,92,0.307692307692308,,
-family,Dyrosauridae,Dryosauridae,No,58,38,0,,
+family,Dyrosauridae,Dryosauridae,No,58,38,0,no_change,These are separate families
 family,Chaetodontidae,Ceratodontidae,No,8,171,0.2,,
 family,Scansoriopterygidae,Sinosauropterygidae,No,3,5,0.133333333333333,,
 family,Aipichthyidae,Aipichthyoididae,No,10,2,0.0909090909090909,,
@@ -65,12 +65,12 @@ family,Helminthoglyptidae,Helminthophyllidae,No,12,1,0.0714285714285714,,
 family,Thiaridae,Thoraliidae,No,400,6,0.222222222222222,,
 family,Eucyclidae,Eucochlidae,No,748,19,0.272727272727273,,
 family,Litiopidae,Liotiidae,No,100,161,0.25,,
-family,Protoculidae,Protorculidae,No,18,97,0,,
-family,Protoculidae,Proconulidae,No,18,81,0.166666666666667,,
-family,Pleuroceriidae,Pleuroceridae,No,1,34,0,,
-family,Redlichinidae,Redlichiidae,Redlichiida,23,240,0.111111111111111,,
-family,Illaenidae,Illaenuridae,Corynexochida,1122,109,0.222222222222222,,
-family,Remopleuridae,Remopleurididae,Asaphida,13,1166,0,,
+family,Protoculidae,Protorculidae,No,18,97,0,t2,Spelling mistake
+family,Protoculidae,Proconulidae,No,18,81,0.166666666666667,no_change,These are separate families
+family,Pleuroceriidae,Pleuroceridae,No,1,34,0,t2,Spelling mistake
+family,Redlichinidae,Redlichiidae,Redlichiida,23,240,0.111111111111111,no_change,These are separate families
+family,Illaenidae,Illaenuridae,Corynexochida,1122,109,0.222222222222222,no_change,These are separate families
+family,Remopleuridae,Remopleurididae,Asaphida,13,1166,0,t2,Spelling mistake
 family,Beyrichiopsidae,Beyrichiidae,Palaeocopida,18,308,0.416666666666667,,
 family,Tricornidae,Tricorninidae,Podocopida,10,18,0,,
 family,Cytheruridae,Cytheridae,Podocopida,775,219,0.2,,
