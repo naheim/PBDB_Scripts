@@ -313,4 +313,3 @@ if(one.stage.reso == TRUE) {
 ##### GitHub won't let us upload the uncompressed occurrence dataset.
 
 write.csv(pbdb.occs, file=gzfile("pbdb_occs.csv.gz"), row.names=FALSE, na="")
-
