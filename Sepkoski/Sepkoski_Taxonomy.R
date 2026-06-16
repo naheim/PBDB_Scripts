@@ -91,8 +91,7 @@ for(i in 1:(length(iterate)-1)) {
      if(i %% 50 == 0) {print(iterate[i+1]-1)} # just to keep track of progress
 }
 sep.pbdb <- do.call(rbind, sep.pbdb) # combine individual data frames into one
-pbdb.occs <- sep.pbdb
-#sep.pbdb <- clean.pbdb.taxa(sep.pbdb)
+sep.pbdb <- clean.pbdb.taxa(sep.pbdb)
 
 
 # ADD PBDB HIGHER TAXONOMY TO SEPKOSKI
