@@ -17,6 +17,7 @@ timescale$LAD <- timescale$age_top
 
 ### General Set Up
 api.base <- "https://paleobiodb.org/data1.2/taxa/list.json?"
+api.base.auto <- "https://paleobiodb.org/data1.2/taxa/auto.json?"
 
 params <- paste(c(
      "pres=regular", # only body fossils
@@ -150,7 +151,61 @@ for(i in unused.classes) {
 ## THERE ARE SOME GENERA WHOSE PBDB and SEPKOSKI CLASSES DO NOT MATCH
 # Take care of those here
 bad.class <- subset(sepkoski, CLASS != pbdb_class)
+params.new <- paste(c(
+     "pres=regular", # only body fossils
+     "taxon_status=all",
+     "rank=genus",
+     "show=class,attr,app",
+     "limit=250",
+     "vocab=pbdb"
+), collapse="&")
 
+#i <- 6358 # Gosseletia
+i <- 1 # Syphax
+for(i in 1:nrow(bad.class)) {
+     # for this we have to use the name autofill option to get all the valid names and their id
+     url1 <- URLencode(paste0(api.base.auto, "name=", bad.class$GENUS[i], "&limit=100"))
+     temp.taxa <- fromJSON(url1)$records
+     overwrite.pbdb.to.na <- FALSE
+     
+     if(!is.null(nrow(temp.taxa))) {
+          taxon.no <- subset(temp.taxa, rnk == 5)
+          if(nrow(taxon.no) > 0) {
+               url2 <- URLencode(paste0(api.base, 
+                                        params.new, "&taxon_id=",
+                                        paste(taxon.no$oid, collapse=","))
+               )
+               temp.genera <- fromJSON(url2)$records
+               temp.genera <- subset(temp.genera, taxon_name == bad.class$GENUS[i] & class == bad.class$CLASS[i])
+               if(nrow(temp.genera == 1)) {
+                    sepkoski$pbdb_phylum[i] <- temp.genera$phylum[1]
+                    sepkoski$pbdb_class[i] <- temp.genera$class[1]
+                    sepkoski$pbdb_order[i] <- temp.genera$order[1]
+                    sepkoski$pbdb_family[i] <- temp.genera$family[1]
+                    sepkoski$pbdb_genus[i] <- temp.genera$accepted_name[1]
+                    sepkoski$pbdb_accepted_no[i] <- temp.genera$accepted_no[1]
+               } else if(nrow(temp.genera) > 1) {
+                    print(i)
+               } else {
+                    overwrite.pbdb.to.na <- TRUE
+               }
+          } else {
+               overwrite.pbdb.to.na <- TRUE
+          }
+     } 
+     
+     if(overwrite.pbdb.to.na == TRUE) {
+          sepkoski$pbdb_phylum[i] <- NA
+          sepkoski$pbdb_class[i] <- NA
+          sepkoski$pbdb_order[i] <- NA
+          sepkoski$pbdb_family[i] <- NA
+          sepkoski$pbdb_genus[i] <- NA
+          sepkoski$pbdb_accepted_no[i] <- NA  
+     }
+     if(i %% 200 == 0) {
+          print0("Progress: ", i) # just to keep track
+     }
+}
 write.csv(sepkoski, file="sepkoski.csv", na="", row.names = FALSE)
 write.csv(sep.pbdb, file="pbdb_genenera_in_sepkoski.csv") # just in case you want it
 
