@@ -7,6 +7,7 @@ clean.pbdb.taxa <- function(pbdb.occs, ) {
      if(!is.element("accpeted_name", colnames(pbdb.occs))) {
           colnames(pbdb.occs)[colnames(pbdb.occs) == "genus"] <- "accepted_name"
           colnames(pbdb.occs)[colnames(pbdb.occs) == "taxon_no"] <- "accepted_no"
+          colnames(pbdb.occs)[colnames(pbdb.occs) == "taxon_rank"] <- "accepted_rank"
      }
      
      ##### Take Care of the Subgenus Problem
@@ -15,11 +16,12 @@ clean.pbdb.taxa <- function(pbdb.occs, ) {
      pbdb.occs$genus_no <- pbdb.occs$accepted_no
      
      subgen <- unique(subset(pbdb.occs, accepted_rank == "subgenus")$genus_name)
-     
-     subgenera <- read.csv(file=URLencode(paste0("https://paleobiodb.org/data1.2/taxa/list.csv?taxon_name=",paste0(subgen, collapse=","),"&taxon_status=accepted&show=classext")))
-     for(i in 1:nrow(subgenera)) {
-          pbdb.occs$genus_no[pbdb.occs$accepted_no == subgen[i]] <- subgenera$genus_no[subgenera$orig_no == subgen[i]]
-          pbdb.occs$genus_name[pbdb.occs$accepted_no == subgen[i]] <- subgenera$genus[subgenera$orig_no == subgen[i]]
+     if(length(subgen) > 0) {
+          subgenera <- read.csv(file=URLencode(paste0("https://paleobiodb.org/data1.2/taxa/list.csv?taxon_name=",paste0(subgen, collapse=","),"&taxon_status=accepted&show=classext")))
+          for(i in 1:nrow(subgenera)) {
+               pbdb.occs$genus_no[pbdb.occs$accepted_no == subgen[i]] <- subgenera$genus_no[subgenera$orig_no == subgen[i]]
+               pbdb.occs$genus_name[pbdb.occs$accepted_no == subgen[i]] <- subgenera$genus[subgenera$orig_no == subgen[i]]
+          }
      }
      
      ##### UPDATE HIGHER TAXA TO FIX (mostly missing family and order)

@@ -64,12 +64,7 @@ for(i in repeats) {
 # to prevent timing out or request strings that are too long, grab 120 genera at a time
 # using JSON rather than CSV to cut out warnings when Sepkoski genus is not in PBDB
 n.sepkoski <- nrow(sepkoski)
-iterate <- c(seq(1,n.sepkoski, 120), n.sepkoski+1)
-x <- vector()
-for(i in 1:(length(iterate)-1)) {
-     x <- c(x, sepkoski$GENUS[iterate[i]:(iterate[i+1]-1)])
-}
-
+iterate <- c(seq(1,n.sepkoski, 120), n.sepkoski+1)[1:2]
 
 sep.pbdb <- list()
 for(i in 1:(length(iterate)-1)) {
@@ -96,7 +91,8 @@ for(i in 1:(length(iterate)-1)) {
      if(i %% 50 == 0) {print(iterate[i+1]-1)} # just to keep track of progress
 }
 sep.pbdb <- do.call(rbind, sep.pbdb) # combine individual data frames into one
-sep.pbdb <- clean.pbdb.taxa(sep.pbdb)
+pbdb.occs <- sep.pbdb
+#sep.pbdb <- clean.pbdb.taxa(sep.pbdb)
 
 
 # ADD PBDB HIGHER TAXONOMY TO SEPKOSKI
@@ -214,4 +210,4 @@ params.new <- paste(c(
 #}
 
 write.csv(sepkoski, file="sepkoski.csv", na="", row.names = FALSE)
-write.csv(sep.pbdb, file="pbdb_genenera_in_sepkoski.csv") # just in case you want it
+write.csv(sep.pbdb, file="pbdb_genenera_in_sepkoski.csv", na="", row.names = FALSE) # just in case you want it
