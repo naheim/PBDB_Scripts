@@ -1,8 +1,14 @@
-# This functions takes a PBDB Occurrence Download and Returns it with cleaned taxonomy
+# This functions takes a PBDB Download of Occurrences or Taxa (at the genus level) and Returns it with cleaned taxonomy
 # The function also creates a new column called genus_name that does not have any subgenera
-clean.pbdb.taxa <- function(pbdb.occs) {
+clean.pbdb.taxa <- function(pbdb.occs, ) {
      require(fossilbrush)
-
+     
+     # Change some column names if accepted_name and accepted_no are not present
+     if(!is.element("accpeted_name", colnames(pbdb.occs))) {
+          colnames(pbdb.occs)[colnames(pbdb.occs) == "genus"] <- "accepted_name"
+          colnames(pbdb.occs)[colnames(pbdb.occs) == "taxon_no"] <- "accepted_no"
+     }
+     
      ##### Take Care of the Subgenus Problem
      # Even though subgenera should be lumped into genera, there are still some subgenera
      pbdb.occs$genus_name <- clean_name(pbdb.occs$accepted_name)
