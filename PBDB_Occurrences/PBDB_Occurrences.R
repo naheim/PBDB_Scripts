@@ -190,8 +190,29 @@ for(i in 1:nrow(subgenera)) {
 }
 pbdb.occs$class_genus <- paste(pbdb.occs$class, pbdb.occs$genus_name, sep="_")
 
-##### UPDATE HIGHER TAXA ONE-BY-ONE
+##### UPDATE HIGHER TAXA TO FIX (mostly missing family and order)
+fix.by.fam <- read.csv(file="../Taxon_Cleaning_Files/taxonomy_fixes/families-fix_by_family.csv")
+fix.by.gen <- read.csv(file="../Taxon_Cleaning_Files/taxonomy_fixes/genera-fix_by_genus.csv")
+for(i in 1:nrow(fix.by.fam)) {
+     if(!is.na(fix.by.fam$family_class[i])) {
+          pbdb.occs$class[pbdb.occs$family == fix.by.fam$family_to_fix[i]] <- fix.by.fam$family_class[i]
+     }
+     if(!is.na(fix.by.fam$family_order[i])) {
+          pbdb.occs$order[pbdb.occs$family == fix.by.fam$family_to_fix[i]] <- fix.by.fam$family_order[i]
+     }
+}
 
+for(i in 1:nrow(fix.by.gen)) {
+     if(!is.na(fix.by.gen$genus_class[i])) {
+          pbdb.occs$class[pbdb.occs$genus_name == fix.by.gen$genus_to_fix[i]] <- fix.by.gen$genus_class[i]
+     }
+     if(!is.na(fix.by.gen$genus_order[i])) {
+          pbdb.occs$order[pbdb.occs$genus_name == fix.by.gen$genus_to_fix[i]] <- fix.by.gen$genus_order[i]
+     }
+     if(!is.na(fix.by.gen$genus_family[i])) {
+          pbdb.occs$family[pbdb.occs$genus_name == fix.by.gen$genus_to_fix[i]] <- fix.by.gen$genus_family[i]
+     }
+}
 
 ##### GENERA TO DROP
 genera.to.drop <- c(
