@@ -2,6 +2,9 @@
 my.wd <- "~/Documents/PBDB_Scripts/Sepkoski/"
 setwd(my.wd)
 
+### LOAD CUSTOM FUNCTIONS
+source("../my.functions.R")
+
 ### Load Libraries
 library(fossilbrush)
 library(jsonlite)
@@ -93,6 +96,8 @@ for(i in 1:(length(iterate)-1)) {
      if(i %% 50 == 0) {print(iterate[i+1]-1)} # just to keep track of progress
 }
 sep.pbdb <- do.call(rbind, sep.pbdb) # combine individual data frames into one
+sep.pbdb <- clean.pbdb.taxa(sep.pbdb)
+
 
 # ADD PBDB HIGHER TAXONOMY TO SEPKOSKI
 sepkoski$pbdb_phylum <- NA
@@ -106,16 +111,16 @@ sep.anim.phy <- c("Annelida","Arthropoda","Brachiopoda","Bryozoa",
      "Chordata","Cnidaria","Echinodermata","Hemichordata","Mollusca","Porifera")
 for(i in 1:nrow(sepkoski)) {
      if(is.na(sepkoski$PHYLUM[i]) | sepkoski$PHYLUM[i] == "Protista") {
-          temp.pbdb <- subset(sep.pbdb, accepted_rank == "genus" & !is.element(phylum, sep.anim.phy) & (accepted_name == sepkoski$GENUS[i] | genus == sepkoski$GENUS[i] | taxon_name == sepkoski$GENUS[i]))
+          temp.pbdb <- subset(sep.pbdb, accepted_rank == "genus" & !is.element(phylum, sep.anim.phy) & (genus_name == sepkoski$GENUS[i] | genus == sepkoski$GENUS[i] | taxon_name == sepkoski$GENUS[i]))
      } else {
-          temp.pbdb <- subset(sep.pbdb, accepted_rank == "genus" & phylum == sepkoski$PHYLUM[i] & (accepted_name == sepkoski$GENUS[i] | genus == sepkoski$GENUS[i] | taxon_name == sepkoski$GENUS[i]))
+          temp.pbdb <- subset(sep.pbdb, accepted_rank == "genus" & phylum == sepkoski$PHYLUM[i] & (genus_name == sepkoski$GENUS[i] | genus == sepkoski$GENUS[i] | taxon_name == sepkoski$GENUS[i]))
      }
      if(nrow(temp.pbdb) == 1) {
           sepkoski$pbdb_phylum[i] <- temp.pbdb$phylum[1]
           sepkoski$pbdb_class[i] <- temp.pbdb$class[1]
           sepkoski$pbdb_order[i] <- temp.pbdb$order[1]
           sepkoski$pbdb_family[i] <- temp.pbdb$family[1]
-          sepkoski$pbdb_genus[i] <- temp.pbdb$accepted_name[1]
+          sepkoski$pbdb_genus[i] <- temp.pbdb$genus_name[1]
           sepkoski$pbdb_accepted_no[i] <- temp.pbdb$accepted_no[1]
      } else if (nrow(temp.pbdb) > 1) {
           temp.pbdb <- subset(temp.pbdb, taxon_name == sepkoski$GENUS[i])
@@ -124,7 +129,7 @@ for(i in 1:nrow(sepkoski)) {
           sepkoski$pbdb_class[i] <- temp.pbdb$class[1]
           sepkoski$pbdb_order[i] <- temp.pbdb$order[1]
           sepkoski$pbdb_family[i] <- temp.pbdb$family[1]
-          sepkoski$pbdb_genus[i] <- temp.pbdb$accepted_name[1]
+          sepkoski$pbdb_genus[i] <- temp.pbdb$genus_name[1]
           sepkoski$pbdb_accepted_no[i] <- temp.pbdb$accepted_no[1]
      } 
      if(i %% 5000 == 0) {print(i)} # just to keep track of progress
@@ -161,52 +166,52 @@ params.new <- paste(c(
 ), collapse="&")
 
 #i <- 6358 # Gosseletia
-i <- 1 # Syphax
-for(i in 1:nrow(bad.class)) {
+#i <- 1 # Syphax
+#for(i in 1:nrow(bad.class)) {
      # for this we have to use the name autofill option to get all the valid names and their id
-     url1 <- URLencode(paste0(api.base.auto, "name=", bad.class$GENUS[i], "&limit=100"))
-     temp.taxa <- fromJSON(url1)$records
+#     url1 <- URLencode(paste0(api.base.auto, "name=", bad.class$GENUS[i], "&limit=100"))
+#     temp.taxa <- fromJSON(url1)$records
      
-     overwrite.pbdb.to.na <- FALSE
+#     overwrite.pbdb.to.na <- FALSE
      
-     if(!is.null(nrow(temp.taxa))) {
-          taxon.no <- subset(temp.taxa, rnk == 5)
-          if(nrow(taxon.no) > 0) {
-               url2 <- URLencode(paste0(api.base, 
-                                        params.new, "&taxon_id=",
-                                        paste(taxon.no$oid, collapse=","))
-               )
-               temp.genera <- fromJSON(url2)$records
-               temp.genera <- subset(temp.genera, taxon_name == bad.class$GENUS[i] & class == bad.class$CLASS[i])
-               if(nrow(temp.genera == 1)) {
-                    sepkoski$pbdb_phylum[i] <- temp.genera$phylum[1]
-                    sepkoski$pbdb_class[i] <- temp.genera$class[1]
-                    sepkoski$pbdb_order[i] <- temp.genera$order[1]
-                    sepkoski$pbdb_family[i] <- temp.genera$family[1]
-                    sepkoski$pbdb_genus[i] <- temp.genera$accepted_name[1]
-                    sepkoski$pbdb_accepted_no[i] <- temp.genera$accepted_no[1]
-               } else if(nrow(temp.genera) > 1) {
-                    print(i)
-               } else {
-                    overwrite.pbdb.to.na <- TRUE
-               }
-          } else {
-               overwrite.pbdb.to.na <- TRUE
-          }
-     } 
-     
-     if(overwrite.pbdb.to.na == TRUE) {
-          sepkoski$pbdb_phylum[i] <- NA
-          sepkoski$pbdb_class[i] <- NA
-          sepkoski$pbdb_order[i] <- NA
-          sepkoski$pbdb_family[i] <- NA
-          sepkoski$pbdb_genus[i] <- NA
-          sepkoski$pbdb_accepted_no[i] <- NA  
-     }
-     if(i %% 200 == 0) {
-          print0("Progress: ", i) # just to keep track
-     }
-}
+#     if(!is.null(nrow(temp.taxa))) {
+#          taxon.no <- subset(temp.taxa, rnk == 5)
+#          if(nrow(taxon.no) > 0) {
+#               url2 <- URLencode(paste0(api.base, 
+#                                        params.new, "&taxon_id=",
+#                                        paste(taxon.no$oid, collapse=","))
+#               )
+#               temp.genera <- fromJSON(url2)$records
+#               temp.genera <- subset(temp.genera, taxon_name == bad.class$GENUS[i] & class == bad.class$CLASS[i])
+#               if(nrow(temp.genera == 1)) {
+#                    sepkoski$pbdb_phylum[i] <- temp.genera$phylum[1]
+#                    sepkoski$pbdb_class[i] <- temp.genera$class[1]
+#                    sepkoski$pbdb_order[i] <- temp.genera$order[1]
+#                    sepkoski$pbdb_family[i] <- temp.genera$family[1]
+#                    sepkoski$pbdb_genus[i] <- temp.genera$genus_name[1]
+#                    sepkoski$pbdb_accepted_no[i] <- temp.genera$accepted_no[1]
+#               } else if(nrow(temp.genera) > 1) {
+#                    print(i)
+#               } else {
+#                    overwrite.pbdb.to.na <- TRUE
+#               }
+#          } else {
+#               overwrite.pbdb.to.na <- TRUE
+#          }
+#     } 
+#     
+#     if(overwrite.pbdb.to.na == TRUE) {
+#          sepkoski$pbdb_phylum[i] <- NA
+#          sepkoski$pbdb_class[i] <- NA
+#          sepkoski$pbdb_order[i] <- NA
+#          sepkoski$pbdb_family[i] <- NA
+#          sepkoski$pbdb_genus[i] <- NA
+#          sepkoski$pbdb_accepted_no[i] <- NA  
+#     }
+#     if(i %% 200 == 0) {
+#          print0("Progress: ", i) # just to keep track
+#     }
+#}
+
 write.csv(sepkoski, file="sepkoski.csv", na="", row.names = FALSE)
 write.csv(sep.pbdb, file="pbdb_genenera_in_sepkoski.csv") # just in case you want it
-
