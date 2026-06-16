@@ -64,7 +64,7 @@ for(i in repeats) {
 # to prevent timing out or request strings that are too long, grab 120 genera at a time
 # using JSON rather than CSV to cut out warnings when Sepkoski genus is not in PBDB
 n.sepkoski <- nrow(sepkoski)
-iterate <- c(seq(1,n.sepkoski, 120), n.sepkoski+1)[1:2]
+iterate <- c(seq(1,n.sepkoski, 120), n.sepkoski+1)
 
 sep.pbdb <- list()
 for(i in 1:(length(iterate)-1)) {
@@ -106,9 +106,9 @@ sep.anim.phy <- c("Annelida","Arthropoda","Brachiopoda","Bryozoa",
      "Chordata","Cnidaria","Echinodermata","Hemichordata","Mollusca","Porifera")
 for(i in 1:nrow(sepkoski)) {
      if(is.na(sepkoski$PHYLUM[i]) | sepkoski$PHYLUM[i] == "Protista") {
-          temp.pbdb <- subset(sep.pbdb, accepted_rank == "genus" & !is.element(phylum, sep.anim.phy) & (genus_name == sepkoski$GENUS[i] | genus == sepkoski$GENUS[i] | taxon_name == sepkoski$GENUS[i]))
+          temp.pbdb <- subset(sep.pbdb, accepted_rank == "genus" & !is.element(phylum, sep.anim.phy) & (genus_name == sepkoski$GENUS[i] | accepted_name == sepkoski$GENUS[i] | taxon_name == sepkoski$GENUS[i]))
      } else {
-          temp.pbdb <- subset(sep.pbdb, accepted_rank == "genus" & phylum == sepkoski$PHYLUM[i] & (genus_name == sepkoski$GENUS[i] | genus == sepkoski$GENUS[i] | taxon_name == sepkoski$GENUS[i]))
+          temp.pbdb <- subset(sep.pbdb, accepted_rank == "genus" & phylum == sepkoski$PHYLUM[i] & (genus_name == sepkoski$GENUS[i] | accepted_name == sepkoski$GENUS[i] | taxon_name == sepkoski$GENUS[i]))
      }
      if(nrow(temp.pbdb) == 1) {
           sepkoski$pbdb_phylum[i] <- temp.pbdb$phylum[1]
