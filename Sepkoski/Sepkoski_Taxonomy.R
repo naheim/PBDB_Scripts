@@ -6,17 +6,11 @@ setwd(my.wd)
 source("../my.functions.R")
 
 ### Load Libraries
-library(fossilbrush)
+library(sepkoski)
 library(jsonlite)
 
 ### EXTERNAL DATA FILES FOR SEPKOSKI & MARINE AND TERRESTRAIL TAXA
-fb.timescale <- read.csv(file="../Timescale/timescale_2020.csv") # ICS 2024 of the PBDB
-timescale <- read.csv(file="../Timescale/timescale_2024.csv") # ICS 2024 of the PBDB
-
-# repeat interval_name, age_bottom, and age_top columns with new names to use with fossil brush
-timescale$Interval <- timescale$interval_name
-timescale$FAD <- timescale$age_bottom
-timescale$LAD <- timescale$age_top
+timescale <- read.csv(file="../Timescale/timescale_2024.csv") # ICS 2024 used by PBDB
 
 ### General Set Up
 api.base <- "https://paleobiodb.org/data1.2/taxa/list.json?"
@@ -33,27 +27,40 @@ params <- paste(c(
 
 
 ###### ADD & CLEAN UP SEPKOSKI DATASET
-data("sepkoski")
+sepkoski <- sepkoski::sepkoski # using dataset from sepkoski package not fossilbrush
+
+# Drop genera with genus name == "incertae sedis"
+sepkoski <- subset(sepkoski, genus != "incertae sedis")
+
+# THERE are some genera with ranges of 0 ma -- assuming because max and min ints were swapped
+temp <- subset(sepkoski, max_ma - min_ma == 0)
+temp <- unique(temp[,is.element(colnames(temp), c("interval_max", "interval_min"))])
+for(i in 1:nrow(temp)) {
+     sepkoski[sepkoski$interval_max==temp[i,1] & sepkoski$interval_min==temp[i,2],match(c("interval_max", "interval_min"), colnames(sepkoski))] <- temp[i,2:1]
+}
 
 # add ICS 2024 timescale
-sepkoski$early_interval <- ""
-sepkoski$late_interval <- ""
-for(i in 1:nrow(fb.timescale)) {
-     sepkoski$early_interval[sepkoski$RANGE_BASE <= fb.timescale$age_bottom[i] & sepkoski$RANGE_BASE > fb.timescale$age_top[i]] <- fb.timescale$Age[i]
-     sepkoski$late_interval[sepkoski$RANGE_TOP < fb.timescale$age_bottom[i] & sepkoski$RANGE_TOP >= fb.timescale$age_top[i]] <- fb.timescale$Age[i]
+sep.ints <- unique(c(sepkoski$interval_max, sepkoski$interval_min))
+sepkoski$max_ma_2022 <- sepkoski$max_ma
+sepkoski$min_ma_2022 <- sepkoski$min_ma
+for(i in sep.ints) {
+     sepkoski$max_ma[sepkoski$interval_max==i] <- timescale$age_bottom[timescale$interval_name==i]
+     sepkoski$min_ma[sepkoski$interval_min==i] <- timescale$age_top[timescale$interval_name==i]
 }
-sepkoski <- chrono_scale(sepkoski, tscale=timescale, srt = "early_interval", end = "late_interval", max_ma = "RANGE_BASE", min_ma = "RANGE_TOP")
-colnames(sepkoski)[match(c("newFAD","newLAD"), colnames(sepkoski))] <- c("fad","lad")
 
-sepkoski <- subset(sepkoski, PHYLUM != "Protista")
+
 sepkoski <- cbind('index' = 1:nrow(sepkoski), sepkoski)
-mult.gen <- table(sepkoski$GENUS)
+sepkoski$cl_gn <- paste(sepkoski$class, sepkoski$genus, sep="_")
+
+mult.gen <- table(sepkoski$cl_gn)
 repeats <- names(mult.gen[mult.gen > 1])
 for(i in repeats) {
-     temp <- subset(sepkoski, GENUS == i)
-     temp <- temp[order(temp$RANGE_BASE, decreasing=TRUE),]
+     temp <- subset(sepkoski, cl_gn == i)
+     temp <- temp[order(temp$max_ma, decreasing=TRUE),]
      
-     if(diff(temp$RANGE_BASE) <= 0 & diff(temp$RANGE_TOP) >= 0) { # if ranges are fully overlapping
+     if(nrow(unique(temp[,-1])) == 1) {
+          sepkoski <- subset(sepkoski, index != temp$index[1]) # ranges identical, keep first, drop rest
+     } else if(diff(temp$max_ma) <= 0 & diff(temp$min_ma) >= 0) { # if ranges are fully overlapping
           sepkoski <- subset(sepkoski, index != temp$index[1]) # keep longer range, drop shorter
      } else { # if ranges are non-overlapping or partially overlapping
           sepkoski <- subset(sepkoski, !is.element(index, temp$index)) # drop both
@@ -70,7 +77,7 @@ sep.pbdb <- list()
 for(i in 1:(length(iterate)-1)) {
      url.genus <- URLencode(paste0(api.base, 
           params, "&taxon_name=",
-          paste(sepkoski$GENUS[iterate[i]:(iterate[i+1]-1)], collapse=","))
+          paste(sepkoski$genus[iterate[i]:(iterate[i+1]-1)], collapse=","))
      )
      temp <- fromJSON(url.genus)$records
      if(i == 1) {
@@ -105,10 +112,10 @@ sepkoski$pbdb_accepted_no <- NA
 sep.anim.phy <- c("Annelida","Arthropoda","Brachiopoda","Bryozoa",
      "Chordata","Cnidaria","Echinodermata","Hemichordata","Mollusca","Porifera")
 for(i in 1:nrow(sepkoski)) {
-     if(is.na(sepkoski$PHYLUM[i]) | sepkoski$PHYLUM[i] == "Protista") {
-          temp.pbdb <- subset(sep.pbdb, accepted_rank == "genus" & !is.element(phylum, sep.anim.phy) & (genus_name == sepkoski$GENUS[i] | accepted_name == sepkoski$GENUS[i] | taxon_name == sepkoski$GENUS[i]))
+     if(is.na(sepkoski$phylum[i]) | sepkoski$phylum[i] == "Protista") {
+          temp.pbdb <- subset(sep.pbdb, accepted_rank == "genus" & !is.element(phylum, sep.anim.phy) & (genus_name == sepkoski$genus[i] | accepted_name == sepkoski$genus[i] | taxon_name == sepkoski$genus[i]))
      } else {
-          temp.pbdb <- subset(sep.pbdb, accepted_rank == "genus" & phylum == sepkoski$PHYLUM[i] & (genus_name == sepkoski$GENUS[i] | accepted_name == sepkoski$GENUS[i] | taxon_name == sepkoski$GENUS[i]))
+          temp.pbdb <- subset(sep.pbdb, accepted_rank == "genus" & phylum == sepkoski$phylum[i] & (genus_name == sepkoski$genus[i] | accepted_name == sepkoski$genus[i] | taxon_name == sepkoski$genus[i]))
      }
      if(nrow(temp.pbdb) == 1) {
           sepkoski$pbdb_phylum[i] <- temp.pbdb$phylum[1]
@@ -118,7 +125,7 @@ for(i in 1:nrow(sepkoski)) {
           sepkoski$pbdb_genus[i] <- temp.pbdb$genus_name[1]
           sepkoski$pbdb_accepted_no[i] <- temp.pbdb$accepted_no[1]
      } else if (nrow(temp.pbdb) > 1) {
-          temp.pbdb <- subset(temp.pbdb, taxon_name == sepkoski$GENUS[i])
+          temp.pbdb <- subset(temp.pbdb, taxon_name == sepkoski$genus[i])
           if(nrow(temp.pbdb) > 1) {print(i)}
           sepkoski$pbdb_phylum[i] <- temp.pbdb$phylum[1]
           sepkoski$pbdb_class[i] <- temp.pbdb$class[1]
@@ -130,27 +137,27 @@ for(i in 1:nrow(sepkoski)) {
      if(i %% 5000 == 0) {print(i)} # just to keep track of progress
 }
 
-unused.orders <- unique(subset(sepkoski, is.na(pbdb_genus) & !is.element(ORDER, pbdb_order))$ORDER)
+unused.orders <- unique(subset(sepkoski, is.na(pbdb_genus) & !is.element(sepkoski$order, pbdb_order))$order)
 for(i in unused.orders) {
-     this.order <- subset(sepkoski, ORDER == i & !is.na(pbdb_genus))
+     this.order <- subset(sepkoski, sepkoski$order == i & !is.na(pbdb_genus))
      if(length(unique(this.order$pbdb_order)) == 1) {
-          sepkoski$pbdb_order[sepkoski$ORDER == i & is.na(sepkoski$pbdb_order)] <- this.order$pbdb_order[1]
+          sepkoski$pbdb_order[sepkoski$order == i & is.na(sepkoski$pbdb_order)] <- this.order$pbdb_order[1]
           #print(i)
      }
 }
 
-unused.classes <- unique(subset(sepkoski, is.na(pbdb_genus) & !is.element(CLASS, pbdb_class))$CLASS)
+unused.classes <- unique(subset(sepkoski, is.na(pbdb_genus) & !is.element(class, pbdb_class))$class)
 for(i in unused.classes) {
-     this.class <- subset(sepkoski, CLASS == i & !is.na(pbdb_genus))
+     this.class <- subset(sepkoski, class == i & !is.na(pbdb_genus))
      if(length(unique(this.class$pbdb_class)) == 1) {
-          sepkoski$pbdb_class[sepkoski$CLASS == i & is.na(sepkoski$pbdb_class)] <- this.class$pbdb_class[1]
+          sepkoski$pbdb_class[sepkoski$class == i & is.na(sepkoski$pbdb_class)] <- this.class$pbdb_class[1]
           #print(i)
      }
 }
 
 ## THERE ARE SOME GENERA WHOSE PBDB and SEPKOSKI CLASSES DO NOT MATCH
 # Take care of those here
-bad.class <- subset(sepkoski, CLASS != pbdb_class)
+bad.class <- subset(sepkoski, class != pbdb_class)
 params.new <- paste(c(
      "pres=regular", # only body fossils
      "taxon_status=all",
