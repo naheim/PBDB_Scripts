@@ -158,5 +158,5 @@ if(lump.holocene == TRUE) {
      timescale.2022 <- rbind(holo, timescale.2022)
 }
 
-write.csv(timescale.2022, file="Documents/PBDB_Scripts/Timescale/timescale_2022.csv", quote=FALSE, row.names=FALSE)
+write.csv(timescale.2022, file="timescale_2022.csv", quote=FALSE, row.names=FALSE)
 

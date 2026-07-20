@@ -1,5 +1,7 @@
 "Era","Period","Epoch","Age","age_bottom","age_top","age_mid"
-"Cenozoic","Quaternary","Holocene","Holocene",0.0117,0,0.006
+"Cenozoic","Quaternary","Holocene","Meghalayan",0.0042,0,0.002
+"Cenozoic","Quaternary","Holocene","Northgrippian",0.0082,0.0042,0.006
+"Cenozoic","Quaternary","Holocene","Greenlandian",0.0117,0.0082,0.01
 "Cenozoic","Quaternary","Pleistocene","Late Pleistocene",0.129,0.0117,0.07
 "Cenozoic","Quaternary","Pleistocene","Chibanian",0.773,0.129,0.451
 "Cenozoic","Quaternary","Pleistocene","Calabrian",1.8,0.773,1.286
@@ -99,3 +101,6 @@
 "Paleozoic","Cambrian","Series 2","Stage 3",521,514.5,517.75
 "Paleozoic","Cambrian","Terreneuvian","Stage 2",529,521,525
 "Paleozoic","Cambrian","Terreneuvian","Fortunian",538.8,529,533.9
+"Neoproterozoic","Ediacaran","","Ediacaran",635,538.8,586.9
+"Neoproterozoic","Cryogenian","","Cryogenian",720,635,677.5
+"Neoproterozoic","Tonian","","Tonian",1000,720,860
