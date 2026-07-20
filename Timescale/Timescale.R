@@ -89,7 +89,13 @@ if(lump.holocene == TRUE) {
 # Get Phanerozoic
 url.ts <- paste0("https://paleobiodb.org/data1.2/intervals/list.csv?scale=",ts.id,"&type=Age&order=age")
 timescale.pbdb <- read.csv(file=URLencode(url.ts))
-dim(timescale.pbdb)
+
+# API does not return the Prodoli, so need to add it manualy
+pridoli <- read.csv(file=URLencode("https://paleobiodb.org/data1.2/intervals/single.csv?name=Pridoli"))
+timescale.pbdb <- rbind(timescale.pbdb, pridoli)
+timescale.pbdb <- timescale.pbdb[order(timescale.pbdb$b_age),]
+
+
 
 if(include.npz == TRUE) {
      url.pc <- "https://paleobiodb.org/data1.2/intervals/list.csv?name=Cryogenian,Ediacaran,Tonian&order=age"
