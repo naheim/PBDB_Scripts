@@ -137,15 +137,6 @@ if(include.npz == TRUE) {
     timescale.2022 <- rbind(timescale.2022, pc)
 }
 
-if(include.npz == TRUE) {
-     pc <- data.frame("name"=c("Ediacaran","Cryogenian","Tonian"),
-                      "max_age"=c(635, 720, 1000),
-                      "min_age"=c(538.8, 635, 720),
-                      "abbr"=c("Ed","Cy","To"),
-                      "color"=c("#FED96A","#FECC5C","#FEBF4E"),
-                      "lab_color"=c("black","black","black"))
-     timescale.2022 <- rbind(timescale.2022, pc)
-}
 
 if(lump.holocene == TRUE) {
      timescale.2022 <- subset(timescale.2022, !is.element(name, c("Meghalayan","Northgrippian","Greenlandian")))
@@ -158,5 +149,23 @@ if(lump.holocene == TRUE) {
      timescale.2022 <- rbind(holo, timescale.2022)
 }
 
+## add eras, epochs, periods
+temp <- data.frame("era"=rep(NA, nrow(timescale.2022)),
+                   "period"=rep(NA, nrow(timescale.2022)),
+                   "epoch"=rep(NA, nrow(timescale.2022)))
+timescale.2022 <- cbind(temp, timescale.2022)
+
+# eras
+for(i in 1:nrow(eras)) {
+     timescale.2022$era[timescale.2022$max_age <= eras$max_age[i] & timescale.2022$min_age >= eras$min_age[i]] <- eras$name[i]
+}
+# periods
+for(i in 1:nrow(periods)) {
+     timescale.2022$period[timescale.2022$max_age <= periods$max_age[i] & timescale.2022$min_age >= periods$min_age[i]] <- periods$name[i]
+}
+# periods
+for(i in 1:nrow(epochs)) {
+     timescale.2022$epoch[timescale.2022$max_age <= epochs$max_age[i] & timescale.2022$min_age >= epochs$min_age[i]] <- epochs$name[i]
+}
 write.csv(timescale.2022, file="timescale_2022.csv", quote=FALSE, row.names=FALSE)
 
