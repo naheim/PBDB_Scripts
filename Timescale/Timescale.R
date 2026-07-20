@@ -95,8 +95,6 @@ pridoli <- read.csv(file=URLencode("https://paleobiodb.org/data1.2/intervals/sin
 timescale.pbdb <- rbind(timescale.pbdb, pridoli)
 timescale.pbdb <- timescale.pbdb[order(timescale.pbdb$b_age),]
 
-
-
 if(include.npz == TRUE) {
      url.pc <- "https://paleobiodb.org/data1.2/intervals/list.csv?name=Cryogenian,Ediacaran,Tonian&order=age"
      pc <- read.csv(file=URLencode(url.pc))
