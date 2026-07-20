@@ -110,9 +110,10 @@ sepkoski$pbdb_genus <- NA
 sepkoski$pbdb_accepted_no <- NA
 
 sep.anim.phy <- c("Annelida","Arthropoda","Brachiopoda","Bryozoa",
-     "Chordata","Cnidaria","Echinodermata","Hemichordata","Mollusca","Porifera")
+     "Chordata","Cnidaria","Echinodermata","Hemichordata","Hyolitha",
+     "Mollusca","Porifera")
 for(i in 1:nrow(sepkoski)) {
-     if(is.na(sepkoski$phylum[i]) | sepkoski$phylum[i] == "Protista") {
+     if(is.na(sepkoski$phylum[i])) {
           temp.pbdb <- subset(sep.pbdb, accepted_rank == "genus" & !is.element(phylum, sep.anim.phy) & (genus_name == sepkoski$genus[i] | accepted_name == sepkoski$genus[i] | taxon_name == sepkoski$genus[i]))
      } else {
           temp.pbdb <- subset(sep.pbdb, accepted_rank == "genus" & phylum == sepkoski$phylum[i] & (genus_name == sepkoski$genus[i] | accepted_name == sepkoski$genus[i] | taxon_name == sepkoski$genus[i]))
