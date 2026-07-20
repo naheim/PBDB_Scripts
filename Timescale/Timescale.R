@@ -4,12 +4,13 @@ setwd(my.wd)
 
 ### Load Library
 library(fossilbrush)
+library(deeptime)
 
 ### CHOOSE TO INCLUDE OR NOT NEROTEROZOIC STAGES
-include.npz <- FALSE # change to TRUE to include
+include.npz <- TRUE # change to TRUE to include
 
 ### CHOOSE TO LUMP HOLOCENE AGES OR KEEP THEM SEPERATE
-lump.holocene <- TRUE # change to TRUE to KEEP HOLOCENE AGES SEPERATE
+lump.holocene <- FALSE # change to TRUE to KEEP HOLOCENE AGES SEPERATE
 
 # FIX TYPOS IN GTS_2020
 GTS_2020$LAD[GTS_2020$Interval == "Changhsingian"] <- 251.902 # was 251.901
@@ -122,4 +123,40 @@ colnames(timescale.pbdb)[match("b_age", colnames(timescale.pbdb))] <- "age_botto
 colnames(timescale.pbdb)[match("t_age", colnames(timescale.pbdb))] <- "age_top"
 
 write.csv(timescale.pbdb, file="timescale_2024.csv", na="", row.names=FALSE)
+
+
+##### ICS 2022/10
+timescale.2022 <- stages
+if(include.npz == TRUE) {
+    pc <- data.frame("name"=c("Ediacaran","Cryogenian","Tonian"),
+                     "max_age"=c(635, 720, 1000),
+                     "min_age"=c(538.8, 635, 720),
+                     "abbr"=c("Ed","Cy","To"),
+                     "color"=c("#FED96A","#FECC5C","#FEBF4E"),
+                     "lab_color"=c("black","black","black"))
+    timescale.2022 <- rbind(timescale.2022, pc)
+}
+
+if(include.npz == TRUE) {
+     pc <- data.frame("name"=c("Ediacaran","Cryogenian","Tonian"),
+                      "max_age"=c(635, 720, 1000),
+                      "min_age"=c(538.8, 635, 720),
+                      "abbr"=c("Ed","Cy","To"),
+                      "color"=c("#FED96A","#FECC5C","#FEBF4E"),
+                      "lab_color"=c("black","black","black"))
+     timescale.2022 <- rbind(timescale.2022, pc)
+}
+
+if(lump.holocene == TRUE) {
+     timescale.2022 <- subset(timescale.2022, !is.element(name, c("Meghalayan","Northgrippian","Greenlandian")))
+     holo <- data.frame("name"="Holocene",
+                        "max_age"=0.0117,
+                        "min_age"=0.0000,
+                        "abbr"="Ho",
+                        "color"="#FEEBD2",
+                        "lab_color"="black")
+     timescale.2022 <- rbind(holo, timescale.2022)
+}
+
+write.csv(timescale.2022, file="Documents/PBDB_Scripts/Timescale/timescale_2022.csv", quote=FALSE, row.names=FALSE)
 
