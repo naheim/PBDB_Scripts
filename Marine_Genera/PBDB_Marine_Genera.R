@@ -5,11 +5,6 @@ setwd(my.wd)
 ### Load Libraries
 library(fossilbrush)
 
-# FIX TYPOS IN GTS_2020
-#GTS_2020$LAD[GTS_2020$Interval == "Changhsingian"] <- 251.902 # was 251.901
-#GTS_2020$LAD[GTS_2020$Interval == "Stage 10"] <- 486.85 # was 485.85
-#GTS_2020$Interval[GTS_2020$Interval == "Palaeozoic"] <- "Paleozoic" # using American spelling
-
 ### General Set Up
 api.base <- "https://paleobiodb.org/data1.2/occs/list.csv?"
 
