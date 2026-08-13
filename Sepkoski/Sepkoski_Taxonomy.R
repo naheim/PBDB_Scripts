@@ -10,7 +10,7 @@ library(sepkoski)
 library(jsonlite)
 
 ### EXTERNAL DATA FILES FOR SEPKOSKI & MARINE AND TERRESTRAIL TAXA
-timescale <- read.csv(file="../Timescale/timescale_2024.csv") # ICS 2024 used by PBDB
+timescale <- read.csv(file="../Timescale/timescale_2026.csv") # ICS 2024 used by PBDB
 
 ### General Set Up
 api.base <- "https://paleobiodb.org/data1.2/taxa/list.json?"
