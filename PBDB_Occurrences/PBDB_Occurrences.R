@@ -157,7 +157,7 @@ params <- paste(c(
      "idreso=lump_genus", # lump mult. species of the same genus in each collection into a single occurrence
      "scale_id=1", # use international time scale
      "interval_type=age", # bin occurrences by age 
-     "timerule=main", # the most restrictive time rule, but we may will still have to limit after the fact
+     "timerule=contain", # the most restrictive time rule, but we may will still have to limit after the fact
      "show=attr,class,coords,paleoloc,abund,env,lith,ecospace,ent,entname"
 ), collapse="&")
 
