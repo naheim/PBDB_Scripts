@@ -31,7 +31,7 @@ marine.genera <- marine.genera[order(marine.genera$phylum, marine.genera$class, 
 sepkoski <- subset(sepkoski, is.element(pbdb_phylum, unique(marine.genera$phylum)))
 sepkoski <- sepkoski[order(sepkoski$pbdb_phylum, sepkoski$pbdb_class, sepkoski$pbdb_order, sepkoski$pbdb_genus),]
 sepkoski$class_genus <- paste(sepkoski$pbdb_class, sepkoski$pbdb_genus, sep="_")
-sepkoski$range_duration <- sepkoski$RANGE_BASE - sepkoski$RANGE_TOP
+sepkoski$range_duration <- sepkoski$max_ma - sepkoski$min_ma
 
 # make some important calculations
 pbdb.n.occ <- table(marine.occs$class_genus)
