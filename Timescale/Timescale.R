@@ -79,7 +79,7 @@ colnames(timescale)[match("LAD", colnames(timescale))] <- "age_top"
 
 write.csv(timescale, file="timescale_2020.csv", na="", row.names=FALSE)
 
-##### PBDB Timescale ICS 2024/12
+##### PBDB Timescale ICS 2026/06
 if(lump.holocene == TRUE) {
      ts.id <- 11
 } else {
@@ -126,7 +126,7 @@ timescale.pbdb$age_mid <- round((timescale.pbdb$b_age + timescale.pbdb$t_age)/2,
 colnames(timescale.pbdb)[match("b_age", colnames(timescale.pbdb))] <- "age_bottom"
 colnames(timescale.pbdb)[match("t_age", colnames(timescale.pbdb))] <- "age_top"
 
-write.csv(timescale.pbdb, file="timescale_2024.csv", na="", row.names=FALSE)
+write.csv(timescale.pbdb, file="timescale_2026.csv", na="", row.names=FALSE)
 
 
 ##### ICS 2022/10
