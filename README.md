@@ -12,14 +12,14 @@ This repository contains a series of R scripts that are used sequentially to dow
 
 ## The Geological Timescale
 
-There are two timescales. The native PBDB timescale, which is based on the International Comission on Stratigraphy 2024 timescale. The other is from the ``fossilbrush`` R package and is based on the Gradstein 2020 timescale (i.e., the current ICS Timescale).
+There are two timescales. The native PBDB timescale, which is based on the International Comission on Stratigraphy 2026 timescale. The other is from the ``fossilbrush`` R package and is based on the Gradstein 2020 timescale (i.e., the current ICS Timescale).
 
 
-* [timescale_2024.csv](Timescale/timescale_2024.csv)
+* [timescale_2024.csv](Timescale/timescale_2026.csv)
 * [timescale_2020.csv](Timescale/timescale_2020.csv)
 
 ```{r}
-timescale.2024 <- read.csv(file="https://raw.githubusercontent.com/naheim/PBDB_Scripts/master/Timescale/timescale_2024.csv")
+timescale.2024 <- read.csv(file="https://raw.githubusercontent.com/naheim/PBDB_Scripts/master/Timescale/timescale_2026.csv")
 
 timescale.2020 <- read.csv(file="https://raw.githubusercontent.com/naheim/PBDB_Scripts/master/Timescale/timescale_2020.csv")
 ```
