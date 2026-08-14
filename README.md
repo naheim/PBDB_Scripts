@@ -18,9 +18,11 @@ There are two timescales. The native PBDB timescale, which is based on the Inter
 * [timescale_2026.csv](Timescale/timescale_2026.csv)
 * [timescale_2020.csv](Timescale/timescale_2020.csv)
 
-```{r}
+```{r timescale-1}
 timescale.2026 <- read.csv(file="https://raw.githubusercontent.com/naheim/PBDB_Scripts/master/Timescale/timescale_2026.csv")
+```
 
+```{r timescale-2}
 timescale.2020 <- read.csv(file="https://raw.githubusercontent.com/naheim/PBDB_Scripts/master/Timescale/timescale_2020.csv")
 ```
 
